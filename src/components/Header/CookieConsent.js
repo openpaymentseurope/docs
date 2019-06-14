@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { useCookies } from 'react-cookie';
 
 function CookieConsent(props) {

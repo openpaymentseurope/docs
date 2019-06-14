@@ -1,8 +1,8 @@
 ---
 title: Supported banks
-root: "/docs"
-parents: ["Introduction"]
-prio: 0
+root: '/docs'
+parents: ['Introduction']
+prio: 1
 ---
 
 # Supported banks

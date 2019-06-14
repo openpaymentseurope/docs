@@ -1,32 +1,53 @@
 import React, { Component } from 'react'
-import { Link } from 'gatsby';
-import sizeMe from 'react-sizeme';
-import { connect } from "react-redux";
-import { updateHeaderHeight } from '../../actions/layout';
-import Logo from './Logo.js';
-import CookieConsent from './CookieConsent';
+import { Link } from 'gatsby'
+import sizeMe from 'react-sizeme'
+import { connect } from 'react-redux'
+import { updateHeaderHeight } from '../../actions/layout'
+import Logo from './Logo.js'
+import CookieConsent from './CookieConsent'
+import LinkItem from '../common/LinkItem'
 
 class Header extends Component {
   componentDidUpdate = () => {
     this.props.updateHeaderHeight(this.props.size.height)
   }
 
-  render() {
-    const logo = window.location.pathname === '/' ? <Logo/> : <Link to= '/'><Logo /></Link>
+  renderLogo = () => {
+    if (window.location.pathname === '/') {
+      return <Logo />
+    } else {
+      return (
+        <Link to="/">
+          <Logo />
+        </Link>
+      )
+    }
+  }
 
+  render() {
     return (
-      <div className='header'>
+      <div className="header">
         <CookieConsent />
-        {logo}
-        <a className = "register" href="/obp.postman_collection.json" target="_blank">Download Postman Collection</a>
-        <a className="register" href="https://auth.sandbox.openbankingplatform.com/client/register" target="_blank">Register a client</a>
+        {this.renderLogo()}
+        <LinkItem className="register" href="/obp.postman_collection.json">
+          Download Postman Collection
+        </LinkItem>
+        <LinkItem
+          className="register"
+          href="https://auth.sandbox.openbankingplatform.com/client/register"
+        >
+          Register a client
+        </LinkItem>
       </div>
     )
   }
 }
 
 const mapDispatchToProps = {
-  updateHeaderHeight
+  updateHeaderHeight,
 }
 
-export default connect(() => ({}), mapDispatchToProps)(sizeMe({ monitorHeight: true })(Header))
+export default connect(
+  () => ({}),
+  mapDispatchToProps
+)(sizeMe({ monitorHeight: true })(Header))

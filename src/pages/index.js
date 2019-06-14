@@ -2,7 +2,6 @@ import React from 'react'
 import Layout from '../components/Layout'
 import Button from 'antd/lib/button'
 import { Link } from "gatsby"
-import Img from "gatsby-image"
 
 const IndexPage = ({data}) => {
   return (
