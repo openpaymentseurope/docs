@@ -21,7 +21,9 @@ Finally there is Payment Initiation where actual payments are initiated. This AP
 
 ## Standards
 
-The first generation of Open Payments API is based on the NextGen specification. A client already aware of NextGen should be able to work with our platform with no or little hassle. For practical purposes we have broken the specification up in 4 different parts corresponding to the building stones described above. OAS3 specifications are available:
+The first generation of Open Payments API is based on the Berlin Groups NextGen specification. This common API standard was developed to create a uniform and interoperable communications between banks and TPPs. A client already aware of NextGen should be able to work with our platform with no or little hassle. 
+
+For practical purposes we have broken the specification up in 4 different parts corresponding to the building stones described above. OAS3 specifications are available:
 
 - [ASPSP](aspsp-ref.md)
 - [Account Information](ais-ref.md)
