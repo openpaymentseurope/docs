@@ -4,8 +4,10 @@ title: Introduction
 sidebar_label: Introduction
 ---
 
-Open Payments provides a PSD2 compliant API for aggregated use over all [supported banks](banks.md).
-You can give away the hassle of bank integration to us and focus on your core business when it comes to bank interactions.
+Whether you are building a FinTech or accounting app, E-commerce business, ERP software, or managing a subscription service of any kind, Open Payments connects you to banks in Europe through one single unified API.
+
+The Open Payments Platform provides a PSD2 compliant API for aggregated use for all [supported banks](banks.md).
+We take care of the hassle of bank integration so you can focus on your core business.
 
 ## Overview
 
@@ -19,7 +21,9 @@ Finally there is Payment Initiation where actual payments are initiated. This AP
 
 ## Standards
 
-The first generation of Open Payments API is based on the NextGen specification. A client already aware of NextGen should be able to work with our platform with no or little hassle. For practical purposes we have broken the specification up in 4 different parts corresponding to the building stones described above. OAS3 specifications are available:
+The first generation of Open Payments API is based on the Berlin Groups NextGen specification. This common API standard was developed to create a uniform and interoperable communications between banks and TPPs. A client already aware of NextGen should be able to work with our platform with no or little hassle. 
+
+For practical purposes we have broken the specification up in 4 different parts corresponding to the building stones described above. OAS3 specifications are available:
 
 - [ASPSP](aspsp-ref.md)
 - [Account Information](ais-ref.md)
