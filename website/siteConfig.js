@@ -77,8 +77,8 @@ const siteConfig = {
   },
   */
   algolia: {
-    apiKey: '6ae8782a9fea6cc447c939050cadca06',
-    indexName: 'default',
+    apiKey: 'dafc026eb85cdc374a1e761b561001ad',
+    indexName: 'prod_DEVDOCS',
     algoliaOptions: {},
   },
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
