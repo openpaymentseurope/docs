@@ -9,7 +9,7 @@ You can give away the hassle of bank integration to us and focus on your core bu
 
 ## Overview
 
-Open Payments provides three building stones on which you can build you bank aware application. 
+Open Payments provides three building blocks on which you can build you bank aware application. 
 
 The first is called ASPSP after Account Servicing Payment Service Providers. Most of these would be called banks in everyday language. This set of APIs makes it possible to discover what banks that are available for a certain country and what capabilities those banks have in the Open Payments ecosystem. Here is a [tutorial to get started](aspsp.md) with ASPSP.
 
