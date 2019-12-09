@@ -5,6 +5,10 @@ sidebar_label: How to use the ASPSP API
 original_id: aspsp
 ---
 
+This API is used to retreive information about supported Account Servicing Payment Service Providers (ASPSP) that Open Payments Platform currently support. You will also get information about the specific ASPSP that will be used to call the other APIs.
+
+## Hosts
+
 Available `AUTH_HOST` values
 | Environment | URL |
 | --- | --- |
@@ -16,6 +20,9 @@ Available `API_HOST` values
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
+
+## Account Servicing Payment Service Provider (ASPSP) Flow
+![PlantUML model](/docs/img/aspsp.svg)
 
 ## Acquire an access token for ASPSP Information
 ```javascript

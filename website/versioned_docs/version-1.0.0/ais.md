@@ -7,6 +7,8 @@ original_id: ais
 
 This API is used to access information about accounts. Lists of accounts with an ASPSP and the actual transactions for one account. In order to be able to access this API first a consent needs to be acquired. See the [consent tutorial](consent.md) for how that is done.
 
+## Hosts
+
 Available `AUTH_HOST` values
 | Environment | URL |
 | --- | --- |
@@ -19,6 +21,8 @@ Available `API_HOST` values
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
+## Account Information Services (AIS) Flow
+![PlantUML model](/docs/img/ais.svg)
 
 ## Acquire an access token for Account Information
 

@@ -7,6 +7,8 @@ original_id: consent
 
 This API is used to retreive and manage consent for accessing account information on behalf of a banks customer. If you are new to Open Payments API it is probably best to read a bit about how the APIs work in the [ASPSP tutorial](aspsp.md).
 
+## Hosts
+
 Available `AUTH_HOST` values
 | Environment | URL |
 | --- | --- |
@@ -19,6 +21,8 @@ Available `API_HOST` values
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
+## Consent Flow
+![PlantUML model](/docs/img/consent.svg)
 
 ## Acquire an access token for Account Information
 ```javascript
