@@ -61,9 +61,9 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Support</h5>
-            <a href={`${this.props.config.baseUrl}blog`}>API Blog</a>
+            <a href={`${this.props.config.baseUrl}blog`}>News Blog</a>
             <a href="mailto:support@openpayments.io">support@openpayments.io</a>
-            <a href="https://github.com/openpaymentseurope">GitHub</a>
+            <a href="https://github.com/openpaymentseurope/docs">GitHub</a>
           </div>
         </section>
         <section className="social">

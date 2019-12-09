@@ -14,7 +14,7 @@ const users = [
     caption: 'User1',
     // You will need to prepend the image path with your baseUrl
     // if it is not '/', like: '/test-site/img/image.jpg'.
-    image: '/img/undraw_open_source.svg',
+    image: '/docs/img/undraw_open_source.svg',
     infoLink: 'https://www.facebook.com',
     pinned: true,
   },
@@ -39,8 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'introduction', label: 'Docs'},
-    {doc: 'doc4', label: 'API'},
-    {page: 'help', label: 'Help'},
+    {page: 'support', label: 'Support'},
     {blog: true, label: 'Blog'},
   ],
 

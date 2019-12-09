@@ -21,17 +21,17 @@ function Help(props) {
   const supportLinks = [
     {
       content: `Learn more using the [documentation on this site.](${docUrl(
-        'doc1.html',
+        'introduction.html',
       )})`,
       title: 'Browse Docs',
     },
     {
-      content: 'Ask questions about the documentation and project',
+      content: 'File an issue at our [GitHub repository](https://github.com/openpaymentseurope/docs/issues) or join the discussion!',
       title: 'Join the community',
     },
     {
-      content: "Find out what's new with this project",
-      title: 'Stay up to date',
+      content: "If you can't find any solution to your problem, [open a support case](mailto:support@openpayments.io) with us!",
+      title: "Open a Support Case",
     },
   ];
   return (
@@ -41,7 +41,7 @@ function Help(props) {
           <header className="postHeader">
             <h1>Need help?</h1>
           </header>
-          <p>This project is maintained by a dedicated group of people.</p>
+          <p>We've got your back! Create a developer account at our <a href="https://developer.openpayments.io" target="_blank">Developer Portal</a> and try any of the channels below to get the help you need!</p>
           <GridBlock contents={supportLinks} layout="threeColumn" />
         </div>
       </Container>

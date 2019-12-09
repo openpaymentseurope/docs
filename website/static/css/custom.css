@@ -51,6 +51,9 @@ a {
 }
 
 @media only screen and (max-width: 1023px) {
+    .reactNavSearchWrapper input#search_input_react {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
 }
 
 @media only screen and (min-width: 1400px) {
