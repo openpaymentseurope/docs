@@ -414,7 +414,7 @@ See Create consent.
 
 ### Test procedure
 
-If the ASPSP uses OAuth:
+If the [ASPSP](glossary.md) uses OAuth:
 - The above endpoint returns an OAuth authorize URL in the `scoOAuth` field. 
 - Replace all the bracketed fields with real values. In your code you will have to replace only the two TPP values.
     - `TPP_REDIRECT_URI` should be the URL to redirect to after auth is completed.
