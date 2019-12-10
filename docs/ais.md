@@ -7,12 +7,14 @@ sidebar_label: How to use the AIS API
 This API is used to access information about accounts. Lists of accounts with an ASPSP and the actual transactions for one account. In order to be able to access this API first a consent needs to be acquired. See the [consent tutorial](consent.md) for how that is done.
 
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
