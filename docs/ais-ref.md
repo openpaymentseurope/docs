@@ -29,9 +29,9 @@ Available `API_HOST` values
 |Scopes|accountinformation|
 
 ### Decoupled
-|decoupled|BankID|
+|Country|SCA Method Id|
 |---|---|
-|||
+|Sweden|mbid|
 
 ## Endpoints
 
