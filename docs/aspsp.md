@@ -30,7 +30,7 @@ This post will return a JSON object that looks like this:
 ```javascript
 {
     "access_token": "[ACCESS_TOKEN]",
-    "expires_in": 7776000,
+    "expires_in": 3600,
     "token_type": "Bearer",
     "scope": "aspspinformation"
 }
