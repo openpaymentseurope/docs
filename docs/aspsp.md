@@ -5,12 +5,14 @@ sidebar_label: How to use the ASPSP API
 ---
 
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
@@ -88,10 +90,10 @@ The `COUNTRY_CODE` parameter should be one of the codes in the ISO 3166-1 alpha-
 
 ### Response
 ```javascript
-    {
-        "isoCountryCode": "SE",
-        "name": "Sweden"
-    }
+{
+    "isoCountryCode": "SE",
+    "name": "Sweden"
+}
 ```
 
 This is exactly the same as in the country list.
@@ -227,24 +229,16 @@ curl -X GET
         "domestic"
     ],
     "paymentProducts": [
-        "swedish-domestic-private-credit-transfers",
         "swedish-domestic-private-own-accounts-transfers",
         "swedish-domestic-private-bankgiros",
         "swedish-domestic-private-plusgiros",
-        "sepa-credit-transfers",
-        "cross-border-credit-transfers",
-        "high-value-credit-transfers",
-        "dk-domestic-credit-transfers",
-        "intra-company-credit-transfers",
-        "no-domestic-credit-transfers",
-        "pl-domestic-credit-transfers",
-        "se-domestic-credit-transfers",
-        "uk-domestic-credit-transfers"
+        "high-value-credit-transfers"
+        "se-domestic-credit-transfers"
     ],
     "supportedAuthorizationMethods": [
         {
             "name": "OAuth2",
-            "uri": "https://auth.dev.openbankingplatform.com/.well-known/openid-configuration"
+            "uri": "https://auth.sandbox.openbankingplatform.com/.well-known/openid-configuration"
         }
     ],
     "bicFi": "ESSESESS",
