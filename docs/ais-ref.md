@@ -8,12 +8,14 @@ Open Payments Europe, Open Banking Platform - Account Information REST API.
 
 ## Environments
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
