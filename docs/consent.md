@@ -7,12 +7,14 @@ sidebar_label: How to use the Consent API
 This API is used to retreive and manage consent for accessing account information on behalf of a banks customer. If you are new to Open Payments API it is probably best to read a bit about how the APIs work in the [ASPSP tutorial](aspsp.md).
 
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |

@@ -8,12 +8,14 @@ Open Payments Platform uses OAuth2 (specifically OIDC) for authentication. In th
 by step instructions on how you will interact with the platform. Throughout this documentation we use brackets to denote variables that need to be replaced with corresponding values. The actual domains to access are two - one for handling auth and one for doing the actual calls. See list below for values in sandbox and production.
 
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
@@ -35,4 +37,4 @@ You can [download](https://docs.openpayments.io/obp.postman_collection.json) our
 
 ### X-Request-ID
 
-All calls accept a header called `X-Request-ID` - this should be set to a newly generated guid. Denoted in the code with [GUID]. If your client is also a platform it would make sense to accept such an id from the client that calls you. This id is used to trace requests through our systems. Logging it somewhere together with the request will make bug hunting much easier.
+All calls accept a header called `X-Request-ID` - this should be set to a newly generated guid. Denoted in the code with [GUID]. If your client is also a platform it would make sense to accept such an id from the client that calls you. This id is used to trace requests through our systems. Logging it somewhere together with the request will make troubleshooting much easier.

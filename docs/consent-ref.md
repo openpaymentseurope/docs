@@ -8,12 +8,14 @@ Open Payments Europe, Open Banking Platform - Consent REST API.
 
 ## Environments
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
@@ -29,9 +31,9 @@ Available `API_HOST` values
 |Scopes|accountinformation|
 
 ### Decoupled
-|decoupled|BankID|
+|Country|SCA Method Id|
 |---|---|
-|||
+|Sweden|mbid|
 
 ## Endpoints
 
