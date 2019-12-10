@@ -16,7 +16,7 @@ Available `API_HOST` values
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
-## Acquire an access token for ASPSP Information
+## Acquire an access token for [ASPSP](glossary.md) Information
 ```javascript
 curl -X POST
     [AUTH_HOST]/connect/token
@@ -172,10 +172,10 @@ curl -X GET
 
 ### Query parameters
 
-- `isoCountryCodes` a comma separated list of countries to retrieve ASPSPs for. Optional.
-- `cityIds` a comma separated list of city ids to retrieve ASPSPs for. Optional.
+- `isoCountryCodes` a comma separated list of countries to retrieve [ASPSPs](glossary.md) for. Optional.
+- `cityIds` a comma separated list of city ids to retrieve [ASPSPs](glossary.md) for. Optional.
 
-The service will return all matches for the queries. So it is possible to get all ASPSPs in Sweden and Helsinki by sending in the country code for Sweden and the city id for Helsinki.
+The service will return all matches for the queries. So it is possible to get all [ASPSPs](glossary.md) in Sweden and Helsinki by sending in the country code for Sweden and the city id for Helsinki.
 
 ### Response
 ```javascript
@@ -200,7 +200,7 @@ The service will return all matches for the queries. So it is possible to get al
 }
 ```
 
-## Get ASPSP
+## Get [ASPSP](glossary.md)
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps/[BICFI]
