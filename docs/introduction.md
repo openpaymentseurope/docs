@@ -22,7 +22,7 @@ We have integrated our platform with the bank’s APIs, and no matter their vers
 
 ### How can you learn?
 
-We have included tutorials on how you can get started using our services and continuing use it. Those are a step by step instructions on how you will interact with the platform.
+We have included tutorials and API references for you on how you can get started using our services and continuing use it. Those include a step by step instructions on how you will interact with the platform.
 
 ## Overview
 
