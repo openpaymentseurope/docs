@@ -61,14 +61,6 @@ curl -X GET
         {
             "isoCountryCode": "FI",
             "name": "Finland"
-        },
-        {
-            "isoCountryCode": "DE",
-            "name": "Germany"
-        },
-        {
-            "isoCountryCode": "DK",
-            "name": "Denmark"
         }
     ]
 }
@@ -126,16 +118,6 @@ The service will return all matches for the queries. So querying for `SE` and `b
             "cityId": "ba9dd929-1408-33a6-3ce2-bc45fcfaaa5c",
             "name": "Helsinki",
             "isoCountryCode": "FI"
-        },
-        {
-            "cityId": "bb97dd78-835c-9922-e700-a8b5b3f5cbba",
-            "name": "Frankfurt",
-            "isoCountryCode": "DE"
-        },
-        {
-            "cityId": "8f64d9db-7f38-e13e-cbf8-809e6bc6175c",
-            "name": "Copenhagen",
-            "isoCountryCode": "DK"
         }
     ]
 }
