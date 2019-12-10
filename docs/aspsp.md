@@ -162,7 +162,7 @@ curl -X GET
 
 This is exactly as one item in the list returned from the "get cities" endpoint.
 
-## Get ASPSPs
+## Get [ASPSPs](glossary.md)
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps
@@ -210,7 +210,7 @@ curl -X GET
 
 ### Path parameter
 
-- `BICFI` ASPSP identifier. It can be known upfront or it can be picked from the previous response.
+- `BICFI` [ASPSP](glossary.md) identifier. It can be known upfront or it can be picked from the previous response.
 
 ### Response
 ```javascript
