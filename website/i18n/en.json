@@ -37,6 +37,10 @@
         "title": "How to use the Consent API",
         "sidebar_label": "How to use the Consent API"
       },
+      "essesess": {
+        "title": "SEB (ESSESESS)",
+        "sidebar_label": "SEB"
+      },
       "doc4": {
         "title": "Other Document"
       },
@@ -47,9 +51,17 @@
         "title": "Glossary",
         "sidebar_label": "Glossary"
       },
+      "handsess": {
+        "title": "Handelsbanken (HANDSESS)",
+        "sidebar_label": "Handelsbanken"
+      },
       "introduction": {
         "title": "Introduction",
         "sidebar_label": "Introduction"
+      },
+      "ndeasess": {
+        "title": "Nordea (NDEASESS)",
+        "sidebar_label": "Nordea"
       },
       "pis-ref": {
         "title": "Payment Initiation Services (PIS) API Reference",

@@ -1,19 +1,16 @@
 ---
-title: Nordea Bank
-root: "/docs"
-parents: ["Introduction"]
-prio: 0
+id: ndeasess
+title: Nordea (NDEASESS)
+sidebar_label: Nordea
 ---
-
-# Nordea Bank - SE<br>NDEASESS
 
 ## Status Highlights
 
-* ##### HTTP header PSU-ID is required by the ASPSP in the form `yyyyMMddNNNN` when calling "Start the authorization process.." or "Update PSU Data.." both for Payment and Consent.
+* HTTP header PSU-ID is required by the ASPSP in the form `yyyyMMddNNNN` when calling "Start the authorization process.." or "Update PSU Data.." both for Payment and Consent.
 
-* ##### Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP.
+* Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP.
 
-* ##### "Read Transaction Details" not supported by ASPSP.
+* "Read Transaction Details" not supported by ASPSP.
 
 ## Supported SCA Methods
 |Environment     |Supported SCA Method     | Authentication Method | Notes |
@@ -24,7 +21,7 @@ prio: 0
 
 ## Payment Initiation Service
 
-#### Supported Payment Products
+### Supported Payment Products
 
 |Product               |Sandbox             |Production          |
 |----------------------|:------------------:|:------------------:|
@@ -32,7 +29,7 @@ prio: 0
 |sepa-credit-transfers | :x:                | :x:                |
 |international         | :x:                | :x:                |
 
-#### API Compliance
+### API Compliance
 
 |Service  |Sandbox |Sandbox Notes |Production |Production Notes |
 |---------|:--------:|--------------|:-----------:|------------|
@@ -51,7 +48,7 @@ prio: 0
 
 ## Consent Service
 
-#### API Compliance
+### API Compliance
 
 |Service  |Sandbox |Sandbox Notes |Production |Production Notes |
 |---------|:--------:|--------------|:-----------:|------------|
@@ -67,7 +64,7 @@ prio: 0
 
 ## Account Information Service
 
-#### API Compliance
+### API Compliance
 
 |Service  |Sandbox |Sandbox Notes |Production |Production Notes |
 |---------|:--------:|--------------|:-----------:|------------|
