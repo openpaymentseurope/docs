@@ -8,12 +8,9 @@ Here is a list of currently supported banks in the sandbox environment. The sand
 
 ## Sweden
 
-- Nordea
-- Handelsbanken
-- SEB
+
+- [Nordea](NDEASESS.md)
+- [Handelsbanken](HANDSESS.md)
+- [SEB](ESSESESS.md)
 - Swedbank
 
-## Finland
-
-- Nordea
-- OP
