@@ -35,7 +35,7 @@ This post will return a JSON object that looks like this:
 ```javascript
 {
     "access_token": "[ACCESS_TOKEN]",
-    "expires_in": 7776000,
+    "expires_in": 3600,
     "token_type": "Bearer",
     "scope": "aspspinformation"
 }
@@ -95,10 +95,10 @@ The `COUNTRY_CODE` parameter should be one of the codes in the ISO 3166-1 alpha-
 
 ### Response
 ```javascript
-    {
-        "isoCountryCode": "SE",
-        "name": "Sweden"
-    }
+{
+    "isoCountryCode": "SE",
+    "name": "Sweden"
+}
 ```
 
 This is exactly the same as in the country list.
@@ -131,16 +131,6 @@ The service will return all matches for the queries. So querying for `SE` and `b
             "cityId": "ba9dd929-1408-33a6-3ce2-bc45fcfaaa5c",
             "name": "Helsinki",
             "isoCountryCode": "FI"
-        },
-        {
-            "cityId": "bb97dd78-835c-9922-e700-a8b5b3f5cbba",
-            "name": "Frankfurt",
-            "isoCountryCode": "DE"
-        },
-        {
-            "cityId": "8f64d9db-7f38-e13e-cbf8-809e6bc6175c",
-            "name": "Copenhagen",
-            "isoCountryCode": "DK"
         }
     ]
 }
@@ -231,27 +221,20 @@ curl -X GET
     "websiteUrl": "https://seb.se/",
     "globalPaymentProducts": [
         "sepa-credit-transfers",
-        "domestic"
+        "domestic",
+        "international"
     ],
     "paymentProducts": [
-        "swedish-domestic-private-credit-transfers",
         "swedish-domestic-private-own-accounts-transfers",
         "swedish-domestic-private-bankgiros",
         "swedish-domestic-private-plusgiros",
-        "sepa-credit-transfers",
-        "cross-border-credit-transfers",
         "high-value-credit-transfers",
-        "dk-domestic-credit-transfers",
-        "intra-company-credit-transfers",
-        "no-domestic-credit-transfers",
-        "pl-domestic-credit-transfers",
-        "se-domestic-credit-transfers",
-        "uk-domestic-credit-transfers"
+        "se-domestic-credit-transfers"
     ],
     "supportedAuthorizationMethods": [
         {
             "name": "OAuth2",
-            "uri": "https://auth.dev.openbankingplatform.com/.well-known/openid-configuration"
+            "uri": "https://auth.sandbox.openbankingplatform.com/.well-known/openid-configuration"
         }
     ],
     "bicFi": "ESSESESS",
