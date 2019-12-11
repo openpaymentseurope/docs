@@ -66,14 +66,6 @@ curl -X GET
         {
             "isoCountryCode": "FI",
             "name": "Finland"
-        },
-        {
-            "isoCountryCode": "DE",
-            "name": "Germany"
-        },
-        {
-            "isoCountryCode": "DK",
-            "name": "Denmark"
         }
     ]
 }
