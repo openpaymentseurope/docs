@@ -1,7 +1,8 @@
 ---
-id: essesess
-title: SEB (ESSESESS)
-sidebar_label: SEB
+id: version-1.0.0-swedsess
+title: Swedbank (SWEDSESS)
+sidebar_label: Swedbank
+original_id: swedsess
 ---
 
 ## Status Highlights

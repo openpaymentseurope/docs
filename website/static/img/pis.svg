@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="4557px" preserveAspectRatio="none" style="width:1207px;height:4557px;" version="1.1" viewBox="0 0 1207 4557" width="1207px" zoomAndPan="magnify"><defs/><g><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="189" x="509.75" y="23.5352">Payment Initiation Service</text><rect fill="#FFFFFF" height="8" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3032.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3032.6211" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3032.6211" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3032.6211" y2="3032.6211"/><rect fill="#FFFFFF" height="21.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3068.6211" y2="3089.9316"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3068.6211" y2="3089.9316"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3089.9316" y2="3089.9316"/><rect fill="#FFFFFF" height="8" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3871.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3871.1348" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3871.1348" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3871.1348" y2="3871.1348"/><rect fill="#FFFFFF" height="21.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3907.1348" y2="3928.4453"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3907.1348" y2="3928.4453"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3928.4453" y2="3928.4453"/><rect fill="#FFFFFF" height="118.2422" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="159.5977"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="442.0137"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="739.7402"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1022.1563"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1304.5723"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1586.9883"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1884.7148"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="2167.1309"/><rect fill="#FFFFFF" height="575.7637" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="2464.8574"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="2464.8574" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="2464.8574" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="89.5" y1="2464.8574" y2="2464.8574"/><rect fill="#FFFFFF" height="810.5137" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="3068.6211" y2="3879.1348"/><rect fill="#FFFFFF" height="95.2422" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="3907.1348" y2="4002.377"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="3907.1348" y2="4002.377"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="89.5" y1="4002.377" y2="4002.377"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="4184.8848"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="442.0137"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="739.7402"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1022.1563"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1304.5723"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1586.9883"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1884.7148"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="2167.1309"/><rect fill="#FFFFFF" height="179.4844" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="2464.8574"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="4184.8848"/><rect fill="#FFFFFF" height="118.2422" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="159.5977"/><rect fill="#FFFFFF" height="139.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="2834.8262"/><rect fill="#FFFFFF" height="44.6211" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3119.2422"/><rect fill="#FFFFFF" height="179.4844" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3272.416"/><rect fill="#FFFFFF" height="139.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3673.3398"/><rect fill="#FFFFFF" height="44.6211" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3957.7559"/><rect fill="#FFFFFF" height="37.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3003.3105"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3003.3105" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3003.3105" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3003.3105" y2="3003.3105"/><rect fill="#FFFFFF" height="50.6211" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3068.6211" y2="3119.2422"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3068.6211" y2="3119.2422"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3119.2422" y2="3119.2422"/><rect fill="#FFFFFF" height="37.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3841.8242"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3841.8242" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3841.8242" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3841.8242" y2="3841.8242"/><rect fill="#FFFFFF" height="50.6211" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3907.1348" y2="3957.7559"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3907.1348" y2="3957.7559"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3957.7559" y2="3957.7559"/><rect fill="#FFFFFF" height="1714.4063" style="stroke: #000000; stroke-width: 2.0;" width="1182.5" x="13" y="2738.584"/><rect fill="#FFFFFF" height="504.5449" style="stroke: none; stroke-width: 1.0;" width="1182.5" x="13" y="3579.4531"/><rect fill="#FFFFFF" height="368.9922" style="stroke: none; stroke-width: 1.0;" width="1182.5" x="13" y="4083.998"/><rect fill="#FFFFFF" height="315.0371" style="stroke: #000000; stroke-width: 2.0;" width="892.5" x="55" y="4105.9531"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="39" x2="39" y1="112.9766" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="39" x2="39" y1="3040.6211" y2="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="39" x2="39" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="39" x2="39" y1="3879.1348" y2="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="39" x2="39" y1="3907.1348" y2="4469.9902"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="84" x2="84" y1="112.9766" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="84" x2="84" y1="3040.6211" y2="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="84" x2="84" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="84" x2="84" y1="3879.1348" y2="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="84" x2="84" y1="3907.1348" y2="4469.9902"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="851.5" x2="851.5" y1="112.9766" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="851.5" x2="851.5" y1="3040.6211" y2="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="851.5" x2="851.5" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="851.5" x2="851.5" y1="3879.1348" y2="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="851.5" x2="851.5" y1="3907.1348" y2="4469.9902"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1033.5" x2="1033.5" y1="112.9766" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="1033.5" x2="1033.5" y1="3040.6211" y2="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1033.5" x2="1033.5" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="1033.5" x2="1033.5" y1="3879.1348" y2="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1033.5" x2="1033.5" y1="3907.1348" y2="4469.9902"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1157.5" x2="1157.5" y1="112.9766" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="1157.5" x2="1157.5" y1="3040.6211" y2="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1157.5" x2="1157.5" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 1.0,4.0;" x1="1157.5" x2="1157.5" y1="3879.1348" y2="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1157.5" x2="1157.5" y1="3907.1348" y2="4469.9902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="23" y="110.0234">PSU</text><ellipse cx="39" cy="43.4883" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M39,51.4883 L39,78.4883 M26,59.4883 L52,59.4883 M39,78.4883 L26,93.4883 M39,78.4883 L52,93.4883 " fill="none" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="23" y="4482.5254">PSU</text><ellipse cx="39" cy="4495.4785" fill="#FEFECE" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><path d="M39,4503.4785 L39,4530.4785 M26,4511.4785 L52,4511.4785 M39,4530.4785 L26,4545.4785 M39,4530.4785 L52,4545.4785 " fill="none" style="stroke: #A80036; stroke-width: 2.0;"/><rect fill="#FEFECE" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="65" y="81.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="72" y="102.0234">TPP</text><rect fill="#FEFECE" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="39" x="65" y="4468.9902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="25" x="72" y="4489.5254">TPP</text><rect fill="#FEFECE" height="46.9766" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="765.5" y="65"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="772.5" y="85.5352">Open Banking Platform</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="840.5" y="102.0234">API</text><rect fill="#FEFECE" height="46.9766" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="765.5" y="4468.9902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="772.5" y="4489.5254">Open Banking Platform</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="840.5" y="4506.0137">API</text><rect fill="#FEFECE" height="46.9766" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="947.5" y="65"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="954.5" y="85.5352">Open Banking Platform</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="1017" y="102.0234">Auth</text><rect fill="#FEFECE" height="46.9766" style="stroke: #A80036; stroke-width: 1.5;" width="172" x="947.5" y="4468.9902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="158" x="954.5" y="4489.5254">Open Banking Platform</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="1017" y="4506.0137">Auth</text><rect fill="#FEFECE" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="1129.5" y="81.4883"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="1136.5" y="102.0234">ASPSP</text><rect fill="#FEFECE" height="30.4883" style="stroke: #A80036; stroke-width: 1.5;" width="56" x="1129.5" y="4468.9902"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="42" x="1136.5" y="4489.5254">ASPSP</text><rect fill="#FFFFFF" height="8" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3032.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3032.6211" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3032.6211" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3032.6211" y2="3032.6211"/><rect fill="#FFFFFF" height="21.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3068.6211" y2="3089.9316"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3068.6211" y2="3089.9316"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3089.9316" y2="3089.9316"/><rect fill="#FFFFFF" height="8" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3871.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3871.1348" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3871.1348" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3871.1348" y2="3871.1348"/><rect fill="#FFFFFF" height="21.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="34" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="34" y1="3907.1348" y2="3928.4453"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="44" y1="3907.1348" y2="3928.4453"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="34" x2="44" y1="3928.4453" y2="3928.4453"/><rect fill="#FFFFFF" height="118.2422" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="159.5977"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="442.0137"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="739.7402"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1022.1563"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1304.5723"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1586.9883"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="1884.7148"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="2167.1309"/><rect fill="#FFFFFF" height="575.7637" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="2464.8574"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="2464.8574" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="2464.8574" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="89.5" y1="2464.8574" y2="2464.8574"/><rect fill="#FFFFFF" height="810.5137" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="3068.6211" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="3068.6211" y2="3879.1348"/><rect fill="#FFFFFF" height="95.2422" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="79.5" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="79.5" y1="3907.1348" y2="4002.377"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="89.5" y1="3907.1348" y2="4002.377"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="79.5" x2="89.5" y1="4002.377" y2="4002.377"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="79.5" y="4184.8848"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="442.0137"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="739.7402"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1022.1563"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1304.5723"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1586.9883"/><rect fill="#FFFFFF" height="148.8633" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="1884.7148"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="2167.1309"/><rect fill="#FFFFFF" height="179.4844" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="2464.8574"/><rect fill="#FFFFFF" height="164.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="846.5" y="4184.8848"/><rect fill="#FFFFFF" height="118.2422" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="159.5977"/><rect fill="#FFFFFF" height="139.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="2834.8262"/><rect fill="#FFFFFF" height="44.6211" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3119.2422"/><rect fill="#FFFFFF" height="179.4844" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3272.416"/><rect fill="#FFFFFF" height="139.1738" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3673.3398"/><rect fill="#FFFFFF" height="44.6211" style="stroke: #A80036; stroke-width: 1.0;" width="10" x="1028.5" y="3957.7559"/><rect fill="#FFFFFF" height="37.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3003.3105"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3003.3105" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3003.3105" y2="3040.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3003.3105" y2="3003.3105"/><rect fill="#FFFFFF" height="50.6211" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3068.6211"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3068.6211" y2="3119.2422"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3068.6211" y2="3119.2422"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3119.2422" y2="3119.2422"/><rect fill="#FFFFFF" height="37.3105" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3841.8242"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3841.8242" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3841.8242" y2="3879.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3841.8242" y2="3841.8242"/><rect fill="#FFFFFF" height="50.6211" style="stroke: #FFFFFF; stroke-width: 1.0;" width="10" x="1152.5" y="3907.1348"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1152.5" y1="3907.1348" y2="3957.7559"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1162.5" x2="1162.5" y1="3907.1348" y2="3957.7559"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1152.5" x2="1162.5" y1="3957.7559" y2="3957.7559"/><polygon fill="#A80036" points="1016.5,155.5977,1026.5,159.5977,1016.5,163.5977,1020.5,159.5977" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1022.5" y1="159.5977" y2="159.5977"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="69" x="96.5" y="139.5449">Get Token</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="96.5" y="154.8555">POST /connect/token</text><rect fill="#FBFB77" height="69" style="stroke: #A80036; stroke-width: 1.0;" width="103" x="94" y="172.5977"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69" x="98" y="189.166">B: client_id</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="98" y="204.4766">B: client_secret</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="98" y="219.7871">B: grant_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="98" y="235.0977">B: scope</text><polygon fill="#A80036" points="95.5,273.8398,85.5,277.8398,95.5,281.8398,91.5,277.8398" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="1032.5" y1="277.8398" y2="277.8398"/><rect fill="#FBFB77" height="84" style="stroke: #A80036; stroke-width: 1.0;" width="108" x="920" y="290.8398"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="924" y="307.4082">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="924" y="322.7188">B: access_token</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="924" y="338.0293">B: expires_in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="924" y="353.3398">B: token_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="924" y="368.6504">B: scope</text><polygon fill="#A80036" points="834.5,438.0137,844.5,442.0137,834.5,446.0137,838.5,442.0137" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="442.0137" y2="442.0137"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="182" x="96.5" y="421.9609">Payment Initiation Request</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="461" x="96.5" y="437.2715">POST /psd2/paymentinitiation/v1/{payment-service}/{payment-product}</text><rect fill="#FBFB77" height="115" style="stroke: #A80036; stroke-width: 1.0;" width="168" x="94" y="455.0137"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="471.582">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="486.8926">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="502.2031">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="517.5137">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="119" x="98" y="532.8242">H: PSU-IP-Address</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="548.1348">H: X-BicFi</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="160" x="98" y="563.4453">B: paymentInitiation_json</text><polygon fill="#A80036" points="95.5,602.1875,85.5,606.1875,95.5,610.1875,91.5,606.1875" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="606.1875" y2="606.1875"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="272" x="574" y="619.1875"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="578" y="635.7559">HTTP 201</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="578" y="651.0664">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="264" x="578" y="666.377">B: paymentInitationRequestResponse-201</text><polygon fill="#A80036" points="834.5,735.7402,844.5,739.7402,834.5,743.7402,838.5,739.7402" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="739.7402" y2="739.7402"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="292" x="96.5" y="719.6875">Get Payment Initiation Request Information</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="534" x="96.5" y="734.998">GET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="752.7402"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="769.3086">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="784.6191">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="799.9297">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="815.2402">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="830.5508">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="845.8613">H: X-BicFi</text><polygon fill="#A80036" points="95.5,884.6035,85.5,888.6035,95.5,892.6035,91.5,888.6035" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="888.6035" y2="888.6035"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="261" x="585" y="901.6035"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="589" y="918.1719">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="589" y="933.4824">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="253" x="589" y="948.793">B: paymentInitiationWithStatusResponse</text><polygon fill="#A80036" points="834.5,1018.1563,844.5,1022.1563,834.5,1026.1563,838.5,1022.1563" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="1022.1563" y2="1022.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="269" x="96.5" y="1002.1035">Payment Initiation Cancellation Request</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="556" x="96.5" y="1017.4141">DELETE /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="1035.1563"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="1051.7246">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="1067.0352">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="1082.3457">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="1097.6563">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="1112.9668">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="1128.2773">H: X-BicFi</text><polygon fill="#A80036" points="95.5,1167.0195,85.5,1171.0195,95.5,1175.0195,91.5,1171.0195" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="1171.0195" y2="1171.0195"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="268" x="578" y="1184.0195"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="582" y="1200.5879">HTTP 202</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="582" y="1215.8984">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="260" x="582" y="1231.209">B: paymentInitiationCancelResponse-202</text><polygon fill="#A80036" points="834.5,1300.5723,844.5,1304.5723,834.5,1308.5723,838.5,1304.5723" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="1304.5723" y2="1304.5723"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="227" x="96.5" y="1284.5195">Payment Initiation Status Request</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="580" x="96.5" y="1299.8301">GET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/status</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="1317.5723"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="1334.1406">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="1349.4512">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="1364.7617">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="1380.0723">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="1395.3828">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="1410.6934">H: X-BicFi</text><polygon fill="#A80036" points="95.5,1449.4355,85.5,1453.4355,95.5,1457.4355,91.5,1453.4355" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="1453.4355" y2="1453.4355"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="299" x="547" y="1466.4355"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="551" y="1483.0039">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="551" y="1498.3145">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="291" x="551" y="1513.625">B: paymentInitiationStatusResponse-200_json</text><polygon fill="#A80036" points="834.5,1582.9883,844.5,1586.9883,834.5,1590.9883,838.5,1586.9883" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="1586.9883" y2="1586.9883"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="309" x="96.5" y="1566.9355">Start Payment Initiation Authorisation Process</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="640" x="96.5" y="1582.2461">POST /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="1599.9883"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="1616.5566">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="1631.8672">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="1647.1777">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="1662.4883">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="1677.7988">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="1693.1094">H: X-BicFi</text><polygon fill="#A80036" points="95.5,1731.8516,85.5,1735.8516,95.5,1739.8516,91.5,1735.8516" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="1735.8516" y2="1735.8516"/><rect fill="#FBFB77" height="69" style="stroke: #A80036; stroke-width: 1.0;" width="182" x="664" y="1748.8516"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="668" y="1765.4199">HTTP 201</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="668" y="1780.7305">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="668" y="1796.041">H: ASPSP-SCA-Approach</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="174" x="668" y="1811.3516">B: startScaprocessResponse</text><polygon fill="#A80036" points="834.5,1880.7148,844.5,1884.7148,834.5,1888.7148,838.5,1884.7148" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="1884.7148" y2="1884.7148"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="411" x="96.5" y="1864.6621">Get Payment Initiation Authorisation Sub-Resources Request</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="632" x="96.5" y="1879.9727">GET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="1897.7148"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="1914.2832">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="1929.5938">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="1944.9043">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="1960.2148">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="1975.5254">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="1990.8359">H: X-BicFi</text><polygon fill="#A80036" points="95.5,2029.5781,85.5,2033.5781,95.5,2037.5781,91.5,2033.5781" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="2033.5781" y2="2033.5781"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="114" x="732" y="2046.5781"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="736" y="2063.1465">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="736" y="2078.457">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="736" y="2093.7676">B: authorisations</text><polygon fill="#A80036" points="834.5,2163.1309,844.5,2167.1309,834.5,2171.1309,838.5,2167.1309" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="2167.1309" y2="2167.1309"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="321" x="96.5" y="2147.0781">Get Payment Initiation Authorisation SCA Status</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="743" x="96.5" y="2162.3887">GET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}</text><rect fill="#FBFB77" height="115" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="2180.1309"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="2196.6992">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="2212.0098">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="2227.3203">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="98" y="2242.6309">P: authorisationId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="2257.9414">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="2273.252">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="2288.5625">H: X-BicFi</text><polygon fill="#A80036" points="95.5,2327.3047,85.5,2331.3047,95.5,2335.3047,91.5,2331.3047" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="2331.3047" y2="2331.3047"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="143" x="703" y="2344.3047"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="707" y="2360.873">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="707" y="2376.1836">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="707" y="2391.4941">B: scaStatusResponse</text><polygon fill="#A80036" points="834.5,2460.8574,844.5,2464.8574,834.5,2468.8574,838.5,2464.8574" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="2464.8574" y2="2464.8574"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="263" x="96.5" y="2444.8047">Update PSU Data for Payment Initiation</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="743" x="96.5" y="2460.1152">PUT /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}</text><rect fill="#FBFB77" height="130" style="stroke: #A80036; stroke-width: 1.0;" width="222" x="94" y="2477.8574"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="2494.4258">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="2509.7363">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="2525.0469">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="98" y="2540.3574">P: authorisationId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="2555.668">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="2570.9785">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="2586.2891">H: X-BicFi</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="214" x="98" y="2601.5996">B: selectPsuAuthenticationMethod</text><polygon fill="#A80036" points="100.5,2640.3418,90.5,2644.3418,100.5,2648.3418,96.5,2644.3418" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="94.5" x2="850.5" y1="2644.3418" y2="2644.3418"/><rect fill="#FBFB77" height="69" style="stroke: #A80036; stroke-width: 1.0;" width="282" x="564" y="2657.3418"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="568" y="2673.9102">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="568" y="2689.2207">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="156" x="568" y="2704.5313">H: ASPSP-SCA-Approach</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="274" x="568" y="2719.8418">B: selectPsuAuthenticationMethodResponse</text><path d="M13,2738.584 L75,2738.584 L75,2745.584 L65,2755.584 L13,2755.584 L13,2738.584 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="1714.4063" style="stroke: #000000; stroke-width: 2.0;" width="1182.5" x="13" y="2738.584"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="17" x="28" y="2752.1523">alt</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="61" x="90" y="2751.2188">[scaOAuth]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="131.5" y1="2777.2051" y2="2777.2051"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="131.5" x2="131.5" y1="2777.2051" y2="2790.2051"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="90.5" x2="131.5" y1="2790.2051" y2="2790.2051"/><polygon fill="#A80036" points="100.5,2786.2051,90.5,2790.2051,100.5,2794.2051,96.5,2790.2051" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="540" x="96.5" y="2772.4629">Process selectPsuAuthenticationMethodResponse._links.scaOAuth.href template</text><polygon fill="#A80036" points="1016.5,2830.8262,1026.5,2834.8262,1016.5,2838.8262,1020.5,2834.8262" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1022.5" y1="2834.8262" y2="2834.8262"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="96.5" y="2814.7734">Call authlink</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="96.5" y="2830.084">GET /connect/authorize</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="117" x="94" y="2847.8262"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="98" y="2864.3945">Q: client_id</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="98" y="2879.7051">Q: scope</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="98" y="2895.0156">Q: response_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="98" y="2910.3262">Q: redirect_uri</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="98" y="2925.6367">Q: state</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="98" y="2940.9473">Q: acr_values</text><polygon fill="#A80036" points="100.5,2970,90.5,2974,100.5,2978,96.5,2974" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="94.5" x2="1032.5" y1="2974" y2="2974"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117" x="106.5" y="2969.2578">Redirect to ASPSP</text><polygon fill="#A80036" points="1140.5,2999.3105,1150.5,3003.3105,1140.5,3007.3105,1144.5,3003.3105" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1146.5" y1="3003.3105" y2="3003.3105"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="159" x="96.5" y="2998.5684">Follow authlink redirect</text><polygon fill="#A80036" points="1140.5,3028.6211,1150.5,3032.6211,1140.5,3036.6211,1144.5,3032.6211" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="1146.5" y1="3032.6211" y2="3032.6211"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="260" x="51" y="3027.8789">Start PSU authentication/authorization</text><polygon fill="#A80036" points="50,3085.9316,40,3089.9316,50,3093.9316,46,3089.9316" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="1151.5" y1="3089.9316" y2="3089.9316"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="255" x="56" y="3085.1895">End PSU authentication/authorization</text><polygon fill="#A80036" points="1049.5,3115.2422,1039.5,3119.2422,1049.5,3123.2422,1045.5,3119.2422" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1043.5" x2="1156.5" y1="3119.2422" y2="3119.2422"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="76" x="1055.5" y="3114.5">Auth result</text><polygon fill="#A80036" points="100.5,3159.8633,90.5,3163.8633,100.5,3167.8633,96.5,3163.8633" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="94.5" x2="1032.5" y1="3163.8633" y2="3163.8633"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="86" x="106.5" y="3143.8105">TPP Callback</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="106.5" y="3159.1211">GET [TPP Redirect URI]</text><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="63" x="965" y="3176.8633"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="48" x="969" y="3193.4316">Q: code</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="969" y="3208.7422">Q: scope</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="969" y="3224.0527">Q: state</text><polygon fill="#A80036" points="1016.5,3268.416,1026.5,3272.416,1016.5,3276.416,1020.5,3272.416" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1022.5" y1="3272.416" y2="3272.416"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="113" x="96.5" y="3252.3633">Get OAuth token</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="136" x="96.5" y="3267.6738">POST /connect/token</text><rect fill="#FBFB77" height="130" style="stroke: #A80036; stroke-width: 1.0;" width="193" x="94" y="3285.416"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="99" x="98" y="3301.9844">H: X-PaymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="185" x="98" y="3317.2949">H: X-PaymentAuthorisationId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="69" x="98" y="3332.6055">B: client_id</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="95" x="98" y="3347.916">B: client_secret</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="45" x="98" y="3363.2266">B: code</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="87" x="98" y="3378.5371">B: redirect_uri</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="82" x="98" y="3393.8477">B: grant_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="98" y="3409.1582">B: scope</text><polygon fill="#A80036" points="100.5,3447.9004,90.5,3451.9004,100.5,3455.9004,96.5,3451.9004" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="94.5" x2="1032.5" y1="3451.9004" y2="3451.9004"/><rect fill="#FBFB77" height="84" style="stroke: #A80036; stroke-width: 1.0;" width="108" x="920" y="3464.9004"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="924" y="3481.4688">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="100" x="924" y="3496.7793">B: access_token</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="80" x="924" y="3512.0898">B: expires_in</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="85" x="924" y="3527.4004">B: token_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="52" x="924" y="3542.7109">B: scope</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="13" x2="1195.5" y1="3580.4531" y2="3580.4531"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="72" x="18" y="3591.0879">[scaRedirect]</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="131.5" y1="3615.7188" y2="3615.7188"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="131.5" x2="131.5" y1="3615.7188" y2="3628.7188"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="90.5" x2="131.5" y1="3628.7188" y2="3628.7188"/><polygon fill="#A80036" points="100.5,3624.7188,90.5,3628.7188,100.5,3632.7188,96.5,3628.7188" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="552" x="96.5" y="3610.9766">Process selectPsuAuthenticationMethodResponse._links.scaRedirect.href template</text><polygon fill="#A80036" points="1016.5,3669.3398,1026.5,3673.3398,1016.5,3677.3398,1020.5,3673.3398" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1022.5" y1="3673.3398" y2="3673.3398"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="85" x="96.5" y="3653.2871">Call authlink</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="151" x="96.5" y="3668.5977">GET /connect/authorize</text><rect fill="#FBFB77" height="99" style="stroke: #A80036; stroke-width: 1.0;" width="117" x="94" y="3686.3398"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="72" x="98" y="3702.9082">Q: client_id</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="98" y="3718.2188">Q: scope</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="98" y="3733.5293">Q: response_type</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="90" x="98" y="3748.8398">Q: redirect_uri</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="98" y="3764.1504">Q: state</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="84" x="98" y="3779.4609">Q: acr_values</text><polygon fill="#A80036" points="100.5,3808.5137,90.5,3812.5137,100.5,3816.5137,96.5,3812.5137" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="94.5" x2="1032.5" y1="3812.5137" y2="3812.5137"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="117" x="106.5" y="3807.7715">Redirect to ASPSP</text><polygon fill="#A80036" points="1140.5,3837.8242,1150.5,3841.8242,1140.5,3845.8242,1144.5,3841.8242" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1146.5" y1="3841.8242" y2="3841.8242"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="159" x="96.5" y="3837.082">Follow authlink redirect</text><polygon fill="#A80036" points="1140.5,3867.1348,1150.5,3871.1348,1140.5,3875.1348,1144.5,3871.1348" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="1146.5" y1="3871.1348" y2="3871.1348"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="260" x="51" y="3866.3926">Start PSU authentication/authorization</text><polygon fill="#A80036" points="50,3924.4453,40,3928.4453,50,3932.4453,46,3928.4453" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="44" x2="1151.5" y1="3928.4453" y2="3928.4453"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="255" x="56" y="3923.7031">End PSU authentication/authorization</text><polygon fill="#A80036" points="1049.5,3953.7559,1039.5,3957.7559,1049.5,3961.7559,1045.5,3957.7559" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="1043.5" x2="1156.5" y1="3957.7559" y2="3957.7559"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="76" x="1055.5" y="3953.0137">Auth result</text><polygon fill="#A80036" points="95.5,3998.377,85.5,4002.377,95.5,4006.377,91.5,4002.377" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="1032.5" y1="4002.377" y2="4002.377"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="86" x="101.5" y="3982.3242">TPP Callback</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="138" x="101.5" y="3997.6348">GET [TPP Redirect URI]</text><rect fill="#FBFB77" height="38" style="stroke: #A80036; stroke-width: 1.0;" width="63" x="965" y="4015.377"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="55" x="969" y="4031.9453">Q: scope</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="49" x="969" y="4047.2559">Q: state</text><line style="stroke: #000000; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="13" x2="1195.5" y1="4084.998" y2="4084.998"/><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="65" x="18" y="4095.6328">[decoupled]</text><path d="M55,4105.9531 L129,4105.9531 L129,4112.9531 L119,4122.9531 L55,4122.9531 L55,4105.9531 " fill="#EEEEEE" style="stroke: #000000; stroke-width: 1.0;"/><rect fill="none" height="315.0371" style="stroke: #000000; stroke-width: 2.0;" width="892.5" x="55" y="4105.9531"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="29" x="70" y="4119.5215">loop</text><text fill="#000000" font-family="sans-serif" font-size="11" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="404" x="144" y="4118.5879">[until scaStatusResponse.scaStatus = "finalised", "failed" or "exempted"]</text><polygon fill="#A80036" points="834.5,4180.8848,844.5,4184.8848,834.5,4188.8848,838.5,4184.8848" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="89.5" x2="840.5" y1="4184.8848" y2="4184.8848"/><text fill="#000000" font-family="sans-serif" font-size="13" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="321" x="96.5" y="4164.832">Get Payment Initiation Authorisation SCA Status</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="743" x="96.5" y="4180.1426">GET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}</text><rect fill="#FBFB77" height="115" style="stroke: #A80036; stroke-width: 1.0;" width="134" x="94" y="4197.8848"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="121" x="98" y="4214.4531">P: payment-service</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="126" x="98" y="4229.7637">P: payment-product</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="81" x="98" y="4245.0742">P: paymentId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="111" x="98" y="4260.3848">P: authorisationId</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="104" x="98" y="4275.6953">H: Authorization</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="98" y="4291.0059">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="63" x="98" y="4306.3164">H: X-BicFi</text><polygon fill="#A80036" points="95.5,4345.0586,85.5,4349.0586,95.5,4353.0586,91.5,4349.0586" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 2.0,2.0;" x1="89.5" x2="850.5" y1="4349.0586" y2="4349.0586"/><rect fill="#FBFB77" height="53" style="stroke: #A80036; stroke-width: 1.0;" width="143" x="703" y="4362.0586"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="707" y="4378.627">HTTP 200</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="106" x="707" y="4393.9375">H: X-Request-ID</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="135" x="707" y="4409.248">B: scaStatusResponse</text><!--
+@startuml
+
+skinparam shadowing false
+
+title Payment Initiation Service
+
+actor "PSU" as psu
+participant "TPP" as tpp
+participant "Open Banking Platform\nAPI" as obpapi
+participant "Open Banking Platform\nAuth" as obpauth
+participant "ASPSP" as aspsp
+
+
+tpp -> obpauth: **Get Token**\nPOST /connect/token
+activate tpp
+rnote right of tpp
+B: client_id
+B: client_secret
+B: grant_type
+B: scope
+endrnote
+activate obpauth
+|||
+obpauth - -> tpp:
+deactivate obpauth
+rnote left of obpauth
+HTTP 200
+B: access_token
+B: expires_in
+B: token_type
+B: scope
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Payment Initiation Request**\nPOST /psd2/paymentinitiation/v1/{payment-service}/{payment-product}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+H: Authorization
+H: X-Request-ID
+H: PSU-IP-Address
+H: X-BicFi
+B: paymentInitiation_json
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 201
+H: X-Request-ID
+B: paymentInitationRequestResponse-201
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Get Payment Initiation Request Information**\nGET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 200
+H: X-Request-ID
+B: paymentInitiationWithStatusResponse
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Payment Initiation Cancellation Request**\nDELETE /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 202
+H: X-Request-ID
+B: paymentInitiationCancelResponse-202
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Payment Initiation Status Request**\nGET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/status
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 200
+H: X-Request-ID
+B: paymentInitiationStatusResponse-200_json
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Start Payment Initiation Authorisation Process**\nPOST /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 201
+H: X-Request-ID
+H: ASPSP-SCA-Approach
+B: startScaprocessResponse
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Get Payment Initiation Authorisation Sub-Resources Request**\nGET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 200
+H: X-Request-ID
+B: authorisations
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Get Payment Initiation Authorisation SCA Status**\nGET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+P: authorisationId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 200
+H: X-Request-ID
+B: scaStatusResponse
+endrnote
+deactivate tpp
+
+|||
+
+tpp -> obpapi: **Update PSU Data for Payment Initiation**\nPUT /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+P: authorisationId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+B: selectPsuAuthenticationMethod
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+rnote left of obpapi
+HTTP 200
+H: X-Request-ID
+H: ASPSP-SCA-Approach
+B: selectPsuAuthenticationMethodResponse
+endrnote
+
+
+alt scaOAuth
+
+tpp -> tpp: **Process selectPsuAuthenticationMethodResponse._links.scaOAuth.href template**
+
+tpp -> obpauth: **Call authlink**\nGET /connect/authorize
+activate obpauth
+rnote right of tpp
+Q: client_id
+Q: scope
+Q: response_type
+Q: redirect_uri
+Q: state
+Q: acr_values
+endrnote
+obpauth - -> tpp: **Redirect to ASPSP**
+deactivate obpauth
+
+tpp -> aspsp: **Follow authlink redirect**
+activate aspsp
+
+psu -> aspsp: **Start PSU authentication/authorization**
+activate psu
+...
+aspsp -> psu: **End PSU authentication/authorization**
+deactivate psu
+aspsp -> obpauth: **Auth result**
+deactivate aspsp
+activate obpauth
+obpauth -> tpp: **TPP Callback**\nGET [TPP Redirect URI]
+rnote left of obpauth
+Q: code
+Q: scope
+Q: state
+endrnote
+
+deactivate obpauth
+
+tpp -> obpauth: **Get OAuth token**\nPOST /connect/token
+activate obpauth
+rnote right of tpp
+H: X-PaymentId
+H: X-PaymentAuthorisationId
+B: client_id
+B: client_secret
+B: code
+B: redirect_uri
+B: grant_type
+B: scope
+endrnote
+|||
+obpauth - -> tpp:
+deactivate obpauth
+rnote left of obpauth
+HTTP 200
+B: access_token
+B: expires_in
+B: token_type
+B: scope
+endrnote
+|||
+
+else scaRedirect
+
+tpp -> tpp: **Process selectPsuAuthenticationMethodResponse._links.scaRedirect.href template**
+
+tpp -> obpauth: **Call authlink**\nGET /connect/authorize
+activate obpauth
+rnote right of tpp
+Q: client_id
+Q: scope
+Q: response_type
+Q: redirect_uri
+Q: state
+Q: acr_values
+endrnote
+obpauth - -> tpp: **Redirect to ASPSP**
+deactivate obpauth
+
+tpp -> aspsp: **Follow authlink redirect**
+activate aspsp
+
+psu -> aspsp: **Start PSU authentication/authorization**
+activate psu
+...
+aspsp -> psu: **End PSU authentication/authorization**
+deactivate psu
+aspsp -> obpauth: **Auth result**
+deactivate aspsp
+activate obpauth
+obpauth -> tpp: **TPP Callback**\nGET [TPP Redirect URI]
+rnote left of obpauth
+Q: scope
+Q: state
+endrnote
+
+deactivate obpauth
+deactivate tpp
+|||
+
+else decoupled
+
+loop until scaStatusResponse.scaStatus = "finalised", "failed" or "exempted"
+|||
+tpp -> obpapi: **Get Payment Initiation Authorisation SCA Status**\nGET /psd2/paymentinitiation/v1/{payment-service}/{payment-product}/{paymentId}/authorisations/{authorisationId}
+activate tpp
+rnote right of tpp
+P: payment-service
+P: payment-product
+P: paymentId
+P: authorisationId
+H: Authorization
+H: X-Request-ID
+H: X-BicFi
+endrnote
+activate obpapi
+|||
+obpapi - -> tpp:
+deactivate obpapi
+deactivate tpp
+rnote left of obpapi
+HTTP 200 
+H: X-Request-ID
+B: scaStatusResponse
+endrnote
+end
+|||
+end
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 18:19:51 CEST 2019)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Java Version: 12.0.2+10
+Operating System: Mac OS X
+OS Version: 10.14.6
+Default Encoding: UTF-8
+Language: en
+Country: SE
+--></g></svg>

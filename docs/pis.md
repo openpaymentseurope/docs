@@ -20,9 +20,8 @@ Available `API_HOST` values
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
-## Introduction
-
-This documentation describes the payment flow.
+## Payment Initiation Services (PIS) Flow
+![PlantUML model](/docs/img/pis.svg)
 
 ## Acquire an access token for Payment Initiation
 

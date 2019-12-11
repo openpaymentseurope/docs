@@ -8,20 +8,21 @@ original_id: pis
 This API is used to get consent for and initiating payments. Note that the consent from the consent API is only used to access the account information API and that this API has its own consent procedure. (Very similar to the one in the [consent API](consent.md).)
 
 Available `AUTH_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
+
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
-## Introduction
-
-This documentation describes the payment flow.
+## Payment Initiation Services (PIS) Flow
+![PlantUML model](/docs/img/pis.svg)
 
 ## Acquire an access token for Payment Initiation
 

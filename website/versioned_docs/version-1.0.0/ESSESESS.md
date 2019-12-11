@@ -1,7 +1,8 @@
 ---
-id: essesess
+id: version-1.0.0-essesess
 title: SEB (ESSESESS)
 sidebar_label: SEB
+original_id: essesess
 ---
 
 ## Status Highlights

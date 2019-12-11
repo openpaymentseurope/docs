@@ -6,20 +6,22 @@ sidebar_label: How to use the Consent API
 
 This API is used to retreive and manage consent for accessing account information on behalf of a banks customer. If you are new to Open Payments API it is probably best to read a bit about how the APIs work in the [ASPSP tutorial](aspsp.md).
 
-Available `AUTH_HOST` values
+## Hosts
 
+Available `AUTH_HOST` values
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
 Available `API_HOST` values
-
 | Environment | URL |
 | --- | --- |
 | Sandbox | https://api.sandbox.openbankingplatform.com |
 | Production | https://api.openbankingplatform.com |
 
+## Consent Flow
+![PlantUML model](/docs/img/consent.svg)
 
 ## Acquire an access token for Account Information
 ```javascript
@@ -416,7 +418,7 @@ See Create consent.
 
 ### Test procedure
 
-If the [ASPSP](glossary.md) uses OAuth:
+If the ASPSP uses OAuth:
 - The above endpoint returns an OAuth authorize URL in the `scoOAuth` field. 
 - Replace all the bracketed fields with real values. In your code you will have to replace only the two TPP values.
     - `TPP_REDIRECT_URI` should be the URL to redirect to after auth is completed.

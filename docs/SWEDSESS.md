@@ -1,7 +1,7 @@
 ---
-id: essesess
-title: SEB (ESSESESS)
-sidebar_label: SEB
+id: swedsess
+title: Swedbank (SWEDSESS)
+sidebar_label: Swedbank
 ---
 
 ## Status Highlights
