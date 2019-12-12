@@ -48,7 +48,9 @@ Any of the following `{payment-service}` can be used in the URL of the endpoint:
 Any of the following `{payment-product}` can be used in the URL of the endpoint:
 |Payment Product|Description|
 |---|---|
+|domestic| Domestic credit transfer. |
 |sepa-credit-transfers| SEPA credit transfer. |
+|international| International credit transfer. |
 |instant-sepa-credit-transfers| Instant SEPA credit transfer. *`Not yet implemented`*|
 |cross-border-credit-transfers| International credit transder. *`Not yet implemented`*|
 
