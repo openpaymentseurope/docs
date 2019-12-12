@@ -8,9 +8,10 @@ Here is a list of currently supported banks in the sandbox environment. The sand
 
 ## Sweden
 
-
-- [Nordea](NDEASESS.md)
-- [Handelsbanken](HANDSESS.md)
-- [SEB](ESSESESS.md)
-- [Swedbank](SWEDSESS.md)
+| Bank | Sandbox Environment | Production Environment|
+| --- |:---:|:---:|
+| [Nordea](NDEASESS.md) | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+| [Handelsbanken](HANDSESS.md) | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+| [SEB](ESSESESS.md) | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+| [Swedbank](SWEDSESS.md) | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
 
