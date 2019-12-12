@@ -31,7 +31,7 @@ You will get a `client_id` and a `client_secret` that you can use to authenticat
 
 ## Postman collection
 
-You can [download](https://docs.openpayments.io/obp.postman_collection.json) our Postam Collection with ready made API calls.
+You can [download](https://docs.openpayments.io/obp.postman_collection.json) our Postman Collection with ready made API calls.
 
 ## General notes about requests
 
