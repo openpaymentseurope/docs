@@ -10,8 +10,5 @@
   },
   "devDependencies": {
     "docusaurus": "^1.14.3"
-  },
-  "dependencies": {
-    "swagger-ui-dist": "^3.24.3"
   }
 }

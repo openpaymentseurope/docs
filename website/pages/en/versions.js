@@ -55,7 +55,7 @@ function Versions(props) {
           <table className="versions">
             <tbody>
               <tr>
-                <th>master</th>
+                <th>next</th>
                 <td>
                   {/* You are supposed to change this href where appropriate
                         Example: href="<baseUrl>/docs(/:language)/next/:id" */}
