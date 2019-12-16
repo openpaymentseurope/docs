@@ -17,6 +17,10 @@
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
       },
+      "apis": {
+        "title": "API:s",
+        "sidebar_label": "API:s"
+      },
       "aspsp-ref": {
         "title": "Account Servicing Payment Service Providers (ASPSP) API Reference",
         "sidebar_label": "ASPSP API Reference"
@@ -71,6 +75,10 @@
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
       },
+      "snugge": {
+        "title": "Snugge",
+        "sidebar_label": "Snugge"
+      },
       "swedsess": {
         "title": "Swedbank (SWEDSESS)",
         "sidebar_label": "Swedbank"
@@ -86,6 +94,10 @@
       "version-1.0.0/version-1.0.0-api": {
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
+      },
+      "version-1.0.0/version-1.0.0-apis": {
+        "title": "API:s",
+        "sidebar_label": "API:s"
       },
       "version-1.0.0/version-1.0.0-aspsp-ref": {
         "title": "Account Servicing Payment Service Providers (ASPSP) API Reference",
@@ -148,6 +160,7 @@
     },
     "links": {
       "Docs": "Docs",
+      "APIs": "APIs",
       "Support": "Support",
       "Blog": "Blog"
     },
