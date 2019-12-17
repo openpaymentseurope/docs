@@ -5,10 +5,6 @@
     "previous": "Previous",
     "tagline": "Join the Open Banking Revolution",
     "docs": {
-      "ais-ref": {
-        "title": "Account Information Services (AIS) API Reference",
-        "sidebar_label": "AIS API Reference"
-      },
       "ais": {
         "title": "How to use the AIS API",
         "sidebar_label": "How to use the AIS API"
@@ -17,14 +13,6 @@
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
       },
-      "apis": {
-        "title": "API:s",
-        "sidebar_label": "API:s"
-      },
-      "aspsp-ref": {
-        "title": "Account Servicing Payment Service Providers (ASPSP) API Reference",
-        "sidebar_label": "ASPSP API Reference"
-      },
       "aspsp": {
         "title": "How to use the ASPSP API",
         "sidebar_label": "How to use the ASPSP API"
@@ -32,10 +20,6 @@
       "banks": {
         "title": "Supported Banks",
         "sidebar_label": "Supported banks"
-      },
-      "consent-ref": {
-        "title": "Consent API Reference",
-        "sidebar_label": "Consent API Reference"
       },
       "consent": {
         "title": "How to use the Consent API",
@@ -67,10 +51,6 @@
         "title": "Nordea (NDEASESS)",
         "sidebar_label": "Nordea"
       },
-      "pis-ref": {
-        "title": "Payment Initiation Services (PIS) API Reference",
-        "sidebar_label": "PIS API Reference"
-      },
       "pis": {
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
@@ -78,10 +58,6 @@
       "swedsess": {
         "title": "Swedbank (SWEDSESS)",
         "sidebar_label": "Swedbank"
-      },
-      "version-1.0.0/version-1.0.0-ais-ref": {
-        "title": "Account Information Services (AIS) API Reference",
-        "sidebar_label": "AIS API Reference"
       },
       "version-1.0.0/version-1.0.0-ais": {
         "title": "How to use the AIS API",
@@ -91,14 +67,6 @@
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
       },
-      "version-1.0.0/version-1.0.0-apis": {
-        "title": "API:s",
-        "sidebar_label": "API:s"
-      },
-      "version-1.0.0/version-1.0.0-aspsp-ref": {
-        "title": "Account Servicing Payment Service Providers (ASPSP) API Reference",
-        "sidebar_label": "ASPSP API Reference"
-      },
       "version-1.0.0/version-1.0.0-aspsp": {
         "title": "How to use the ASPSP API",
         "sidebar_label": "How to use the ASPSP API"
@@ -106,10 +74,6 @@
       "version-1.0.0/version-1.0.0-banks": {
         "title": "Supported Banks",
         "sidebar_label": "Supported banks"
-      },
-      "version-1.0.0/version-1.0.0-consent-ref": {
-        "title": "Consent API Reference",
-        "sidebar_label": "Consent API Reference"
       },
       "version-1.0.0/version-1.0.0-consent": {
         "title": "How to use the Consent API",
@@ -141,10 +105,6 @@
         "title": "Nordea (NDEASESS)",
         "sidebar_label": "Nordea"
       },
-      "version-1.0.0/version-1.0.0-pis-ref": {
-        "title": "Payment Initiation Services (PIS) API Reference",
-        "sidebar_label": "PIS API Reference"
-      },
       "version-1.0.0/version-1.0.0-pis": {
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
@@ -163,7 +123,6 @@
     "categories": {
       "Getting Started": "Getting Started",
       "Tutorials": "Tutorials",
-      "API Reference": "API Reference",
       "Category": "Category"
     }
   },
