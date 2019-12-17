@@ -48,7 +48,7 @@ This post will return a JSON object that looks like this:
 You'll need a valid consent for the ASPSP you want to interact with.
 Follow instructions in [the Consent API](consent.md).
 
-## Read account list
+## Get Account List
 ```javascript
 curl -X GET
     [API_HOST]/psd2/accountinformation/v1/accounts
@@ -86,7 +86,7 @@ curl -X GET
 
 - `X-Request-ID`
 
-## Read account details
+## Get Account Details
 
 Use one of the [ACCOUNT_ID]s to get more information about a specific account.
 ```javascript
@@ -148,7 +148,7 @@ See Read account list.
 
 - `X-Request-ID`
 
-## Read balance
+## Get Balances
 
 Retreive balances for a given [ACCOUNT_ID].
 ```javascript
@@ -198,7 +198,7 @@ See Read account list.
 
 - `X-Request-ID`
 
-## Read transaction list
+## Get Transaction List
 
 Retreive transactions for a given [ACCOUNT_ID].
 ```javascript
@@ -260,7 +260,7 @@ See Read account list.
 
 - `X-Request-ID`
 
-## Read transaction details
+## Get Transaction Details
 
 Retreive transaction details for a given [ACCOUNT_ID] and [TRANSACTIONID].
 ```javascript

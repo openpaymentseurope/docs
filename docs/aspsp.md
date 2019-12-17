@@ -43,7 +43,7 @@ This post will return a JSON object that looks like this:
 
 Bring the ACCESS_TOKEN forward to subsequent calls.
 
-## Get countries
+## Get Country List
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/countries
@@ -73,7 +73,7 @@ curl -X GET
 
 Where the country code and name will be according to the ISO 3166-1 alpha-2 standard.
 
-## Get one country
+## Get Country Details
 ```javascript
 curl -X GET \
     [API_HOST]/psd2/aspspinformation/v1/countries/[COUNTRY_CODE]
@@ -95,7 +95,7 @@ The `COUNTRY_CODE` parameter should be one of the codes in the ISO 3166-1 alpha-
 
 This is exactly the same as in the country list.
 
-## Get cities
+## Get City List
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/cities
@@ -128,7 +128,7 @@ The service will return all matches for the queries. So querying for `SE` and `b
 }
 ```
 
-## Get one city
+## Get City Details
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/cities/[CITY_ID]
@@ -151,7 +151,7 @@ curl -X GET
 
 This is exactly as one item in the list returned from the "get cities" endpoint.
 
-## Get ASPSPs
+## Get ASPSP List
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps
@@ -189,7 +189,7 @@ The service will return all matches for the queries. So it is possible to get al
 }
 ```
 
-## Get ASPSP
+## Get ASPSP Details
 ```javascript
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps/[BICFI]

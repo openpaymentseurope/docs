@@ -43,7 +43,7 @@ This post will return a JSON object that looks like this:
 }
 ```
 
-## Create consent request
+## Create Consent
 
 This endpoint is used to initiate the consent process with a request for consent.
 ```javascript
@@ -148,7 +148,7 @@ The list of links can be used for further actions on the consent. The `self` one
 - `X-Request-ID`
 
 
-## Get consent request
+## Get Consent
 
 Once you have a consent you can use the id for that consent to get information about the consent.
 ```javascript
@@ -206,7 +206,7 @@ This is the exact same body as the one sent in to the create consent request end
 
 - `X-Request-ID`
 
-## Delete consent request
+## Delete Consent
 
 A consent request can be deleted with a `DELETE` call.
 ```javascript
@@ -227,7 +227,7 @@ curl -X DELETE
 - `X-Request-ID`
 
 
-## Get consent status request
+## Get Consent Status
 
 The consent request status is returned as part of the "get consent request" endpoint but it is also possible to use this endpoint to get only the status and nothing else. It is basaically the same call with `status` added at the end to the path.
 ```javascript
@@ -260,7 +260,7 @@ See possible values for status [further down](#consent-status).
 
 - `X-Request-ID`
 
-## Start the authorisation process for a consent
+## Start Consent Authorisation Process
 ```javascript
 curl -X POST
     [API_HOST]/psd2/consent/v1/consents/[CONSENT_ID]/authorisations
@@ -307,7 +307,7 @@ See Create consent.
 - `ASPSP-SCA-Approach` - see below for different values.
 - `X-Request-ID`
 
-## Get consent authorisation sub-resource request
+## Get Consent Authorisation Sub-Resources
 ```javascript
 curl -X GET
     [API_HOST]/psd2/consent/v1/consents/[CONSENT_ID]/authorisations
@@ -338,7 +338,7 @@ See Create consent.
 
 - `X-Request-ID`
 
-## Read the SCA status of the consent authorisation
+## Get Consent Authorisation SCA Status
 ```javascript
 curl -X GET
     [API_HOST]/psd2/consent/v1/consents/[CONSENT_ID]/authorisations/[CONSENT_AUTH_ID]
@@ -368,7 +368,7 @@ See Create consent.
 
 `X-Request-ID`
 
-## Update PSU data for consents
+## Update PSU Data for Consent
 
 ```javascript
 curl -X PUT

@@ -42,7 +42,7 @@ This post will return a JSON object that looks like this:
 }
 ```
 
-## Payment initiation request
+## Create Payment Initiation
 ```javascript
 curl -X POST
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]
@@ -112,7 +112,7 @@ The [ASPSP details endpoint](aspsp-ref.md) will tell you what payment products t
 
 `X-Request-ID`
 
-## Get payment information
+## Get Payment Initiation
 ```javascript
 curl -X GET
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]
@@ -157,12 +157,12 @@ See [Payment initiation request](#payment-initiation-request)
 `X-Request-ID`
 
 
-## Payment cancellation request
+## Cancel Payment Initiation
 
 Not implemented yet.
 
 
-## Payment initiation status request
+## Get Payment Initiation Status
 ```javascript
 curl -X GET
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/status
@@ -192,7 +192,7 @@ See [Payment initiation request](#payment-initiation-request)
 `X-Request-ID`
 
 
-## Start the authorisation process for a payment initiation
+## Start Payment Initiation Authorisation Process
 ```javascript
 curl -X POST
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations
@@ -238,7 +238,7 @@ See [Payment initiation request](#payment-initiation-request)
 - `X-Request-ID`
 
 
-## Get payment initiation authorisation sub-resources request
+## Get Payment Initiation Authorisation Sub-Resources
 
     curl -X GET
         [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations
@@ -269,7 +269,7 @@ See [Payment initiation request](#payment-initiation-request)
 - `X-Request-ID`
 
 
-## Read the SCA status of the payment initiation
+## Get Payment Initiation Authorisation SCA Status
 ```javascript
 curl -X GET
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations/[PAYMENT_AUTH_ID]
@@ -298,7 +298,7 @@ See [Payment initiation request](#payment-initiation-request)
 
 - `X-Request-ID`
 
-## Update PSU data for payment initiation
+## Update PSU Data for Payment Initiation
 ```javascript
 curl -X PUT
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations/[PAYMENT_AUTH_ID]
