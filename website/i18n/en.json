@@ -75,10 +75,6 @@
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
       },
-      "snugge": {
-        "title": "Snugge",
-        "sidebar_label": "Snugge"
-      },
       "swedsess": {
         "title": "Swedbank (SWEDSESS)",
         "sidebar_label": "Swedbank"
@@ -160,7 +156,7 @@
     },
     "links": {
       "Docs": "Docs",
-      "APIs": "APIs",
+      "API": "API",
       "Support": "Support",
       "Blog": "Blog"
     },
