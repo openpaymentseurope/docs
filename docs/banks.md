@@ -4,7 +4,7 @@ title: Supported Banks
 sidebar_label: Supported banks
 ---
 
-Here is a list of the currently supported banks in our sandbox and production environment. Our environments are continuously being updated with more banks and new functionality in line with that the banks release their APIs. Please contact us to get more information about the current state. (The banks supported has currently been limited due to unsufficient bank functionality, more banks will be enabled again as they become available.)
+Here is a list of the currently supported banks in our sandbox and production environment. Our environments are continuously being updated with more banks and new functionality in line with what the banks release in their APIs. Please contact us to get more information about the current state. (The banks supported has currently been limited due to insufficient bank functionality, more banks will be added as this improves.)
 
 #### Description of example statuses
 <table>
