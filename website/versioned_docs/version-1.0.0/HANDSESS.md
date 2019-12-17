@@ -51,11 +51,11 @@ original_id: handsess
 
 |Service  |Sandbox |Comment |Production |Comment |
 |---------|:--------:|--------------|:-----------:|------------|
-|Read Account List | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Read Account Details | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Read Balances | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Read Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Read Transaction Details | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
+|Get Account List | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
+|Get Account Details | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
+|Get Balances | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
+|Get Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
+|Get Transaction Details | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 
 ## Payment Initiation Service
 
@@ -79,7 +79,7 @@ original_id: handsess
 |Get Payment Initiation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
 |Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
 |Update PSU Data for Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Start Payment Cancellation Authorisation Process | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
-|Get Payment Cancellation Authorisations | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
-|Get Payment Cancellation Authorisation Status | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
-|Update PSU Data for Payment Cancellation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
+|Start Payment Initiation Cancellation Authorisation Process | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
+|Get Payment Initiation Cancellation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
+|Get Payment Initiation Cancellation Authorisation SCA Status | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
+|Update PSU Data for Payment Initiation Cancellation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
