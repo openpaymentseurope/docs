@@ -29,12 +29,6 @@
         "title": "SEB (ESSESESS)",
         "sidebar_label": "SEB"
       },
-      "doc4": {
-        "title": "Other Document"
-      },
-      "doc5": {
-        "title": "Fifth Document"
-      },
       "glossary": {
         "title": "Glossary",
         "sidebar_label": "Glossary"
@@ -117,8 +111,7 @@
     "links": {
       "Docs": "Docs",
       "API": "API",
-      "Support": "Support",
-      "Blog": "Blog"
+      "Support": "Support"
     },
     "categories": {
       "Getting Started": "Getting Started",

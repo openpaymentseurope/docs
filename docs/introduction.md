@@ -40,9 +40,9 @@ The first generation of Open Payments API is based on the [Berlin Groups NextGen
 
 For practical purposes we have broken the specification up in their separate parts corresponding to the building blocks described above. OAS3 specifications are available:
 
-- [ASPSP](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/ASPSP-Information-Service-(ASPSPIS))
-- [Consent](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/Consent-Service)
-- [Account Information](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/Account-Information-Service-(AIS))
-- [Payment Initiation](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/Payment-Initiation-Service-(PIS))
+- [ASPSP](/docs/en/openpayments-NextGenPSD2-1.3.3.html#tag/ASPSP-Information-Service-(ASPSPIS))
+- [Consent](/docs/en/openpayments-NextGenPSD2-1.3.3.html#tag/Consent-Service)
+- [Account Information](/docs/en/openpayments-NextGenPSD2-1.3.3.html#tag/Account-Information-Service-(AIS))
+- [Payment Initiation](/docs/en/openpayments-NextGenPSD2-1.3.3.html#tag/Payment-Initiation-Service-(PIS))
 
 We plan to support other standards in this field in the future - let us know your needs and we can have a dialogue about how to make it happen.
