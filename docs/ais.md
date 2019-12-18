@@ -106,7 +106,7 @@ See Read account list.
 
 ### Path parameter
 
-- `ACCOUNT_ID` Refers to `resourceId` in the response from [Read account list](#read-account-list).
+- `ACCOUNT_ID` Refers to `resourceId` in the response from [Get Account List](#get-account-list).
 
 ### Query parameters
 
@@ -168,7 +168,7 @@ See Read account list.
 
 ### Path parameter
 
-- `ACCOUNT_ID` refers to `resourceId` in the response from [Read account list](#read-account-list).
+- `ACCOUNT_ID` refers to `resourceId` in the response from [Get Account List](#get-account-list).
 
 ### Response
 ```javascript
@@ -218,7 +218,7 @@ See Read account list.
 
 ### Path parameter
 
-- `ACCOUNT_ID` refers to `resourceId` in the response from [Read account list](#read-account-list).
+- `ACCOUNT_ID` refers to `resourceId` in the response from [Get Account List](#get-account-list).
 
 ### Query parameters
 
@@ -280,8 +280,8 @@ See Read account list.
 
 ### Path parameter
 
-- `ACCOUNT_ID` refers to `resourceId` in the response from [Read account list](#read-account-list).
-- `TRANSACTION_ID` refers to `TRANSACTION_ID` in the response from [Read transaction list of an account](#read-transaction-list).
+- `ACCOUNT_ID` refers to `resourceId` in the response from [Get Account List](#get-account-list).
+- `TRANSACTION_ID` refers to `TRANSACTION_ID` in the response from [Get Transaction List](#get-transaction-list).
 
 ### Response
 ```javascript

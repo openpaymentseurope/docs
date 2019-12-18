@@ -86,7 +86,7 @@ curl -X POST
 - `sepa-credit-transfers` - this is a EURO payment from one EURO ASPSP to another
 - `international` - this is an international payment
 
-The [ASPSP details endpoint](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/ASPSP-Information-Service-(ASPSPIS)) will tell you what payment products that are availalbe for that ASPSP.
+The [Get ASPSP Details endpoint](/docs/openpayments-NextGenPSD2-1.3.3.html#operation/getASPSPDetails) will tell you what payment products that are availalbe for that ASPSP.
 
 ### Response
 ```javascript
@@ -124,7 +124,7 @@ curl -X GET
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -174,7 +174,7 @@ curl -X GET
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -207,7 +207,7 @@ Note that this call does not need a body.
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -234,7 +234,7 @@ See [Payment initiation request](#payment-initiation-request)
 
 ### Response headers
 
-- `ASPSP-SCA-Approach` - see below for different values.
+- `ASPSP-SCA-Approach` - see [below](#aspsp\-sca\-approach) for different values.
 - `X-Request-ID`
 
 
@@ -249,7 +249,7 @@ See [Payment initiation request](#payment-initiation-request)
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -281,7 +281,7 @@ curl -X GET
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -313,7 +313,7 @@ curl -X PUT
 
 ### Headers
 
-See [Payment initiation request](#payment-initiation-request)
+See [Create Payment Initiation](#create-payment-initiation)
 
 ### Path parameters
 
@@ -338,7 +338,7 @@ See [Payment initiation request](#payment-initiation-request)
 ### Response headers
 
 - `X-Request-ID`
-- `ASPSP-SCA-Approach` see below for different values.
+- `ASPSP-SCA-Approach` - see [below](#aspsp\-sca\-approach) for different values.
 
 ### Test procedure
 
