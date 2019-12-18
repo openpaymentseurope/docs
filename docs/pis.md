@@ -75,7 +75,7 @@ curl -X POST
 ### Headers
 
 - `PSU-IP-Address` is the IP address of the end user.
-- `X-BicFi` the BICFI for the user's ASPSP. Find it in [the ASPSP API](/docs/openpayments-NextGenPSD2-1.3.3.html#tag/ASPSP-Information-Service-(ASPSPIS)).
+- `X-BicFi` the BICFI for the user's ASPSP. Find it in [the ASPSP API](/docs/en/openpayments-NextGenPSD2-1.3.3.html#tag/ASPSP-Information-Service-(ASPSPIS)).
 - `X-Request-ID` used to verify that the response matches the request.
 
 ### Path parameters
@@ -86,7 +86,7 @@ curl -X POST
 - `sepa-credit-transfers` - this is a EURO payment from one EURO ASPSP to another
 - `international` - this is an international payment
 
-The [Get ASPSP Details endpoint](/docs/openpayments-NextGenPSD2-1.3.3.html#operation/getASPSPDetails) will tell you what payment products that are availalbe for that ASPSP.
+The [Get ASPSP Details endpoint](/docs/en/openpayments-NextGenPSD2-1.3.3.html#operation/getASPSPDetails) will tell you what payment products that are availalbe for that ASPSP.
 
 ### Response
 ```javascript

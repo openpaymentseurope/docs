@@ -39,7 +39,7 @@ const siteConfig = {
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     {doc: 'introduction', label: 'Docs'},
-    {page: 'openpayments-NextGenPSD2-1.3.3.html', label: 'API'},
+    {page: 'en/openpayments-NextGenPSD2-1.3.3.html', label: 'API'},
     {page: 'support', label: 'Support'},
     // {blog: true, label: 'Blog'},
   ],
