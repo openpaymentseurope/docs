@@ -7,31 +7,13 @@ original_id: banks
 
 Here is a list of the currently supported banks in our sandbox and production environment. Our environments are continuously being updated with more banks and new functionality in line with what the banks release in their APIs. Please contact us to get more information about the current state. (The banks supported has currently been limited due to insufficient bank functionality, more banks will be added as this improves.)
 
-#### Description of example statuses
-<table>
-  <tr>
-    <td><img src="https://img.shields.io/badge/AIS-active-success.svg"></td>
-    <td>Account Information Service is implemented and functional</td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/AIS-development-yellow.svg"></td>
-    <td>Account Information Service is currently being developed</td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/AIS-backlog-inactive.svg"></td>
-    <td>Account Information Service is planned for development</td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/AIS-not_supported-critical.svg"></td>
-    <td>Account Information Service is not supported by ASPSP</td>
-  </tr>
-  <tr>
-    <td><img src="https://img.shields.io/badge/AIS-defect-red"></td>
-    <td>Account Information Service is implemented, but currently non-functional at ASPSP</td>
-  </tr>
-</table>
-
-<br>
+| Status | Description |
+| --- | --- |
+| ![](https://img.shields.io/badge/-active-success.svg) | Service is implemented and functional |
+| ![](https://img.shields.io/badge/-development-yellow.svg) | Service is currently being developed |
+| ![](https://img.shields.io/badge/-backlog-inactive.svg) | Service is planned for development |
+| ![](https://img.shields.io/badge/-not_supported-critical.svg) | Service is not supported by ASPSP |
+| ![](https://img.shields.io/badge/-defect-red.svg) | Service is implemented, but currently non-functional at ASPSP |
 
 ## ![](/docs/img/se.png) Sweden 
 
@@ -179,11 +161,3 @@ Here is a list of the currently supported banks in our sandbox and production en
     </td>
   </tr>
 </table>
-
-<!-- | Bank | BicFi | <th colspan=2>Production | Sandbox | 
-| --- | --- | --- | --- |  --- | --- |
-- [Nordea](NDEASESS.md)
-- [Handelsbanken](HANDSESS.md)
-- [SEB](ESSESESS.md)
-- [Swedbank](SWEDSESS.md)
- -->

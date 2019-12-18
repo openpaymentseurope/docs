@@ -41,7 +41,7 @@ const siteConfig = {
     {doc: 'introduction', label: 'Docs'},
     {page: 'openpayments-NextGenPSD2-1.3.3.html', label: 'API'},
     {page: 'support', label: 'Support'},
-    {blog: true, label: 'Blog'},
+    // {blog: true, label: 'Blog'},
   ],
 
   // If you have users set above, you add it here:
