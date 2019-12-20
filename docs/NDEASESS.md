@@ -14,10 +14,10 @@ sidebar_label: Nordea
 |![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
-|Environment     |SCA Method | Authentication Method | Comment |
-|----------------|----------|--------------|--------------|
-|Sandbox         |Decoupled | None   | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly after call to "Start the authorization process.." endpoint has been done. |
-|Production      |Decoupled      | Mobilt BankID | - Mobilt BankID autostarttoken is provided, but is not required to be used when initiating the Mobilt BankID app for the authentication. |
+|Environment     |SCA Method | Authentication Method | Status | Comment |
+|----------------|----------|--------------|--------------|--------------|
+|Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly after call to "Start the authorization process.." endpoint has been done. |
+|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - Mobilt BankID autostarttoken is provided, but is not required to be used when initiating the Mobilt BankID app for the authentication. |
 
 ### Sandbox Test Data
 
@@ -63,8 +63,8 @@ sidebar_label: Nordea
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-informational.svg) | ![](https://img.shields.io/badge/status-in_development-informational.svg) |
-|international         | ![](https://img.shields.io/badge/status-in_development-informational.svg)| ![](https://img.shields.io/badge/status-in_development-informational.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-yellow.svg) | ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
+|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
 ### API Status
 

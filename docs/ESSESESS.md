@@ -12,10 +12,11 @@ sidebar_label: SEB
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP header `PSU-ID` is required when starting auhtorisation process. |
 
 ## Supported SCA Methods
-|Environment     |SCA Method | Authentication Method | Comment |
-|----------------|----------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | Authentication must be done with [specific PSU id's](#sandbox-test-data).|
-|Production      |Decoupled      | Mobilt BankID | - PSU must authenticate with Mobilt BankID within 30 sec. or SCA will fail.<br> - Mobilt BankID autostarttoken is provided, but is not required. |
+|Environment     |SCA Method | Authentication Method | Status | Comment |
+|----------------|----------|--------------|--------------|--------------|
+|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication must be done with [specific PSU id's](#sandbox-test-data).|
+|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must authenticate with Mobilt BankID within 30 sec. or SCA will fail.<br> - Mobilt BankID autostarttoken is provided, but is not required. |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
 ### Sandbox Test Data
 
@@ -70,8 +71,8 @@ sidebar_label: SEB
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-informational.svg) | ![](https://img.shields.io/badge/status-in_development-informational.svg) |
-|international         | ![](https://img.shields.io/badge/status-in_development-informational.svg)| ![](https://img.shields.io/badge/status-in_development-informational.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-yellow.svg) | ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
+|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
 ### API Status
 
@@ -83,7 +84,7 @@ sidebar_label: SEB
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyMMddNNNN` | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyMMddNNNN` |
 |Get Payment Initiation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) | **Currently non-functional at ASPSP** | ![](https://img.shields.io/badge/status-active-success.svg) | **Currently non-functional at ASPSP** |
+|Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** |
 |Update PSU Data for Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Start Payment Initiation Cancellation Authorisation Process | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Cancellation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |

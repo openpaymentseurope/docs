@@ -14,10 +14,11 @@ original_id: handsess
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, AIS, PIS | HTTP header `PSU-IP-Address` is required by ASPSP on a number of services, please see API status comments below |
 
 ## Supported SCA Methods
-|Environment     |SCA Method | Authentication Method | Comment |
-|----------------|----------|--------------|--------------|
-|Sandbox         |Decoupled | None   | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly when calling "Start the authorization process.." endpoint. |
-|Production      |Decoupled      | Mobilt BankID | - PSU must start the Mobilt BankID app with returned autostarttoken within 30 sec. from when "Start the authorization process.." service was called or SCA will fail.<br>- To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`. The redirect query is mandatory for iOS and optional for Android. The TPP must then tell the PSU to open this link on its mobile or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
+|Environment     |SCA Method | Authentication Method | Status | Comment |
+|----------------|----------|--------------|--------------|--------------|
+|Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly when calling "Start the authorization process.." endpoint. |
+|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must start the Mobilt BankID app with returned autostarttoken within 30 sec. from when "Start the authorization process.." service was called or SCA will fail.<br>- To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`. The redirect query is mandatory for iOS and optional for Android. The TPP must then tell the PSU to open this link on its mobile or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
 ### Sandbox Test Data
 
@@ -64,8 +65,8 @@ original_id: handsess
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-informational.svg) | ![](https://img.shields.io/badge/status-in_development-informational.svg) |
-|international         | ![](https://img.shields.io/badge/status-in_development-informational.svg)| ![](https://img.shields.io/badge/status-in_development-informational.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-yellow.svg) | ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
+|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
 ### API Status
 
