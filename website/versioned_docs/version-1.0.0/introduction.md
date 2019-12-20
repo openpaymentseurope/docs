@@ -7,7 +7,7 @@ original_id: introduction
 
 ## Presenting Open Payments Platform 1.0
 
-After hard work the team at Open Payment is proudly presenting our first version in production. This release 1.0 marks a milestone as we now can offer our customer the full scope of PSD2, covering private accounts for all [supported banks](banks.md). This release allows you to access your consumer’s account information data or initiate transfers. 
+The production release of Open Payments Platform 1.0 marks a milestone in the emerging space of Open Banking as we now can offer our customer the full scope of PSD2, covering private accounts for all [supported banks](banks.md). This release allows you to access your consumer’s account information data or initiate transfers. 
 
 The documentation cover general information on our platform as well as specific information you will need to successfully integrate your solution and your customer journey with our REST API. We welcome developers to dig in and start making revolutionary new solutions, tools and services using our unified API.
 
