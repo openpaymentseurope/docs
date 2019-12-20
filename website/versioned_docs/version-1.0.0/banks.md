@@ -15,7 +15,7 @@ Here is a list of the currently supported banks in our sandbox and production en
 | ![](https://img.shields.io/badge/-not_supported-critical.svg) | Service is not supported by ASPSP |
 | ![](https://img.shields.io/badge/-defect-red.svg) | Service is implemented, but currently non-functional at ASPSP |
 
-## ![](/docs/img/se.png) Sweden 
+## ![](/img/se.png) Sweden 
 
 <table>
   <tr>
@@ -31,7 +31,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     <th style="text-align: center;">Corporate</th>
   </tr>
   <tr>
-    <td><a href="ndeasess">Nordea Bank</a></td>
+    <td><a href="/docs/ndeasess">Nordea Bank</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
         <img src="https://img.shields.io/badge/PIS-active-success.svg">
@@ -50,7 +50,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     </td>
   </tr>
   <tr>
-    <td><a href="handsess">Svenska Handelsbanken</a></td>
+    <td><a href="/docs/handsess">Svenska Handelsbanken</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
         <img src="https://img.shields.io/badge/PIS-active-success.svg">
@@ -69,7 +69,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     </td>
   </tr>
   <tr>
-    <td><a href="essesess">Skandinaviska Enskilda Banken</a></td>
+    <td><a href="/docs/essesess">Skandinaviska Enskilda Banken</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
         <img src="https://img.shields.io/badge/PIS-defect-red.svg">
@@ -88,7 +88,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     </td>
   </tr>
   <tr>
-    <td><a href="swedsess">Swedbank</a></td>
+    <td><a href="/docs/swedsess">Swedbank</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
         <img src="https://img.shields.io/badge/PIS-defect-red.svg">
@@ -108,7 +108,7 @@ Here is a list of the currently supported banks in our sandbox and production en
   </tr>
 </table>
 
-## ![](/docs/img/fi.png) Finland 
+## ![](/img/fi.png) Finland 
 <table>
   <tr>
     <th>Bank</th>
