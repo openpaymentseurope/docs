@@ -23,7 +23,7 @@ const users = [
 const siteConfig = {
   title: 'Open Payments', // Title for your website.
   tagline: 'Join the Open Banking Revolution',
-  url: 'https://openpaymentseurope.github.io', // Your website URL
+  url: 'https://docs.openpayments.io', // Your website URL
   baseUrl: '/docs/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
