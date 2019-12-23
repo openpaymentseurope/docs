@@ -21,7 +21,7 @@ Available `API_HOST` values
 | Production | https://api.openbankingplatform.com |
 
 ## Account Information Services (AIS) Flow
-![PlantUML model](/docs/img/ais.svg)
+![PlantUML model](/img/ais.svg)
 
 ## Acquire an access token for Account Information
 

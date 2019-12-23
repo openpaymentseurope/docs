@@ -22,7 +22,7 @@ Available `API_HOST` values
 | Production | https://api.openbankingplatform.com |
 
 ## Consent Flow
-![PlantUML model](/docs/img/consent.svg)
+![PlantUML model](/img/consent.svg)
 
 ## Acquire an access token for Account Information
 ```javascript

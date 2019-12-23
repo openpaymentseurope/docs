@@ -22,7 +22,7 @@ Available `API_HOST` values
 | Production | https://api.openbankingplatform.com |
 
 ## Account Servicing Payment Service Provider (ASPSP) Flow
-![PlantUML model](/docs/img/aspsp.svg)
+![PlantUML model](/img/aspsp.svg)
 
 ## Acquire an access token for ASPSP Information
 ```javascript

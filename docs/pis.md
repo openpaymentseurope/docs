@@ -21,7 +21,7 @@ Available `API_HOST` values
 | Production | https://api.openbankingplatform.com |
 
 ## Payment Initiation Services (PIS) Flow
-![PlantUML model](/docs/img/pis.svg)
+![PlantUML model](/img/pis.svg)
 
 ## Acquire an access token for Payment Initiation
 
