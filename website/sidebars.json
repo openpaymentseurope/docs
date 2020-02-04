@@ -1,0 +1,19 @@
+{
+  "docs": {
+    "Getting Started": [
+      "introduction",
+      "banks",
+      "glossary"    
+    ],
+    "Tutorials": [
+      "api",
+      "aspsp",
+      "consent",
+      "ais",
+      "pis"
+    ]
+  },
+  "docs-other": {
+    "Category": ["doc4", "doc5"]
+  }
+}

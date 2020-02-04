@@ -1,0 +1,63 @@
+/**
+ * Copyright (c) 2017-present, Facebook, Inc.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+ 
+/* your custom css */
+a {
+    color: #f8b83f;
+    text-decoration: none;
+}
+
+.postHeader a {
+    color: $primaryColor;
+}
+
+.postHeader a:hover {
+    text-decoration: underline;
+}
+
+.nav-footer .social {
+    text-align: center;
+}
+.nav-footer .social .fab {
+    color: #ffffff;
+    width: 32px;
+}
+.nav-footer .social li {
+    display: inline;
+}
+
+.headerTitleWithLogo {
+    font-family: $myFont;
+    font-weight: 400;
+}
+.nav-footer {
+    background: $primaryColor;
+}
+
+.fixedHeaderContainer header h3 {
+    font-family: $myFont;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+@media only screen and (min-device-width: 360px) and (max-device-width: 736px) {
+}
+
+@media only screen and (min-width: 1024px) {
+}
+
+@media only screen and (max-width: 1023px) {
+    .reactNavSearchWrapper input#search_input_react {
+        background-color: rgba(0, 0, 0, 0.2);
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1500px) {
+}
