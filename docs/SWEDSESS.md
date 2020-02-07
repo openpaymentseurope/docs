@@ -8,8 +8,7 @@ sidebar_label: Swedbank
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-critical-critical.svg)| PIS | Currently not functional in both the Sandbox and Production environments because of ASPSP API defects. |
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP header `PSU-ID` is required when starting authorisation process. |
+|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required for `Create Consent` and `Create Payment Initiation`. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
@@ -28,13 +27,13 @@ sidebar_label: Swedbank
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|:--------:|--------------|:-----------:|------------|
-|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided |
 |Get Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Delete Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Start Consent Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Get Consent Authorisation SCA Status | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** |
+|Get Consent Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Update PSU Data for Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 
 ## Account Information Service
@@ -69,13 +68,13 @@ sidebar_label: Swedbank
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|--------------------|---|--------------------|---|
-|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided |
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyMMddNNNN` | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyMMddNNNN` |
+|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Payment Initiation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** | ![](https://img.shields.io/badge/status-defect-critical.svg) | **Currently non-functional at ASPSP** |
+|Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Update PSU Data for Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Start Payment Initiation Cancellation Authorisation Process | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Cancellation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
