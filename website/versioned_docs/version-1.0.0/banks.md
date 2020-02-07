@@ -15,7 +15,7 @@ Here is a list of the currently supported banks in our sandbox and production en
 | ![](https://img.shields.io/badge/-not_supported-critical.svg) | Service is not supported by ASPSP |
 | ![](https://img.shields.io/badge/-defect-red.svg) | Service is implemented, but currently non-functional at ASPSP |
 
-## ![](/img/se.png) Sweden 
+## ![](/docs/img/se.png) Sweden 
 
 <table>
   <tr>
@@ -72,7 +72,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     <td><a href="/docs/essesess">Skandinaviska Enskilda Banken</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-defect-red.svg">
+        <img src="https://img.shields.io/badge/PIS-active-success.svg">
     </td>
     <td>
         <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
@@ -91,7 +91,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     <td><a href="/docs/swedsess">Swedbank</a></td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-defect-red.svg">
+        <img src="https://img.shields.io/badge/PIS-active-success.svg">
     </td>
     <td>
         <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
@@ -99,7 +99,7 @@ Here is a list of the currently supported banks in our sandbox and production en
     </td>
     <td>
         <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-defect-red.svg">
+        <img src="https://img.shields.io/badge/PIS-active-success.svg">
     </td>
     <td>
         <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
@@ -108,7 +108,7 @@ Here is a list of the currently supported banks in our sandbox and production en
   </tr>
 </table>
 
-## ![](/img/fi.png) Finland 
+## ![](/docs/img/fi.png) Finland 
 <table>
   <tr>
     <th>Bank</th>
