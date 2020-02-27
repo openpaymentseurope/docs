@@ -10,7 +10,7 @@ original_id: essesess
 | Status | Product | Comment |
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS |`Get Payment Initiation Authorisation SCA Status` currently returns 400 code after SCA flow has finished so that SCA result cannot be determined. Workaround is to check the payment status with `Get Payment Initiation Status` after this error occurs, and verify that the payment succeeded |
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS |  |
+|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | `PSU-ID` not used anymore in Decoupled SCA, instead PSU must open Mobilt BankID with an autostart token given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`|
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
