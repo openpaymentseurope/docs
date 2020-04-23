@@ -41,9 +41,17 @@
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
+      "ndeafihh": {
+        "title": "Nordea Bank Finland (NDEAFIHH)",
+        "sidebar_label": "Nordea FI"
+      },
       "ndeasess": {
         "title": "Nordea (NDEASESS)",
         "sidebar_label": "Nordea"
+      },
+      "okoyfihh": {
+        "title": "OP Bank (OKOYFIHH)",
+        "sidebar_label": "OP Bank"
       },
       "pis": {
         "title": "How to use the PIS API",
@@ -106,6 +114,18 @@
       "version-1.0.0/version-1.0.0-swedsess": {
         "title": "Swedbank (SWEDSESS)",
         "sidebar_label": "Swedbank"
+      },
+      "version-1.0.1/version-1.0.1-banks": {
+        "title": "Supported Banks",
+        "sidebar_label": "Supported banks"
+      },
+      "version-1.0.1/version-1.0.1-ndeafihh": {
+        "title": "Nordea Bank Finland (NDEAFIHH)",
+        "sidebar_label": "Nordea FI"
+      },
+      "version-1.0.1/version-1.0.1-okoyfihh": {
+        "title": "OP Bank (OKOYFIHH)",
+        "sidebar_label": "OP Bank"
       }
     },
     "links": {
