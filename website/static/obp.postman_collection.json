@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "21e00a44-481b-4e56-8b05-4b4c8eebd490",
+		"_postman_id": "24e09251-a1cb-4c27-9cc3-644d1956b463",
 		"name": "Open Banking Platform",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,7 +20,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "d5871ac1-5ee5-4f3e-b1f6-869e1c6f989c",
+												"id": "40775579-3823-4591-9b5a-a56681ebaf9a",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -88,18 +88,20 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Get countries",
+					"name": "Get Country List",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "422613eb-f3eb-4c1f-8bc0-5d4bc5dc576b",
+								"id": "fb48809c-e8e7-46ed-afda-b0531966f0b7",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -135,7 +137,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{apiHost}}/psd2/aspspinformation/v1/countries?",
+							"raw": "https://{{apiHost}}/psd2/aspspinformation/v1/countries",
 							"protocol": "https",
 							"host": [
 								"{{apiHost}}"
@@ -158,7 +160,7 @@
 					"response": []
 				},
 				{
-					"name": "Get country",
+					"name": "Get Country Details",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -195,12 +197,12 @@
 					"response": []
 				},
 				{
-					"name": "Get cities",
+					"name": "Get City List",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d798f644-46e4-4160-8fb6-5de34499d64d",
+								"id": "746f561e-60f7-459c-a211-cef8d543ddfd",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -236,7 +238,7 @@
 							}
 						],
 						"url": {
-							"raw": "https://{{apiHost}}/psd2/aspspinformation/v1/cities?",
+							"raw": "https://{{apiHost}}/psd2/aspspinformation/v1/cities",
 							"protocol": "https",
 							"host": [
 								"{{apiHost}}"
@@ -264,7 +266,7 @@
 					"response": []
 				},
 				{
-					"name": "Get city",
+					"name": "Get City Details",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -301,12 +303,12 @@
 					"response": []
 				},
 				{
-					"name": "Get ASPSPs",
+					"name": "Get ASPSP List",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "a32a7a93-d78f-4f8c-8374-65d1eab87fe0",
+								"id": "ed984b41-e474-48d2-a9cf-451f7152ef1b",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -368,12 +370,12 @@
 					"response": []
 				},
 				{
-					"name": "Get ASPSP details",
+					"name": "Get ASPSP Details",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "68ba703c-9652-4a15-846a-9055ac34dd08",
+								"id": "6402cb62-e415-4368-8136-8aa112b63a1f",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -438,7 +440,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "819bfcaf-137b-4463-99be-2c43cacb43d1",
+						"id": "72224d4c-2252-4473-9ba0-e7e1c2a04b90",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -448,14 +450,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "11d04c3d-122e-477d-be1d-3407ebdd9a58",
+						"id": "fe8713a6-8a6f-4856-8361-90efa0974b14",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Consent Service",
@@ -593,6 +596,7 @@
 								}
 							],
 							"description": "Used for ASPSPs that uses the Decoupled/OAuth flow.",
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						},
 						{
@@ -604,7 +608,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "c6851e17-0af1-4ff5-b345-6308ce01fd8a",
+												"id": "dbe4f788-e59c-496e-8932-78fd9a9997d5",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -672,18 +676,20 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Create consent",
+					"name": "Create Consent",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "f8fccbd8-246f-43c9-bd4b-22da047c7a62",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -695,7 +701,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "67977858-4c18-425c-ae05-1a66f6fd69b3",
+								"id": "9913346a-2052-47f7-bbfd-9c82daeccc11",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -727,6 +733,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -750,12 +762,12 @@
 					"response": []
 				},
 				{
-					"name": "Create consent - With Accounts",
+					"name": "Create Consent - With Accounts",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "07d889c6-3f89-4dc6-b5b5-eeb0340c7d45",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -767,7 +779,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "67977858-4c18-425c-ae05-1a66f6fd69b3",
+								"id": "08484ed9-acf8-4793-9a14-84033af90b9b",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -799,6 +811,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -822,12 +840,12 @@
 					"response": []
 				},
 				{
-					"name": "Get consent request",
+					"name": "Get Consent",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "c80e2e87-8bb9-4cdc-8d83-cdd1530110c1",
 								"exec": [
 									""
 								],
@@ -859,6 +877,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -879,12 +903,12 @@
 					"response": []
 				},
 				{
-					"name": "Delete consent",
+					"name": "Delete Consent",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "fb5d685f-0983-4700-af4b-83985d03500c",
 								"exec": [
 									""
 								],
@@ -916,6 +940,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -940,12 +970,12 @@
 					"response": []
 				},
 				{
-					"name": "Consent status request",
+					"name": "Get Consent Status",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "62d89eb5-3e63-423c-87d6-3baef7e3696c",
 								"exec": [
 									""
 								],
@@ -977,6 +1007,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -998,12 +1034,12 @@
 					"response": []
 				},
 				{
-					"name": "Start the authorisation process for a consent",
+					"name": "Start Consent Authorisation Process",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "7e33343a-75ce-4acc-95e4-7d3dbd3b29b2",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"consentAuthorisationId\", jsonData.authorisationId);",
@@ -1043,6 +1079,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -1068,12 +1110,12 @@
 					"response": []
 				},
 				{
-					"name": "Get consent authorisation sub-resources request",
+					"name": "Get Consent Authorisation Sub-Resources",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "5e133dac-ea5d-47c0-bf1c-097e69389854",
 								"exec": [
 									""
 								],
@@ -1105,6 +1147,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1126,12 +1174,12 @@
 					"response": []
 				},
 				{
-					"name": "Read the SCA status of the consent authorisation.",
+					"name": "Get Consent Authorisation SCA Status",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "cd824b27-7289-4083-86a2-020a8f9f76ba",
 								"exec": [
 									""
 								],
@@ -1166,6 +1214,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -1192,12 +1246,12 @@
 					"response": []
 				},
 				{
-					"name": "Update PSU data for consents",
+					"name": "Update PSU Data for Consent",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "d326ad69-68ec-4317-a53f-68ac4bab3e65",
+								"id": "b3c851fb-3adc-41d9-ace5-d2969fa2b0e2",
 								"exec": [
 									""
 								],
@@ -1229,6 +1283,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -1269,7 +1329,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "8ffbd897-66b6-4f04-9d03-cada70d4b04b",
+						"id": "39e11ddc-2d3c-470c-afaf-1513bc46dd3b",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1279,14 +1339,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "d6782fb1-ac2c-47c1-bca2-54de4286d369",
+						"id": "4c09213b-f36a-4a6d-b89a-93784139e147",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Account Information Service",
@@ -1303,7 +1364,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "c6851e17-0af1-4ff5-b345-6308ce01fd8a",
+												"id": "fe4e2503-0483-4978-99f3-a442cde68478",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -1371,18 +1432,20 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Read account list",
+					"name": "Get Account List",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "a4f4cca2-ab19-4d20-a4ad-5a831bb4050f",
+								"id": "0cc43f72-7090-445e-8640-16c15cf76217",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1428,6 +1491,12 @@
 								"key": "PSU-IP-Address",
 								"value": "{{PSU-IP-Address}}",
 								"type": "text"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1453,7 +1522,7 @@
 					"response": []
 				},
 				{
-					"name": "Read account details",
+					"name": "Get Account Details",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1485,6 +1554,12 @@
 								"key": "PSU-IP-Address",
 								"value": "{{PSU-IP-Address}}",
 								"type": "text"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1511,7 +1586,7 @@
 					"response": []
 				},
 				{
-					"name": "Read balance",
+					"name": "Get Balances",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1543,6 +1618,12 @@
 								"key": "PSU-IP-Address",
 								"value": "{{PSU-IP-Address}}",
 								"type": "text"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1564,12 +1645,12 @@
 					"response": []
 				},
 				{
-					"name": "Read transaction list of an account",
+					"name": "Get Transaction List",
 					"event": [
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "1455dc76-bb4a-4c87-8f46-f5c846560bb4",
+								"id": "3ec0ad3e-a0af-4eea-ba9c-c307f71b9ad3",
 								"exec": [
 									"pm.environment.set(\"dateFrom\", new Date().addDays(-30).toISOString().split('T')[0]);",
 									"pm.environment.set(\"dateTo\", new Date().toISOString().split('T')[0]);"
@@ -1580,7 +1661,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5435397d-4666-419d-8d7f-7e760ede6bc1",
+								"id": "f1e9d65b-f7da-4c5e-9b65-304dfc8f1e32",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1629,6 +1710,12 @@
 								"key": "PSU-IP-Address",
 								"value": "{{PSU-IP-Address}}",
 								"type": "text"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1664,7 +1751,7 @@
 					"response": []
 				},
 				{
-					"name": "Read transaction details",
+					"name": "Get Transaction Details",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -1696,6 +1783,12 @@
 								"key": "PSU-IP-Address",
 								"value": "{{PSU-IP-Address}}",
 								"type": "text"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -1732,7 +1825,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "086e4882-c496-4133-9667-a4aaac82c191",
+						"id": "9b8a977b-1999-4d8c-a418-cc6b5fea4862",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1742,14 +1835,15 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "05089f63-5390-450c-b69c-67514f4668f0",
+						"id": "b25243e8-cafe-4058-8904-7aa3af0beae0",
 						"type": "text/javascript",
 						"exec": [
 							""
 						]
 					}
 				}
-			]
+			],
+			"protocolProfileBehavior": {}
 		},
 		{
 			"name": "Payment Initiation Service",
@@ -1887,6 +1981,7 @@
 								}
 							],
 							"description": "Used for ASPSPs that uses the Decoupled/OAuth flow.",
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						},
 						{
@@ -1898,7 +1993,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "2912a2e7-d771-4bb6-b2f3-18adb332ee45",
+												"id": "fd4dcc27-bf9b-4f56-af22-b4d05bf51a28",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -1966,18 +2061,20 @@
 									"response": []
 								}
 							],
+							"protocolProfileBehavior": {},
 							"_postman_isSubFolder": true
 						}
 					],
+					"protocolProfileBehavior": {},
 					"_postman_isSubFolder": true
 				},
 				{
-					"name": "Payment initiation request",
+					"name": "Create Payment Initiation",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c67fd387-a832-4fbe-bb37-8f4ab54e18f5",
+								"id": "fb75a8c2-01c8-4bca-b86b-2026730ab923",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1989,7 +2086,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c1fdafc3-bc19-47c0-956e-ff6d47d46480",
+								"id": "8bb4feef-34ae-49c1-88a6-b8b5ba7ea173",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2026,6 +2123,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -2050,12 +2153,12 @@
 					"response": []
 				},
 				{
-					"name": "Payment initiation request - Detailed",
+					"name": "Create Payment Initiation - Detailed",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "c67fd387-a832-4fbe-bb37-8f4ab54e18f5",
+								"id": "66448de4-c9be-4f59-89c3-8ff31af6c040",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -2067,7 +2170,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c1fdafc3-bc19-47c0-956e-ff6d47d46480",
+								"id": "9910cf85-e672-4280-86b3-36035960b443",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2104,6 +2207,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -2128,7 +2237,7 @@
 					"response": []
 				},
 				{
-					"name": "Get payment information",
+					"name": "Get Payment Initiation",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2158,6 +2267,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -2179,7 +2294,7 @@
 					"response": []
 				},
 				{
-					"name": "Payment cancellation request",
+					"name": "Cancel Payment Initiation",
 					"request": {
 						"method": "DELETE",
 						"header": [
@@ -2209,6 +2324,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -2234,7 +2355,7 @@
 					"response": []
 				},
 				{
-					"name": "Payment initiation status request",
+					"name": "Get Payment Initiation Status",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2264,6 +2385,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -2286,12 +2413,12 @@
 					"response": []
 				},
 				{
-					"name": "Start the authorisation process for a payment initiation",
+					"name": "Start Payment Initiation Authorisation Process",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
-								"id": "3732b1ba-787c-4b1f-926b-3aa62214b47b",
+								"id": "5c71a124-3b68-4e58-b90f-487707f7c1c7",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"paymentAuthorisationId\", jsonData.authorisationId);",
@@ -2336,6 +2463,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -2358,7 +2491,7 @@
 					"response": []
 				},
 				{
-					"name": "Get payment initiation authorisation sub-resources request",
+					"name": "Get Payment Initiation Authorisation Sub-Resources",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2388,6 +2521,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -2410,7 +2549,7 @@
 					"response": []
 				},
 				{
-					"name": "Read the SCA Status of the payment authorisation",
+					"name": "Get Payment Initiation Authorisation SCA Status",
 					"request": {
 						"method": "GET",
 						"header": [
@@ -2440,6 +2579,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"url": {
@@ -2463,7 +2608,7 @@
 					"response": []
 				},
 				{
-					"name": "Update PSU data for payment initiation",
+					"name": "Update PSU Data for Payment Initiation",
 					"request": {
 						"method": "PUT",
 						"header": [
@@ -2493,6 +2638,12 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-Corporate-Id",
+								"value": "{{PSU-Corporate-Id}}",
+								"type": "text",
+								"disabled": true
 							}
 						],
 						"body": {
@@ -2529,14 +2680,15 @@
 						"type": "string"
 					}
 				]
-			}
+			},
+			"protocolProfileBehavior": {}
 		}
 	],
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "524c60bd-1ea1-4f1e-80d0-e39f5fc22ce5",
+				"id": "0f8daefc-7368-4f12-a035-269928a2ce47",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2546,12 +2698,13 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "870c9723-2e6b-4213-be94-a088fa1cc1c3",
+				"id": "1482e441-b7fd-4104-a84d-24dca85b9b52",
 				"type": "text/javascript",
 				"exec": [
 					""
 				]
 			}
 		}
-	]
+	],
+	"protocolProfileBehavior": {}
 }
