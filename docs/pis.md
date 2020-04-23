@@ -197,10 +197,11 @@ See [Create Payment Initiation](#create-payment-initiation)
 curl -X POST
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
+    -H 'Content-Type: application/json'
     -H 'PSU-IP-Address: [PSU_IP_ADDRESS]'
     -H 'X-BicFi: [BICFI]'
     -H 'X-Request-ID: [GUID]'
-    -H 'Content-Type: application/json'
+    -d ''
 ```
 
 Note that this call does not need a body.
@@ -303,6 +304,7 @@ See [Create Payment Initiation](#create-payment-initiation)
 curl -X PUT
     [API_HOST]/psd2/paymentinitiation/v1/payments/[PAYMENT_PRODUCT]/[PAYMENT_ID]/authorisations/[PAYMENT_AUTH_ID]
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
+    -H 'Content-Type: application/json'
     -H 'PSU-IP-Address: [PSU_IP_ADDRESS]'
     -H 'X-BicFi: [BICFI]'
     -H 'X-Request-ID: [GUID]'
@@ -366,7 +368,7 @@ curl -X POST
     -H 'Content-Type: application/x-www-form-urlencoded'
     -H 'X-PaymentAuthorisationId: [PAYMENT_AUTH_ID]'
     -H 'X-PaymentId: [PAYMENT_ID]'
-    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&code=[CODE]&redirect_uri=[TPP_REDIRECT_URI]&grant_type=authorization_code'
+    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&code=[CODE]&redirect_uri=[TPP_REDIRECT_URI]&scope=paymentinitiation&grant_type=authorization_code'
 ```
 
 ## Schemas
