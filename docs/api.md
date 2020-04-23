@@ -31,7 +31,7 @@ You will get a `client_id` and a `client_secret` that you can use to authenticat
 
 ## Postman collection
 
-You can [download](/obp.postman_collection.json) our Postman Collection with ready made API calls.
+You can download our [Postman Collection](/obp.postman_collection.json) and [Postman Environment Settings](/sandbox.postman_environment.json) with ready made API calls and settings for our sandbox environment. After importing the Collection and the Environment Settings, you just need to set the values for variables "clientId", "clientSecret" and "redirectUri" to start using our API:s in the sandbox environment.
 
 ## General notes about requests
 
