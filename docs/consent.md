@@ -265,9 +265,11 @@ See possible values for status [further down](#consent-status).
 curl -X POST
     [API_HOST]/psd2/consent/v1/consents/[CONSENT_ID]/authorisations
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
+    -H 'Content-Type: application/json'
     -H 'PSU-IP-Address: [PSU_IP_Address]'
     -H 'X-BicFi: [BICFI]'
     -H 'X-Request-ID: [GUID]'
+    -d ''
 ```
 
 Note that this call does not need a body despite being a `POST`.
@@ -360,7 +362,7 @@ See Create consent.
 ### Response
 ```javascript
 {
-    "scaStatus": "started"
+    "scaStatus": "received"
 }
 ```
 
@@ -374,6 +376,7 @@ See Create consent.
 curl -X PUT
     [API_HOST]/psd2/consent/v1/consents/[CONSENT_ID]/authorisations/[CONSENT_AUTH_ID]
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
+    -H 'Content-Type: application/json'
     -H 'PSU-IP-Address: [PSU_IP_Address]'
     -H 'X-BicFi: [BICFI]'
     -H 'X-Request-ID: [GUID]'
@@ -442,7 +445,7 @@ Call the OAuth token endpoint to finalize consent flow.
         -H 'Content-Type: application/x-www-form-urlencoded'
         -H 'X-ConsentAuthorisationId: [CONSENT_AUTH_ID]'
         -H 'X-ConsentId: [CONSENT_ID]'
-        -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&code=[CODE]&redirect_uri=[TPP_REDIRECT_URI]&grant_type=authorization_code'
+        -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&code=[CODE]&redirect_uri=[TPP_REDIRECT_URI]&scope=accountinformation&grant_type=authorization_code'
 
 At this point you are ready to call the account service. Read more in the [account service tutorial](ais.md).
 
