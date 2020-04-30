@@ -24,12 +24,48 @@ Available `API_HOST` values
 ![PlantUML model](/img/aspsp.svg)
 
 ## Acquire an access token for ASPSP Information
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X POST
     [AUTH_HOST]/connect/token
     -H 'Content-Type: application/x-www-form-urlencoded'
     -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=aspspinformation&grant_type=client_credentials'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientGetToken
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var client = new HttpClient();
+            var uri = new Uri($"{Settings.AuthUrl}/connect/token");
+            var response = await client.PostAsync(uri, new FormUrlEncodedContent(new []
+                {
+                    new KeyValuePair<string, string>("client_id", Settings.ClientId),
+                    new KeyValuePair<string, string>("client_secret", Settings.Secret),
+                    new KeyValuePair<string, string>("grant_type", "client_credentials"),
+                    new KeyValuePair<string, string>("scope", "aspspinformation"),
+                }));
+
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 This post will return a JSON object that looks like this:
 ```javascript
@@ -44,12 +80,44 @@ This post will return a JSON object that looks like this:
 Bring the ACCESS_TOKEN forward to subsequent calls.
 
 ## Get Country List
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/countries
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: [GUID]'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientListCountries
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/countries");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Query parameters
 
@@ -74,12 +142,45 @@ curl -X GET
 Where the country code and name will be according to the ISO 3166-1 alpha-2 standard.
 
 ## Get Country Details
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET \
     [API_HOST]/psd2/aspspinformation/v1/countries/[COUNTRY_CODE]
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: 6ff9e7ee-2ac2-42d3-a188-c7314d434b9c'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientCountriesDEtails
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var countryCode = "SE";
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/countries/{countryCode}");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Path parameter
 
@@ -96,12 +197,44 @@ The `COUNTRY_CODE` parameter should be one of the codes in the ISO 3166-1 alpha-
 This is exactly the same as in the country list.
 
 ## Get City List
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/cities
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: [GUID]'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientCityList
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/cities");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Query parameters
 
@@ -129,12 +262,45 @@ The service will return all matches for the queries. So querying for `SE` and `b
 ```
 
 ## Get City Details
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/cities/[CITY_ID]
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: [GUID]'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientCitiesDetails
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var cityCode = "37efa883-c8ad-4ff7-927b-b11b02beb923";
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/cities/{cityCode}");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Path parameter
 
@@ -152,12 +318,44 @@ curl -X GET
 This is exactly as one item in the list returned from the "get cities" endpoint.
 
 ## Get ASPSP List
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: [GUID]'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientListAspsp
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/aspsps");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Query parameters
 
@@ -190,12 +388,45 @@ The service will return all matches for the queries. So it is possible to get al
 ```
 
 ## Get ASPSP Details
-```javascript
+<!--DOCUSAURUS_CODE_TABS-->
+
+<!--curl-->
+```js
 curl -X GET
     [API_HOST]/psd2/aspspinformation/v1/aspsps/[BICFI]
     -H 'Authorization: Bearer [ACCESS_TOKEN]'
     -H 'X-Request-ID: [GUID]'
 ```
+
+<!--C#-->
+```cs
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+using Shared;
+
+namespace ConsoleClientAspspDetails
+{
+    class Program
+    {
+        static async Task Main(string[] args)
+        {
+            var token = await Aspsp.GetToken("aspspinformation");
+            var client = new HttpClient();
+            var aspspCode = Settings.BicFi;
+            var uri = new Uri($"{Settings.ApiUrl}/psd2/aspspinformation/v1/aspsps/{aspspCode}");
+            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            client.DefaultRequestHeaders.Add("X-Request-ID", Guid.NewGuid().ToString());
+            var response = await client.GetAsync(uri);
+            var json = await response.Content.ReadAsStringAsync();
+            
+            Console.WriteLine(json);
+        }
+    }
+}
+```
+<!--END_DOCUSAURUS_CODE_TABS-->
 
 ### Path parameter
 
@@ -234,6 +465,7 @@ curl -X GET
     "logoUrl": "https://opeopenbanking.blob.core.windows.net/images/ESSESESS.jpg"
 }
 ```
+
 
 This result contains contact details for the bank and information about how to access its services through Open Payments API.
 
