@@ -25,12 +25,12 @@ Available `API_HOST` values
 
 ## Acquire an access token for Payment Initiation
 
-Get a token to use for subsequent calls to the API. The scope should be set to `paymentinitiation`.
+Get a token to use for subsequent calls to the API. The scope should be set to `paymentinitiation private` to perform payments from private accounts and `paymentinitiation corporate` for payments originating from corporate accounts.
 ```javascript
 curl -X POST
     [AUTH_HOST]/connect/token
     -H 'Content-Type: application/x-www-form-urlencoded'
-    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=paymentinitiation&grant_type=client_credentials'
+    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=paymentinitiation private&grant_type=client_credentials'
 ```
 
 This post will return a JSON object that looks like this:
@@ -330,7 +330,7 @@ See [Create Payment Initiation](#create-payment-initiation)
     },
     "_links": {
         "scaOAuth": {
-            "href": "[AUTH_HOST]/connect/authorize?client_id=[CLIENT_ID]&scope=paymentinitiation&response_type=code&redirect_uri=[TPP_REDIRECT_URI]&state=[TPP_STATE]&acr_values=idp:[BICFI]%20paymentId:[PAYMENT_ID]%20paymentAuthorisationId:[PAYMENT_AUTH_ID]"
+            "href": "[AUTH_HOST]/connect/authorize?client_id=[CLIENT_ID]&scope=paymentinitiation%20private&response_type=code&redirect_uri=[TPP_REDIRECT_URI]&state=[TPP_STATE]&acr_values=idp:[BICFI]%20paymentId:[PAYMENT_ID]%20paymentAuthorisationId:[PAYMENT_AUTH_ID]"
         }
     },
     "scaStatus": "scaMethodSelected"

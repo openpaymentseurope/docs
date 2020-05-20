@@ -25,12 +25,12 @@ Available `API_HOST` values
 
 ## Acquire an access token for Account Information
 
-Get a token to use for subsequent calls to the API. The scope should be set to `accountinformation`.
+Get a token to use for subsequent calls to the API. The scope should be set to `accountinformation private` for access to private account information and `accountinformation corporate` for access to account information using corporate accounts.
 ```javascript
 curl -X POST
     [AUTH_HOST]/connect/token
     -H 'Content-Type: application/x-www-form-urlencoded'
-    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=accountinformation&grant_type=client_credentials'
+    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=accountinformation private&grant_type=client_credentials'
 ```
 
 This post will return a JSON object that looks like this:
@@ -39,7 +39,7 @@ This post will return a JSON object that looks like this:
     "access_token": "[ACCESS_TOKEN]",
     "expires_in": 3600,
     "token_type": "Bearer",
-    "scope": "accountinformation"
+    "scope": "accountinformation private"
 }
 ```
 
