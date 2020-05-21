@@ -8,7 +8,8 @@ sidebar_label: Swedbank
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required for `Create Consent` and `Create Payment Initiation`. |
+|![](https://img.shields.io/badge/status-defect-red.svg)| Consent | Creating consent for Corporate accounts is currenly non-functional at ASPSP. |
+|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` are required for `Create Consent` and `Create Payment Initiation`. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
