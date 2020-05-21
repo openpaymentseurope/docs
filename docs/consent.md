@@ -28,10 +28,10 @@ Available `API_HOST` values
 curl -X POST
     [AUTH_HOST]/connect/token
     -H 'Content-Type: application/x-www-form-urlencoded'
-    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=accountinformation&grant_type=client_credentials'
+    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=accountinformation private&grant_type=client_credentials'
 ```
 
-If you have looked at the ASPSP tutorial you will notice that this is similar. The only difference is the `scope` that you get the token for. Here it should be set to `accountinformation`.
+If you have looked at the ASPSP tutorial you will notice that this is similar. The only difference is the `scope` that you get the token for. Here it should be set to `accountinformation private` for access to private account information and `accountinformation corporate` if you want to access account information using corporate accounts.
 
 This post will return a JSON object that looks like this:
 ```javascript
@@ -39,7 +39,7 @@ This post will return a JSON object that looks like this:
     "access_token": "[ACCESS_TOKEN]",
     "expires_in": 3600,
     "token_type": "Bearer",
-    "scope": "accountinformation"
+    "scope": "accountinformation private"
 }
 ```
 
@@ -411,7 +411,7 @@ See Create consent.
             "href": "/psd2/consent/v1/consents/[CONSENT_ID]/authorisations/[CONSENT_AUTH_ID]"
         },
         "scaOAuth": {
-            "href": "[AUTH_HOST]/connect/authorize?client_id=[CLIENT_ID]&scope=accountinformation&response_type=code&redirect_uri=[TPP_REDIRECT_URI]&state=[TPP_STATE]&acr_values=idp:[BICFI]%20consentId:[CONSENT_ID]%20consentAuthorisationId:[CONSENT_AUTH_ID]"
+            "href": "[AUTH_HOST]/connect/authorize?client_id=[CLIENT_ID]&scope=accountinformation%20private&response_type=code&redirect_uri=[TPP_REDIRECT_URI]&state=[TPP_STATE]&acr_values=idp:[BICFI]%20consentId:[CONSENT_ID]%20consentAuthorisationId:[CONSENT_AUTH_ID]"
         }
     },
     "psuMessage": "Please confirm with your bank app",

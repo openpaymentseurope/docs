@@ -28,7 +28,7 @@ Available `API_HOST` values
 curl -X POST
     [AUTH_HOST]/connect/token
     -H 'Content-Type: application/x-www-form-urlencoded'
-    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=aspspinformation&grant_type=client_credentials'
+    -d 'client_id=[CLIENT_ID]&client_secret=[CLIENT_SECRET]&scope=aspspinformation private&grant_type=client_credentials'
 ```
 
 This post will return a JSON object that looks like this:
@@ -37,7 +37,7 @@ This post will return a JSON object that looks like this:
     "access_token": "[ACCESS_TOKEN]",
     "expires_in": 3600,
     "token_type": "Bearer",
-    "scope": "aspspinformation"
+    "scope": "aspspinformation private"
 }
 ```
 

@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "24e09251-a1cb-4c27-9cc3-644d1956b463",
+		"_postman_id": "5e16a522-c160-4dbf-9bd7-cb3872adf29a",
 		"name": "Open Banking Platform",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,7 +20,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "40775579-3823-4591-9b5a-a56681ebaf9a",
+												"id": "577af547-6cbd-406b-a566-fcf085a6c7de",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -68,7 +68,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{aspspInformationScope}}",
+													"value": "{{aspspInformationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												}
 											]
@@ -101,7 +101,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fb48809c-e8e7-46ed-afda-b0531966f0b7",
+								"id": "db8df942-6446-4c2d-ac7a-553d504919d6",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -202,7 +202,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "746f561e-60f7-459c-a211-cef8d543ddfd",
+								"id": "ad1db4a6-1687-472d-b08d-46497e19a540",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -308,7 +308,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ed984b41-e474-48d2-a9cf-451f7152ef1b",
+								"id": "36243d79-36aa-47cd-85cd-27422dfcac49",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -375,7 +375,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "6402cb62-e415-4368-8136-8aa112b63a1f",
+								"id": "e8e90e1b-7d8d-4f29-8eef-c30b1206bc21",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -440,7 +440,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "72224d4c-2252-4473-9ba0-e7e1c2a04b90",
+						"id": "990208d5-7824-4390-945a-89df9920c655",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -450,7 +450,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "fe8713a6-8a6f-4856-8361-90efa0974b14",
+						"id": "765137b5-e2bb-45b2-a147-7896dbb33ea9",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -478,7 +478,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{accountInformationScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20consentId:{{consentId}}%20consentAuthorisationId:{{consentAuthorisationId}}",
+											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{accountInformationScope}} {{psuSegmentScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20consentId:{{consentId}}%20consentAuthorisationId:{{consentAuthorisationId}}",
 											"protocol": "https",
 											"host": [
 												"{{authHost}}"
@@ -494,7 +494,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}}"
+													"value": "{{accountInformationScope}} {{psuSegmentScope}}"
 												},
 												{
 													"key": "response_type",
@@ -570,7 +570,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}}",
+													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												},
 												{
@@ -608,7 +608,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "dbe4f788-e59c-496e-8932-78fd9a9997d5",
+												"id": "775e6d47-8826-48eb-a5b5-ad388b366091",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -656,7 +656,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}}",
+													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												}
 											]
@@ -689,7 +689,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f8fccbd8-246f-43c9-bd4b-22da047c7a62",
+								"id": "1c4a8fbe-a1ee-4738-b7c0-4baa640bad6d",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -701,7 +701,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "9913346a-2052-47f7-bbfd-9c82daeccc11",
+								"id": "88ed8381-3c3e-4c38-92c4-5274d99a75ef",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -767,7 +767,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "07d889c6-3f89-4dc6-b5b5-eeb0340c7d45",
+								"id": "df41e0e8-9d46-444a-a0b0-b5d025c5055e",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -779,7 +779,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "08484ed9-acf8-4793-9a14-84033af90b9b",
+								"id": "c2c31b3c-6218-467d-9fdb-666336488886",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -845,7 +845,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "c80e2e87-8bb9-4cdc-8d83-cdd1530110c1",
+								"id": "5f01da97-97d6-4499-bdfe-059e0374c943",
 								"exec": [
 									""
 								],
@@ -908,7 +908,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fb5d685f-0983-4700-af4b-83985d03500c",
+								"id": "bdf75c52-c65e-4877-8cfe-1516656dba98",
 								"exec": [
 									""
 								],
@@ -975,7 +975,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "62d89eb5-3e63-423c-87d6-3baef7e3696c",
+								"id": "e96bb7cb-a263-4b6b-9548-e27e76b6e5a8",
 								"exec": [
 									""
 								],
@@ -1039,7 +1039,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "7e33343a-75ce-4acc-95e4-7d3dbd3b29b2",
+								"id": "3c4c3fdf-8b5f-49bd-8fd3-6da8503e517a",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"consentAuthorisationId\", jsonData.authorisationId);",
@@ -1115,7 +1115,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5e133dac-ea5d-47c0-bf1c-097e69389854",
+								"id": "9182828e-4663-4c91-84e8-ece98f7affac",
 								"exec": [
 									""
 								],
@@ -1179,7 +1179,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "cd824b27-7289-4083-86a2-020a8f9f76ba",
+								"id": "b19a90dc-388f-4e09-b352-f2e91b8f91ec",
 								"exec": [
 									""
 								],
@@ -1251,7 +1251,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b3c851fb-3adc-41d9-ace5-d2969fa2b0e2",
+								"id": "8e1423a4-229a-4573-8612-cb7f13c082f2",
 								"exec": [
 									""
 								],
@@ -1329,7 +1329,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "39e11ddc-2d3c-470c-afaf-1513bc46dd3b",
+						"id": "752e7725-7716-4897-98a5-02fd2cb3cd90",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1339,7 +1339,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "4c09213b-f36a-4a6d-b89a-93784139e147",
+						"id": "b7b39d58-0669-4a92-8300-207f8fb94c78",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1364,7 +1364,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "fe4e2503-0483-4978-99f3-a442cde68478",
+												"id": "6533b473-1d43-4ee5-8572-fe2effe4a4b0",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -1412,7 +1412,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}}",
+													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												}
 											]
@@ -1445,7 +1445,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "0cc43f72-7090-445e-8640-16c15cf76217",
+								"id": "36f68957-00ad-4dbd-b005-c7be65066f08",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1650,7 +1650,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "3ec0ad3e-a0af-4eea-ba9c-c307f71b9ad3",
+								"id": "0456b14e-7ba4-4c73-b720-dec79e9872e3",
 								"exec": [
 									"pm.environment.set(\"dateFrom\", new Date().addDays(-30).toISOString().split('T')[0]);",
 									"pm.environment.set(\"dateTo\", new Date().toISOString().split('T')[0]);"
@@ -1661,7 +1661,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "f1e9d65b-f7da-4c5e-9b65-304dfc8f1e32",
+								"id": "62565382-15fc-4586-af30-1adf256ef4d7",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1825,7 +1825,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "9b8a977b-1999-4d8c-a418-cc6b5fea4862",
+						"id": "44fead19-cf67-477f-9423-2dde544c8492",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1835,7 +1835,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b25243e8-cafe-4058-8904-7aa3af0beae0",
+						"id": "b12129a5-0bcb-49e0-9071-d332385ebf72",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1863,7 +1863,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{paymentInitiationScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20paymentId:{{paymentId}}%20paymentAuthorisationId:{{paymentAuthorisationId}}",
+											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{paymentInitiationScope}} {{psuSegmentScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20paymentId:{{paymentId}}%20paymentAuthorisationId:{{paymentAuthorisationId}}",
 											"protocol": "https",
 											"host": [
 												"{{authHost}}"
@@ -1879,7 +1879,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}}"
+													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}"
 												},
 												{
 													"key": "response_type",
@@ -1955,7 +1955,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}}",
+													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												},
 												{
@@ -1993,7 +1993,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "fd4dcc27-bf9b-4f56-af22-b4d05bf51a28",
+												"id": "692f8798-1537-4741-9de5-97900b564752",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -2041,7 +2041,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}}",
+													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}",
 													"type": "text"
 												}
 											]
@@ -2074,7 +2074,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fb75a8c2-01c8-4bca-b86b-2026730ab923",
+								"id": "9359da63-b407-4b8e-92d8-e6232fe28803",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -2086,7 +2086,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "8bb4feef-34ae-49c1-88a6-b8b5ba7ea173",
+								"id": "636aa626-e7a8-4d66-8b10-4cc50716071d",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2158,7 +2158,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "66448de4-c9be-4f59-89c3-8ff31af6c040",
+								"id": "a6c981fa-b9c6-4fbc-aff0-49167d0b456b",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -2170,7 +2170,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "9910cf85-e672-4280-86b3-36035960b443",
+								"id": "b0646877-12fe-4bec-b1dd-a61705908305",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2418,7 +2418,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5c71a124-3b68-4e58-b90f-487707f7c1c7",
+								"id": "fd984616-183f-404a-b384-668409185c1c",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"paymentAuthorisationId\", jsonData.authorisationId);",
@@ -2688,7 +2688,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "0f8daefc-7368-4f12-a035-269928a2ce47",
+				"id": "f5748e7f-6320-4415-ad21-535e7e6d1e16",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2698,7 +2698,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "1482e441-b7fd-4104-a84d-24dca85b9b52",
+				"id": "53af11ef-d63e-40ee-a78a-5ea76defc925",
 				"type": "text/javascript",
 				"exec": [
 					""
