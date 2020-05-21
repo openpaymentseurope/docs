@@ -35,6 +35,12 @@ You can download our [Postman Collection](/obp.postman_collection.json) and [Pos
 
 ## General notes about requests
 
+### Explicit scopes for Private and Corporate contexts
+Your requests will operate in either a "private" or a "corporate" context in our platform. This is an abstraction layer provided by our platform so that you need to know less about how specific banks are implementing and separating private/corporate access to account information and payment operations.
+The context is selected by specifying an additional "private" or "corporate" scope when requesting an access token from our auth endpoint. The examples in our tutorials shows how it can be done.
+<br><br>
+With this change we have also updated our [Postman Collection](/obp.postman_collection.json) and [Postman Environment Settings](/sandbox.postman_environment.json), so if you are using an old version of these please download the latest to easily shift into using these new scopes when testing.
+
 ### X-Request-ID
 
 All calls accept a header called `X-Request-ID` - this should be set to a newly generated guid. Denoted in the code with [GUID]. If your client is also a platform it would make sense to accept such an id from the client that calls you. This id is used to trace requests through our systems. Logging it somewhere together with the request will make troubleshooting much easier.
