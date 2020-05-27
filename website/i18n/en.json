@@ -166,6 +166,14 @@
       "version-1.0.3/version-1.0.3-pis": {
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
+      },
+      "version-1.0.4/version-1.0.4-api": {
+        "title": "Getting Started with the API",
+        "sidebar_label": "Getting started with the API"
+      },
+      "version-1.0.4/banks/version-1.0.4-ndeasess": {
+        "title": "Nordea (NDEASESS)",
+        "sidebar_label": "Nordea"
       }
     },
     "links": {
