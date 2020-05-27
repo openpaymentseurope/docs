@@ -68,7 +68,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{aspspInformationScope}} {{psuSegmentScope}}",
+													"value": "{{aspspInformationScope}} {{psuContextScope}}",
 													"type": "text"
 												}
 											]
@@ -478,7 +478,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{accountInformationScope}} {{psuSegmentScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20consentId:{{consentId}}%20consentAuthorisationId:{{consentAuthorisationId}}",
+											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{accountInformationScope}} {{psuContextScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20consentId:{{consentId}}%20consentAuthorisationId:{{consentAuthorisationId}}",
 											"protocol": "https",
 											"host": [
 												"{{authHost}}"
@@ -494,7 +494,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}} {{psuSegmentScope}}"
+													"value": "{{accountInformationScope}} {{psuContextScope}}"
 												},
 												{
 													"key": "response_type",
@@ -570,7 +570,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
+													"value": "{{accountInformationScope}} {{psuContextScope}}",
 													"type": "text"
 												},
 												{
@@ -656,7 +656,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
+													"value": "{{accountInformationScope}} {{psuContextScope}}",
 													"type": "text"
 												}
 											]
@@ -1412,7 +1412,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{accountInformationScope}} {{psuSegmentScope}}",
+													"value": "{{accountInformationScope}} {{psuContextScope}}",
 													"type": "text"
 												}
 											]
@@ -1863,7 +1863,7 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{paymentInitiationScope}} {{psuSegmentScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20paymentId:{{paymentId}}%20paymentAuthorisationId:{{paymentAuthorisationId}}",
+											"raw": "https://{{authHost}}/connect/authorize?client_id={{clientId}}&scope={{paymentInitiationScope}} {{psuContextScope}}&response_type={{responseType}}&redirect_uri={{redirectUri}}&state={{state}}&acr_values=idp:{{bicFi}}%20paymentId:{{paymentId}}%20paymentAuthorisationId:{{paymentAuthorisationId}}",
 											"protocol": "https",
 											"host": [
 												"{{authHost}}"
@@ -1879,7 +1879,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}"
+													"value": "{{paymentInitiationScope}} {{psuContextScope}}"
 												},
 												{
 													"key": "response_type",
@@ -1955,7 +1955,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}",
+													"value": "{{paymentInitiationScope}} {{psuContextScope}}",
 													"type": "text"
 												},
 												{
@@ -2041,7 +2041,7 @@
 												},
 												{
 													"key": "scope",
-													"value": "{{paymentInitiationScope}} {{psuSegmentScope}}",
+													"value": "{{paymentInitiationScope}} {{psuContextScope}}",
 													"type": "text"
 												}
 											]
