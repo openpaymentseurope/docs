@@ -1,7 +1,8 @@
 ---
-id: ndeasess
+id: version-1.0.4-ndeasess
 title: Nordea (NDEASESS)
 sidebar_label: Nordea
+original_id: ndeasess
 ---
 
 ## Status Highlights

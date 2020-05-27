@@ -1,7 +1,8 @@
 ---
-id: api
+id: version-1.0.4-api
 title: Getting Started with the API
 sidebar_label: Getting started with the API
+original_id: api
 ---
 
 Open Payments Platform uses OAuth2 (specifically OIDC) for authentication. In the following sections, we have provided step
