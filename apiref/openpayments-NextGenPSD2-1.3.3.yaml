@@ -3998,6 +3998,12 @@ components:
           $ref: "#/components/schemas/amount"
         balanceType:
           $ref: "#/components/schemas/balanceType"
+        creditLimitIncluded:
+          description: |
+            A flag indicating if the credit limit of the corresponding account 
+            is included in the calculation of the balance, where applicable.
+          type: boolean
+          example: false
         lastChangeDateTime:
           description: |
             This data element might be used to indicate e.g. with the expected or booked balance that no action is known 
