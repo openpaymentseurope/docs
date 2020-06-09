@@ -3409,6 +3409,35 @@ components:
           $ref: "#/components/schemas/currencyCode"
 
 
+    trnsCreditorAccountReference:
+      description: | 
+        Reference to an account by either
+          * IBAN, of a payment accounts, or
+          * BBAN, for payment accounts if there is no IBAN, or 
+          * the Primary Account Number (PAN) of a card, can be tokenised by the ASPSP due to PCI DSS requirements, or
+          * the Primary Account Number (PAN) of a card in a masked form, or
+          * an alias to access a payment account via a registered mobile phone number (MSISDN), or
+          * Swedish BankGiro number, or
+          * Swedish PlusGiro number.
+      type: object
+      properties:
+        iban: 
+          $ref: "#/components/schemas/iban"
+        bban: 
+          $ref: "#/components/schemas/bban"
+        pan: 
+          $ref: "#/components/schemas/pan"
+        maskedPan: 
+          $ref: "#/components/schemas/maskedPan"
+        msisdn: 
+          $ref: "#/components/schemas/msisdn"
+        currency:
+          $ref: "#/components/schemas/currencyCode"
+        bankGiro:
+          $ref: "#/components/schemas/bankGiroNumber"
+        plusGiro:
+          $ref: "#/components/schemas/plusGiroNumber"
+
 
     giroReference:
       description: | 
@@ -3858,7 +3887,7 @@ components:
         creditorName:
           $ref: "#/components/schemas/creditorName"
         creditorAccount:
-          $ref: "#/components/schemas/accountReference"
+          $ref: "#/components/schemas/trnsCreditorAccountReference"
         ultimateCreditor:
           $ref: "#/components/schemas/ultimateCreditor"
         debtorName:
@@ -4110,6 +4139,20 @@ components:
       enum:
         - "BANKGIRO"
         - "PLUSGIRO"
+
+
+    bankGiroNumber:
+      type: string
+      description: Swedish BankGiro number
+      pattern: "{5,35}"
+      example: "524-7472"
+
+
+    plusGiroNumber:
+      type: string
+      description: Swedish PlusGiro number
+      pattern: "{5,35}"
+      example: "948294-5"
 
 
     giroOcrRef:
