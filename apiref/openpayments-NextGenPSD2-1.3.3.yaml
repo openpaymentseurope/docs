@@ -3045,7 +3045,7 @@ components:
           Preceding check of technical validation was successful. 
           Customer profile check was also successful.
         - 'ACSC': 'AcceptedSettlementCompleted' - 
-          Settlement on the debtorï¿½s account has been completed.
+          Settlement on the debtor's account has been completed.
           
           **Usage:** this can be used by the first agent to report to the debtor that the transaction has been completed. 
           
@@ -3060,7 +3060,7 @@ components:
         - 'ACWC': 'AcceptedWithChange' - 
           Instruction is accepted but a change will be made, such as date or remittance not sent.
         - 'ACWP': 'AcceptedWithoutPosting' - 
-          Payment instruction included in the credit transfer is accepted without being posted to the creditor customerï¿½s account.
+          Payment instruction included in the credit transfer is accepted without being posted to the creditor customer's account.
         - 'RCVD': 'Received' - 
           Payment initiation has been received by the receiving agent.
         - 'PDNG': 'Pending' - 
@@ -4553,7 +4553,7 @@ components:
           * Domain Code, 
           * Family Code, and 
           * SubFamiliy Code 
-        by hyphens, resulting in ï¿½DomainCodeï¿½-ï¿½FamilyCodeï¿½-ï¿½SubFamilyCodeï¿½.
+        by hyphens, resulting in 'DomainCode'-'FamilyCode'-'SubFamilyCode'.
       type: string
       example: "PMNT-RCDT-ESCT"
 
