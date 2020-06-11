@@ -5031,7 +5031,7 @@ components:
           $ref: "#/components/schemas/bicfi"
         requestedExecutionDate:
           type: string
-          description: Date when payment shall be executed in ISO-Date Format, e.g. 2020-10-30
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
         debtorAccountMessage:
           type: string
           maxLength: 140
@@ -5586,6 +5586,11 @@ components:
           $ref: "#/components/schemas/amount"
         transactionFeeIndicator:
           $ref: "#/components/schemas/transactionFeeIndicator"
+        requestedExecutionDate:
+          type: string
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
+        remittanceInformationStructured:
+          $ref: "#/components/schemas/remittanceInformationStructured"
         scaMethods:
           $ref: "#/components/schemas/scaMethods"
         chosenScaMethod:
@@ -5601,6 +5606,49 @@ components:
           items:
             $ref: "#/components/schemas/tppMessage2XX"
 
+    paymentInitationSwedishGiroRequestResponse-201:
+      description: Body of the response for a successful payment initiation request.
+      type: object
+      required:
+        - transactionStatus
+        - paymentId
+        - _links
+      
+      properties:
+        transactionStatus:
+          $ref: "#/components/schemas/transactionStatus"
+        paymentId:
+          $ref: "#/components/schemas/paymentId"
+        transactionFees:
+          # description: Can be used by the ASPSP to transport transaction fees relevant for the underlying payments.
+          $ref: "#/components/schemas/amount"
+        transactionFeeIndicator:
+          $ref: "#/components/schemas/transactionFeeIndicator"
+        requestedExecutionDate:
+          type: string
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
+        debtorAccountMessage:
+          type: string
+          maxLength: 140
+        creditorAccountMessage:
+          type: string
+          maxLength: 140
+        remittanceInformationStructured:
+          $ref: "#/components/schemas/remittanceInformationStructured"
+        scaMethods:
+          $ref: "#/components/schemas/scaMethods"
+        chosenScaMethod:
+          $ref: "#/components/schemas/chosenScaMethod"
+        challengeData:
+          $ref: "#/components/schemas/challengeData"
+        _links:
+          $ref: "#/components/schemas/_linksPaymentInitiation"
+        psuMessage:
+          $ref: "#/components/schemas/psuMessageText"
+        tppMessages:
+          type: array
+          items:
+            $ref: "#/components/schemas/tppMessage2XX"
 
     paymentInitiationCancelResponse-202:
       description: Body of the response for a successful cancel payment request.
@@ -5620,7 +5668,7 @@ components:
           $ref: "#/components/schemas/_linksPaymentInitiationCancel"
 
 
-    paymentInitiationWithStatusResponse: 
+    paymentInitiationWithStatusResponse:
       description: |
         Generic JSON response body consistion of the corresponding payment initation JSON body together with an optional transaction status field.
       type: object
@@ -5655,11 +5703,64 @@ components:
           $ref: "#/components/schemas/remittanceInformationUnstructured"
 #        remittanceInformationUnstructuredArray:
 #          $ref: "#/components/schemas/remittanceInformationUnstructuredArray"
-#        remittanceInformationStructured: # N.A.
-#          $ref: "#/components/schemas/remittanceInformationStructured"
-#        requestedExecutionDate: # N.A.
+        remittanceInformationStructured: # N.A.
+          $ref: "#/components/schemas/remittanceInformationStructured"
+        requestedExecutionDate:
+          type: string
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
+#        requestedExecutionTime: # N.A.
 #          type: string
-#          format: date
+#          format: date-time
+        transactionStatus:
+          $ref: "#/components/schemas/transactionStatus"
+
+
+    paymentInitiationSwedishGiroWithStatusResponse:
+      description: |
+        Generic JSON response body consistion of the corresponding payment initation JSON body together with an optional transaction status field.
+      type: object
+      required:
+        - debtorAccount
+        - instructedAmount
+        - creditorAccount
+        - creditorName
+      properties:
+        endToEndIdentification:
+          type: string
+          maxLength: 35
+        debtorAccount: 
+          $ref: "#/components/schemas/accountReference"
+#        ultimateDebtor: # N.A.
+#          $ref: "#/components/schemas/ultimateDebtor"
+        instructedAmount:
+          $ref: "#/components/schemas/amount"
+        creditorAccount: 
+          $ref: "#/components/schemas/accountReference"
+        creditorAgent:
+          $ref: "#/components/schemas/bicfi"
+        creditorName:
+          $ref: "#/components/schemas/creditorName"
+        creditorAddress:
+          $ref: "#/components/schemas/address"
+#        ultimateCreditor: # N.A.
+#          $ref: "#/components/schemas/ultimateCreditor"
+#        purposeCode: # N.A.
+#          $ref: "#/components/schemas/purposeCode"
+        remittanceInformationUnstructured:
+          $ref: "#/components/schemas/remittanceInformationUnstructured"
+#        remittanceInformationUnstructuredArray:
+#          $ref: "#/components/schemas/remittanceInformationUnstructuredArray"
+        remittanceInformationStructured: # N.A.
+          $ref: "#/components/schemas/remittanceInformationStructured"
+        requestedExecutionDate:
+          type: string
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
+        debtorAccountMessage:
+          type: string
+          maxLength: 140
+        creditorAccountMessage:
+          type: string
+          maxLength: 140
 #        requestedExecutionTime: # N.A.
 #          type: string
 #          format: date-time
@@ -10576,6 +10677,7 @@ components:
            schema:
             oneOf:  #Different Payment Products with status
               - $ref: "#/components/schemas/paymentInitiationWithStatusResponse"
+              - $ref: "#/components/schemas/paymentInitiationSwedishGiroWithStatusResponse"
               - $ref: "#/components/schemas/periodicPaymentInitiationWithStatusResponse"
               - $ref: "#/components/schemas/bulkPaymentInitiationWithStatusResponse"
               
@@ -10996,7 +11098,9 @@ components:
       content:
         application/json:
           schema:
-            $ref: "#/components/schemas/paymentInitationRequestResponse-201"
+            oneOf:  #Different Payment Products with status
+              - $ref: "#/components/schemas/paymentInitationRequestResponse-201"
+              - $ref: "#/components/schemas/paymentInitationSwedishGiroRequestResponse-201"
           examples:
             "Response in case of a redirect with an implicitly created authorisation sub-resource":
               $ref: "#/components/examples/paymentInitiationExample_json_Redirect"
