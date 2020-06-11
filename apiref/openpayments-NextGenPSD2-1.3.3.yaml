@@ -5589,6 +5589,8 @@ components:
         requestedExecutionDate:
           type: string
           description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
+        remittanceInformationStructured:
+          $ref: "#/components/schemas/remittanceInformationStructured"
         scaMethods:
           $ref: "#/components/schemas/scaMethods"
         chosenScaMethod:
@@ -5631,6 +5633,8 @@ components:
         creditorAccountMessage:
           type: string
           maxLength: 140
+        remittanceInformationStructured:
+          $ref: "#/components/schemas/remittanceInformationStructured"
         scaMethods:
           $ref: "#/components/schemas/scaMethods"
         chosenScaMethod:
@@ -5699,8 +5703,8 @@ components:
           $ref: "#/components/schemas/remittanceInformationUnstructured"
 #        remittanceInformationUnstructuredArray:
 #          $ref: "#/components/schemas/remittanceInformationUnstructuredArray"
-#        remittanceInformationStructured: # N.A.
-#          $ref: "#/components/schemas/remittanceInformationStructured"
+        remittanceInformationStructured: # N.A.
+          $ref: "#/components/schemas/remittanceInformationStructured"
         requestedExecutionDate:
           type: string
           description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
@@ -5746,8 +5750,8 @@ components:
           $ref: "#/components/schemas/remittanceInformationUnstructured"
 #        remittanceInformationUnstructuredArray:
 #          $ref: "#/components/schemas/remittanceInformationUnstructuredArray"
-#        remittanceInformationStructured: # N.A.
-#          $ref: "#/components/schemas/remittanceInformationStructured"
+        remittanceInformationStructured: # N.A.
+          $ref: "#/components/schemas/remittanceInformationStructured"
         requestedExecutionDate:
           type: string
           description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
