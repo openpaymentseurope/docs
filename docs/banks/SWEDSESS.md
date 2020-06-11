@@ -8,6 +8,7 @@ sidebar_label: Swedbank
 
 | Status | Product | Comment |
 |:---|---|---|
+|![](https://img.shields.io/badge/status-defect-red.svg)| PIS | Payment product `swedish-giro` is currently defect in ASPSP production environment. |
 |![](https://img.shields.io/badge/status-defect-red.svg)| Consent | Creating consent for Corporate accounts is currenly non-functional at ASPSP. |
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` are required for `Create Consent` and `Create Payment Initiation`. |
 
@@ -62,6 +63,7 @@ sidebar_label: Swedbank
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-defect-critical.svg) |
 |sepa-credit-transfers | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
 |international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
