@@ -21,6 +21,10 @@
         "title": "Supported Banks",
         "sidebar_label": "Supported banks"
       },
+      "banks/dabasesx": {
+        "title": "Danske Bank (DABASESX)",
+        "sidebar_label": "Danske Bank"
+      },
       "banks/essesess": {
         "title": "SEB (ESSESESS)",
         "sidebar_label": "SEB"
