@@ -22,7 +22,7 @@ Credentials for SCA:
 - Username: 8195475386
 - Password: xUKSWPgHy2H2XBt8cv
 
-Sandbox only supports British accounts, this applies both to AIS and PIS, currency is therefore `GBP` and IBANs are for GB as well. We are mapping UK.OBIE.SortCodeAccountNumber to BBAN in sandbox to make it more aligned with the rest of the system.
+Sandbox only supports British accounts, this applies both to AIS and PIS, currency is therefore `GBP` and IBANs are for GB as well. We are mapping UK.OBIE.SortCodeAccountNumber to BBAN in sandbox to make it more aligned with other Swedish ASPSPs.
 
 ## Consent Service
 
