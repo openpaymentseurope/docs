@@ -1,14 +1,14 @@
 ---
 id: dabasesx
 title: Danske Bank (DABASESX)
-sidebar_label: Danske Bank
+sidebar_label: Danske Bank SE
 ---
 
 ## Status Highlights
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Sandbox doesn't support specifying debtor account for payment, this is therefore omitted by us in the request to the ASPSP. The PSU must choose which account that should be debited in the ASPSP's SCA flow. |
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Sandbox doesn't support specifying debtor account for a payment, the PSU must choose which account that should be debited in the ASPSP's SCA flow. |
 |![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
