@@ -15,7 +15,7 @@ sidebar_label: Danske Bank SE
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
 |Sandbox         |OAuth Redirect | User/password credentials  | ![](https://img.shields.io/badge/status-active-success.svg) | Please see `Sandbox Test Data` |
-|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | When choosing debtor account for payment in the banks SCA webpages, a warning message "kontonummerverifikation misslyckades" is presented by the bank. It is unknown what this means and it has been reported to the bank, but does not seem to have any impact on the payment authorisation. |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | When choosing debtor account for payment in the banks SCA webpages, a warning message "Kontovalidering misslyckades" is presented by the bank. It is unknown what this means and it has been reported to the bank, but does not seem to have any impact on the payment authorisation. |
 
 ### Sandbox Test Data
 Credentials for SCA:
