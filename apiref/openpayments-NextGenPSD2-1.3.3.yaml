@@ -4138,7 +4138,7 @@ components:
     giroNumber:
       type: string
       description: Swedish BankGiro or PlusGiro number
-      pattern: "{5,35}"
+      pattern: "[0-9-]{5,35}"
       example: "524-7472"
 
 
@@ -4153,23 +4153,30 @@ components:
     bankGiroNumber:
       type: string
       description: Swedish BankGiro number
-      pattern: "{5,35}"
+      pattern: "[0-9-]{5,35}"
       example: "524-7472"
 
 
     plusGiroNumber:
       type: string
       description: Swedish PlusGiro number
-      pattern: "{5,35}"
+      pattern: "[0-9-]{5,35}"
       example: "948294-5"
 
 
     giroOcrRef:
       type: string
-      description: Giro OCR reference
+      description: Giro OCR reference, only digits acepted
       pattern: "[0-9]{5,140}"
       example: "3020000071266464"
 
+
+    giroInvoiceRef:          
+      type: string
+      description: Custom invoice reference
+      minLength: 5
+      maxLength: 140
+      example: "Payment for cottage rental: invoicenr 4421"      
 
     address:
       type: object
@@ -5013,6 +5020,9 @@ components:
         - instructedAmount
         - creditorGiro
         - creditorName
+      oneOf:
+      - $ref: "#/components/schemas/giroInvoiceRef"
+      - $ref: "#/components/schemas/giroOcrRef"
       properties:
         endToEndIdentification:
           type: string
@@ -5024,9 +5034,7 @@ components:
         creditorGiro: 
           $ref: "#/components/schemas/giroReference"
         creditorName:
-          type: string
-          minLength: 1
-          maxLength: 70
+          $ref: "#/components/schemas/creditorName"
         creditorAgent:
           $ref: "#/components/schemas/bicfi"
         requestedExecutionDate:
@@ -5037,14 +5045,6 @@ components:
           maxLength: 140
         creditorAccountMessage:
           type: string
-          maxLength: 140
-        invoiceRef:
-          type: string
-          minLength: 5
-          maxLength: 140
-        ocrRef:
-          type: string
-          minLength: 5
           maxLength: 140
 
 
