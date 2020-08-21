@@ -4164,19 +4164,6 @@ components:
       example: "948294-5"
 
 
-    giroOcrRef:
-      type: string
-      description: Giro OCR reference
-      pattern: "[0-9]{5,140}"
-      example: "3020000071266464"
-
-    giroInvoiceRef:          
-      type: string
-      description: Custom invoice reference
-      minLength: 5
-      maxLength: 140
-      example: "Payment for cottage rental: invoicenr 4421"   
-
     address:
       type: object
       required:
@@ -5042,10 +5029,18 @@ components:
         creditorAccountMessage:
           type: string
           maxLength: 140
-      oneOf:
-        - $ref: "#/components/schemas/giroInvoiceRef"
-        - $ref: "#/components/schemas/giroOcrRef"
-
+        giroInvoiceRef:
+          type: string
+          description: "Custom invoice reference, NOTE: ONE of giroInvoiceRef and giroOcrRef must be set."
+          minLength: 5
+          maxLength: 140
+          example: "Payment for cottage rental: invoicenr 4421"             
+        giroOcrRef:
+          type: string
+          description: "Giro OCR reference, NOTE: ONE of giroInvoiceRef and giroOcrRef must be set."
+          pattern: "[0-9]{5,140}"
+          example: "3020000071266464"
+        
 
     paymentInitiationBulkElement_json:
       description: |
