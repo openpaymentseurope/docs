@@ -194,6 +194,22 @@
       "version-1.0.5/banks/version-1.0.5-swedsess": {
         "title": "Swedbank (SWEDSESS)",
         "sidebar_label": "Swedbank"
+      },
+      "version-1.0.6/version-1.0.6-banks": {
+        "title": "Supported Banks",
+        "sidebar_label": "Supported banks"
+      },
+      "version-1.0.6/banks/version-1.0.6-dabasesx": {
+        "title": "Danske Bank (DABASESX)",
+        "sidebar_label": "Danske Bank SE"
+      },
+      "version-1.0.7/version-1.0.7-banks": {
+        "title": "Supported Banks",
+        "sidebar_label": "Supported banks"
+      },
+      "version-1.0.7/banks/version-1.0.7-dabasesx": {
+        "title": "Danske Bank (DABASESX)",
+        "sidebar_label": "Danske Bank SE"
       }
     },
     "links": {
