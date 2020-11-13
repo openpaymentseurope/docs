@@ -3950,6 +3950,8 @@ components:
           $ref: "#/components/schemas/bankTransactionCode"
         proprietaryBankTransactionCode:
           $ref: "#/components/schemas/proprietaryBankTransactionCode"
+        transactionDate:
+          $ref: "#/components/schemas/transactionDate"
         _links:
           $ref: "#/components/schemas/_linksTransactionDetails"
 
@@ -4795,7 +4797,7 @@ components:
     #####################################################
 
     transactionDate:
-      description: Date of the actual card transaction
+      description: The transaction date is the date the transaction was originally performed.
       type: string
       format: date
 
@@ -13112,38 +13114,41 @@ components:
       description: Response in JSON format for an access on a regular account
       value:
         {
-          "account": {"iban": "DE2310010010123456788" },
+          "account": {"iban": "DE2310010010123456788"},
           "transactions":
             {
-            "booked":
-              [{
-              "transactionId": "1234567",
-              "creditorName": "John Miles",
-              "creditorAccount": {"iban": "DE67100100101306118605"},
-              "transactionAmount": {"currency": "EUR", "amount": "256.67"},
-              "bookingDate": "2017-10-25",
-              "valueDate": "2017-10-26", 
-              "remittanceInformationUnstructured": "Example 1" 
+              "booked":
+                [ {
+                  "transactionId": "1234567",
+                  "creditorName": "John Miles",
+                  "creditorAccount": {"iban": "DE67100100101306118605"},
+                  "transactionAmount": {"currency": "EUR", "amount": "256.67"},
+                  "bookingDate": "2017-10-25",
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 1",
+                  "transactionDate": "2017-10-27"
                 },{
-                 "transactionId": "1234568",
-                 "debtorName": "Paul Simpson",
-                 "debtorAccount": {"iban": "NL76RABO0359400371"},
-                 "transactionAmount": {"currency": "EUR", "amount": "343.01"},
-                 "bookingDate": "2017-10-25",
-                 "valueDate": "2017-10-26", 
-                 "remittanceInformationUnstructured": "Example 2"
-                }],
-            "pending":
-              [{
-                 "transactionId": "1234569",
-                 "creditorName": "Claude Renault",
-                 "creditorAccount": {"iban": "FR7612345987650123456789014"},
-                 "transactionAmount": {"currency": "EUR", "amount": "-100.03"},
-                 "valueDate": "2017-10-26", 
-                 "remittanceInformationUnstructured": "Example 3"
-                }],
-            "_links": {"account": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f"}}
-             }
+                  "transactionId": "1234568",
+                  "debtorName": "Paul Simpson",
+                  "debtorAccount": {"iban": "NL76RABO0359400371"},
+                  "transactionAmount": {"currency": "EUR", "amount": "343.01"},
+                  "bookingDate": "2017-10-25",
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 2",
+                  "transactionDate": "2017-10-27"
+                } ],
+              "pending":
+                [ {
+                  "transactionId": "1234569",
+                  "creditorName": "Claude Renault",
+                  "creditorAccount": {"iban": "FR7612345987650123456789014"},
+                  "transactionAmount": {"currency": "EUR", "amount": "-100.03"},
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 3",
+                  "transactionDate": "2017-10-27"
+                } ],
+              "_links": {"account": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f"}}
+            }
         }
 
 
@@ -13159,45 +13164,49 @@ components:
       description: Response in JSON format for an access on a multicurrency account on aggregation level
       value:
         {
-        "account": {"iban": "DE40100100103307118608"},
-         "transactions":
-           {"booked": 
-             [{
-               "transactionId": "1234567",
-               "creditorName": "John Miles",
-               "creditorAccount": {"iban": "DE67100100101306118605"},
-               "transactionAmount": {"currency": "EUR", "amount": "-256.67"},
-               "bookingDate": "2017-10-25",
-               "valueDate": "2017-10-26", 
-               "remittanceInformationUnstructured": "Example 1"
-              },{
-               "transactionId": "1234568",
-               "debtorName": "Paul Simpson",
-               "debtorAccount": {"iban": "NL76RABO0359400371"},
-               "transactionAmount": {"currency": "EUR", "amount": "343.01"},
-               "bookingDate": "2017-10-25",
-               "valueDate": "2017-10-26", 
-               "remittanceInformationUnstructured": "Example 2"
-              },{
-               "transactionId": "1234569",
-               "debtorName": "Pepe Martin",
-               "debtorAccount": {"iban": "SE9412309876543211234567"},
-               "transactionAmount": {"currency": "USD", "amount": "100"},
-               "bookingDate": "2017-10-25",
-               "valueDate": "2017-10-26", 
-               "remittanceInformationUnstructured": "Example 3"
-              }],
-           "pending":
-             [{
-               "transactionId": "1234570",
-               "creditorName": "Claude Renault",
-               "creditorAccount": {"iban": "FR7612345987650123456789014"},
-               "transactionAmount": {"currency": "EUR", "amount": "-100.03"},
-               "valueDate": "2017-10-26", 
-               "remittanceInformationUnstructured": "Example 4"
-              }],
-           "_links": {"account": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f"}}
-           }
+          "account": { "iban": "DE40100100103307118608" },
+          "transactions":
+            { "booked":
+                [ {
+                  "transactionId": "1234567",
+                  "creditorName": "John Miles",
+                  "creditorAccount": { "iban": "DE67100100101306118605" },
+                  "transactionAmount": { "currency": "EUR", "amount": "-256.67" },
+                  "bookingDate": "2017-10-25",
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 1",
+                  "transactionDate": "2017-10-27"
+                },{
+                  "transactionId": "1234568",
+                  "debtorName": "Paul Simpson",
+                  "debtorAccount": { "iban": "NL76RABO0359400371" },
+                  "transactionAmount": { "currency": "EUR", "amount": "343.01" },
+                  "bookingDate": "2017-10-25",
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 2",
+                  "transactionDate": "2017-10-27"
+                },{
+                  "transactionId": "1234569",
+                  "debtorName": "Pepe Martin",
+                  "debtorAccount": { "iban": "SE9412309876543211234567" },
+                  "transactionAmount": { "currency": "USD", "amount": "100" },
+                  "bookingDate": "2017-10-25",
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 3",
+                  "transactionDate": "2017-10-27"
+                } ],
+              "pending":
+                [ {
+                  "transactionId": "1234570",
+                  "creditorName": "Claude Renault",
+                  "creditorAccount": { "iban": "FR7612345987650123456789014" },
+                  "transactionAmount": { "currency": "EUR", "amount": "-100.03" },
+                  "valueDate": "2017-10-26",
+                  "remittanceInformationUnstructured": "Example 4",
+                  "transactionDate": "2017-10-27"
+                } ],
+              "_links": { "account": { "href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f" } }
+            }
         }
 
 
@@ -13216,6 +13225,7 @@ components:
                "valueDate": "2017-10-26", 
                "remittanceInformationUnstructured": "Example 1",
                "bankTransactionCode": "PMNT-RCVD-ESDD",
+               "transactionDate": "2017-10-27"
              }
         }
         
