@@ -19,11 +19,15 @@ steps:
 - script: |
     npm install -g yarn
   displayName: 'Install yarn'
-# 3. Install ReDoc
+# 3. Update npm
 - script: |
-    npm install redoc --save
-    npm install -g npx
-  displayName: 'Install ReDoc'
+    npm install -g npm
+  displayName: 'Update npm'
+# 3. Install ReDoc
+# - script: |
+#     npm install redoc --save
+#     npm install -g npx
+#   displayName: 'Install ReDoc'
 # 4. Install npm packages
 - script: |
     npm install
