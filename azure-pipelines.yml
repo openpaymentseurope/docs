@@ -41,7 +41,6 @@ steps:
 # 6. Build documentation
 - script: |
     cd ./website
-    yarn start
     yarn build
   displayName: 'Build and package documentation'
 # 7. Archive and copy all relevant built files
