@@ -40,6 +40,7 @@ steps:
   displayName: 'Generate Redoc html doc from OAS3 yaml file'
 # 6. Build documentation
 - script: |
+    cd ./website
     yarn start
     yarn build
   displayName: 'Build and package documentation'
