@@ -46,15 +46,15 @@ steps:
 # 7. Archive and copy all relevant built files
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: './website/build'
-    includeRootFolder: true
+    rootFolderOrFile: './website/build/docs'
+    includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(date:yyyyMMdd)$(rev:.r).zip'
     replaceExistingArchive: true
 # 8. Publish zipped Docs for later stages
 - task: PublishBuildArtifacts@1
-  displayName: Publish Blog
+  displayName: Publish Docs artifact
   inputs:
     pathToPublish: $(Build.ArtifactStagingDirectory)
-    artifactName: 'drop'
+    artifactName: 'docs'
     publishLocation: 'Container'
