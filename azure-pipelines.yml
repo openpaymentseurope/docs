@@ -9,6 +9,8 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
 steps:
 # 1. Install npm
 - task: NodeTool@0
@@ -49,7 +51,7 @@ steps:
     rootFolderOrFile: './website/build/docs'
     includeRootFolder: false
     archiveType: 'zip'
-    archiveFile: '$(Build.ArtifactStagingDirectory)/$(date:yyyyMMdd)$(rev:.r).zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildNumber).zip'
     replaceExistingArchive: true
 # 8. Publish zipped Docs for later stages
 - task: PublishBuildArtifacts@1
