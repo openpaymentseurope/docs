@@ -36,28 +36,3 @@ Just build and run container:
 > docker build --force-rm --no-cache -t docs .
 > docker run -it -p 3000:3000 docs
 ```
-# Deploy documentation to Azure App Service
-Build and package documentation
-```shell script
-> yarn build
-> cd build/
-> zip -r docs.zip docs
-```
-Go to Azure Portal and access subscription "Open Banking Platform - Sandbox"
-
-Select App Service resource "openbankingplatform-docs"
-
-Select "Advanced Tools"->"Go"
-
-From top menu, select "Debug console->CMD"
-
-Drag and drop your local `docs.zip` file from Finder to the browser window (which will display an area to drop: "Drag here to upload and unzip")
-
-In the browser App Service shell window:
-```shell script
-> mv docs site/
-> cd site
-> mv wwwroot wwwroot_x
-> mv docs wwwroot
-> cp web.config wwwroot/
-```
