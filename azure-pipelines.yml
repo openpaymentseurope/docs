@@ -1,0 +1,62 @@
+# Node.js
+# Build a general Node.js project with npm.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+
+trigger:
+- docusaurus
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
+
+steps:
+# 1. Install npm
+- task: NodeTool@0
+  inputs:
+    versionSpec: '10.x'
+  displayName: 'Install Node.js'
+# 2. Install Yarn
+- script: |
+    npm install -g yarn
+  displayName: 'Install yarn'
+# 3. Update npm
+- script: |
+    npm install -g npm
+  displayName: 'Update npm'
+# 3. Install ReDoc
+# - script: |
+#     npm install redoc --save
+#     npm install -g npx
+#   displayName: 'Install ReDoc'
+# 4. Install npm packages
+- script: |
+    npm install --prefix ./website
+  displayName: 'Install npm packages'
+# 5. Generate Redoc html doc from OAS3 yaml file
+- script: |
+    npx redoc-cli bundle ./apiref/openpayments-openbankingplatform_NextGenPSD2-1.3.3-oas3.yaml --options.theme.rightPanel.backgroundColor=#1d2937 --options.theme.colors.primary.main=#1d2937 --options.scrollYOffset=50
+    mv ./redoc-static.html ./website/pages/en/openpayments-NextGenPSD2-1.3.3.html
+    rm -rf ./apiref/openpayments-NextGenPSD2-1.3.3.yaml
+  displayName: 'Generate Redoc html doc from OAS3 yaml file'
+# 6. Build documentation
+- script: |
+    cd ./website
+    yarn build
+  displayName: 'Build and package documentation'
+# 7. Archive and copy all relevant built files
+- task: ArchiveFiles@2
+  inputs:
+    rootFolderOrFile: './website/build/docs'
+    includeRootFolder: false
+    archiveType: 'zip'
+    archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildNumber).zip'
+    replaceExistingArchive: true
+# 8. Publish zipped Docs for later stages
+- task: PublishBuildArtifacts@1
+  displayName: Publish Docs artifact
+  inputs:
+    pathToPublish: $(Build.ArtifactStagingDirectory)
+    artifactName: 'docs'
+    publishLocation: 'Container'
