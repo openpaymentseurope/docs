@@ -15,149 +15,17 @@ Here is a list of the currently supported banks in our sandbox and production en
 | ![](https://img.shields.io/badge/-not_supported-critical.svg) | Service is not supported by ASPSP |
 | ![](https://img.shields.io/badge/-defect-red.svg) | Service is implemented, but currently non-functional at ASPSP |
 
-## ![](/docs/img/se.png) Sweden 
+## ![](/img/se.png) Sweden 
+| Bank | Production<br>Private | Production<br>Corporate | Sandbox<br>Private | Sandbox<br>Corporate |
+| ----------------------- | --- | --- | --- | --- |
+| [Nordea Bank](ndeasess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) |
+| [Svenska Handelsbanken](handsess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-not_supported-critical.svg) <br> ![](https://img.shields.io/badge/PIS-not_supported-critical.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-not_supported-critical.svg) <br> ![](https://img.shields.io/badge/PIS-not_supported-critical.svg) |
+| [Skandinaviska Enskilda Banken](essesess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) |
+| [Swedbank](swedsess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) |
 
-<table>
-  <tr>
-    <th>Bank</th>
-    <th style="text-align: center;" colspan="2">Production</th>
-    <th style="text-align: center;" colspan="2">Sandbox</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th style="text-align: center;">Private</th>
-    <th style="text-align: center;">Corporate</th>
-    <th style="text-align: center;">Private</th>
-    <th style="text-align: center;">Corporate</th>
-  </tr>
-  <tr>
-    <td><a href="/docs/ndeasess">Nordea Bank</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-  </tr>
-  <tr>
-    <td><a href="/docs/handsess">Svenska Handelsbanken</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-not_supported-critical.svg">
-        <img src="https://img.shields.io/badge/PIS-not_supported-critical.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-not_supported-critical.svg">
-        <img src="https://img.shields.io/badge/PIS-not_supported-critical.svg">
-    </td>
-  </tr>
-  <tr>
-    <td><a href="/docs/essesess">Skandinaviska Enskilda Banken</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-  </tr>
-  <tr>
-    <td><a href="/docs/swedsess">Swedbank</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-active-success.svg">
-        <img src="https://img.shields.io/badge/PIS-active-success.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-  </tr>
-</table>
 
-## ![](/docs/img/fi.png) Finland 
-<table>
-  <tr>
-    <th>Bank</th>
-    <th style="text-align: center;" colspan="2">Production</th>
-    <th style="text-align: center;" colspan="2">Sandbox</th>
-  </tr>
-  <tr>
-    <th></th>
-    <th style="text-align: center;">Private</th>
-    <th style="text-align: center;">Corporate</th>
-    <th style="text-align: center;">Private</th>
-    <th style="text-align: center;">Corporate</th>
-  </tr>
-  <tr>
-    <td><a>OP Bank</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-development-yellow.svg">
-        <img src="https://img.shields.io/badge/PIS-development-yellow.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-development-yellow.svg">
-        <img src="https://img.shields.io/badge/PIS-development-yellow.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-backlog-inactive.svg">
-        <img src="https://img.shields.io/badge/PIS-backlog-inactive.svg">
-    </td>
-  </tr>
-  <tr>
-    <td><a>Nordea Bank Finland</a></td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-development-yellow.svg">
-        <img src="https://img.shields.io/badge/PIS-development-yellow.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-not_supported-critical.svg">
-        <img src="https://img.shields.io/badge/PIS-not_supported-critical.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-development-yellow.svg">
-        <img src="https://img.shields.io/badge/PIS-development-yellow.svg">
-    </td>
-    <td>
-        <img src="https://img.shields.io/badge/AIS-not_supported-critical.svg">
-        <img src="https://img.shields.io/badge/PIS-not_supported-critical.svg">
-    </td>
-  </tr>
-</table>
+## ![](/img/fi.png) Finland 
+| Bank | Production<br>Private | Production<br>Corporate | Sandbox<br>Private | Sandbox<br>Corporate |
+| ----------------------- | --- | --- | --- | --- |
+| OP Bank | ![](https://img.shields.io/badge/AIS-development-yellow.svg) <br> ![](https://img.shields.io/badge/PIS-development-yellow.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) | ![](https://img.shields.io/badge/AIS-development-yellow.svg) <br> ![](https://img.shields.io/badge/PIS-development-yellow.svg) | ![](https://img.shields.io/badge/AIS-backlog-inactive.svg) <br> ![](https://img.shields.io/badge/PIS-backlog-inactive.svg) |
+| Nordea Bank Finland | ![](https://img.shields.io/badge/AIS-development-yellow.svg) <br> ![](https://img.shields.io/badge/PIS-development-yellow.svg) | ![](https://img.shields.io/badge/AIS-not_supported-critical.svg) <br> ![](https://img.shields.io/badge/PIS-not_supported-critical.svg) | ![](https://img.shields.io/badge/AIS-development-yellow.svg) <br> ![](https://img.shields.io/badge/PIS-development-yellow.svg) | ![](https://img.shields.io/badge/AIS-not_supported-critical.svg) <br> ![](https://img.shields.io/badge/PIS-not_supported-critical.svg) |

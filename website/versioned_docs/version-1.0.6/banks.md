@@ -1,7 +1,8 @@
 ---
-id: banks
+id: version-1.0.6-banks
 title: Supported Banks
 sidebar_label: Supported banks
+original_id: banks
 ---
 
 This page lists the currently supported banks in our sandbox and production environment. Our environments are continuously being updated with additional banks being added and new functionality made available as the bank API:s evolve. Please contact us to get more information and details about the current state if needed.
@@ -17,7 +18,7 @@ This page lists the currently supported banks in our sandbox and production envi
 ## ![](/img/se.png) Sweden 
 | Bank | Production<br>Private | Production<br>Corporate | Sandbox<br>Private | Sandbox<br>Corporate |
 | ----------------------- | --- | --- | --- | --- |
-| [Nordea Bank](ndeasess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-development-yellow.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) |
+| [Nordea Bank](ndeasess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-ASPSP_not_supported-critical.svg) <br> ![](https://img.shields.io/badge/PIS-ASPSP_not_supported-critical.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-ASPSP_not_supported-critical.svg) |
 | [Svenska Handelsbanken](handsess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) |
 | [Skandinaviska Enskilda Banken](essesess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) |
 | [Swedbank](swedsess)  | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-ASPSP_defect-red.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) | ![](https://img.shields.io/badge/AIS-active-success.svg) <br> ![](https://img.shields.io/badge/PIS-active-success.svg) |

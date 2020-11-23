@@ -10,13 +10,13 @@ original_id: essesess
 | Status | Product | Comment |
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS |`Get Payment Initiation Authorisation SCA Status` currently returns 400 code after SCA flow has finished so that SCA result cannot be determined. Workaround is to check the payment status with `Get Payment Initiation Status` after this error occurs, and verify that the payment succeeded |
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP header `PSU-ID` is required when starting decoupled authorisation process. |
+|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | `PSU-ID` not used anymore in Decoupled SCA, instead PSU must open Mobilt BankID with an autostart token given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`|
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
 |Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication must be done with [specific PSU id's](#sandbox-test-data).|
-|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must authenticate with Mobilt BankID within 30 sec. or SCA will fail.<br> - Mobilt BankID autostarttoken is provided, but is not required. |
+|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must authenticate with Mobilt BankID within 30 sec. or SCA will fail.<br> - To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`, where `{AUTO_START_TOKEN}` is the value of `challengeData.data` given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`. The redirect query is mandatory for iOS and optional for Android. The TPP must then have the PSU to open this link on its mobile device or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
 ### Sandbox Test Data
@@ -42,7 +42,7 @@ original_id: essesess
 |Get Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Delete Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Start Consent Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) | Decoupled flow requires header `PSU-ID` to be provided in the form `yyMMddNNNN` |
+|Start Consent Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Update PSU Data for Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
@@ -83,7 +83,7 @@ original_id: essesess
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) | Decoupled flow requires header `PSU-ID` to be provided in the form `yyMMddNNNN` |
+|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Payment Initiation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-defect-critical.svg) | Currently returns 400 code after SCA flow has finished so that SCA result cannot be determined |
 |Update PSU Data for Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |

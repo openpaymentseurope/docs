@@ -1,7 +1,8 @@
 ---
-id: handsess
+id: version-1.0.0-handsess
 title: Handelsbanken (HANDSESS)
 sidebar_label: Handelsbanken
+original_id: handsess
 ---
 
 ## Status Highlights
@@ -16,7 +17,7 @@ sidebar_label: Handelsbanken
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
 |Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly when calling "Start the authorization process.." endpoint. |
-|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must start the Mobilt BankID app with returned autostarttoken within 30 sec. from when "Start the authorization process.." service was called or SCA will fail.<br>- To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`. The redirect query is mandatory for iOS and optional for Android. The TPP must then tell the PSU to open this link on its mobile or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
+|Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must start the Mobilt BankID app with returned autostarttoken within 30 sec. from when "Start the authorization process.." service was called or SCA will fail.<br>- To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`, where `{AUTO_START_TOKEN}` is the value of `challengeData.data` given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`. The redirect query is mandatory for iOS and optional for Android. The TPP must then have the PSU to open this link on its mobile device or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
 ### Sandbox Test Data

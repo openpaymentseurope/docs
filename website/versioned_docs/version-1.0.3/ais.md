@@ -1,7 +1,8 @@
 ---
-id: ais
+id: version-1.0.3-ais
 title: How to use the AIS API
 sidebar_label: How to use the AIS API
+original_id: ais
 ---
 
 This API is used to access information about accounts. Lists of accounts with an ASPSP and the actual transactions for one account. In order to be able to access this API first a consent needs to be acquired. See the [consent tutorial](consent.md) for how that is done.

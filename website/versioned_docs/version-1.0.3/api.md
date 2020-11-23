@@ -1,5 +1,5 @@
 ---
-id: version-1.0.0-api
+id: version-1.0.3-api
 title: Getting Started with the API
 sidebar_label: Getting started with the API
 original_id: api
@@ -32,9 +32,15 @@ You will get a `client_id` and a `client_secret` that you can use to authenticat
 
 ## Postman collection
 
-You can [download](/obp.postman_collection.json) our Postman Collection with ready made API calls.
+You can download our [Postman Collection](/obp.postman_collection.json) and [Postman Environment Settings](/sandbox.postman_environment.json) with ready made API calls and settings for our sandbox environment. After importing the Collection and the Environment Settings, you just need to set the values for variables "clientId", "clientSecret" and "redirectUri" to start using our API:s in the sandbox environment.
 
 ## General notes about requests
+
+### Explicit scopes for Private and Corporate contexts
+Your requests will operate in either a "private" or a "corporate" context in our platform. This is an abstraction layer provided by our platform so that you need to know less about how specific banks are implementing and separating private/corporate access to account information and payment operations.
+The context is selected by specifying an additional "private" or "corporate" scope when requesting an access token from our auth endpoint. The examples in our tutorials shows how it can be done.
+<br><br>
+With this change we have also updated our [Postman Collection](/obp.postman_collection.json) and [Postman Environment Settings](/sandbox.postman_environment.json), so if you are using an old version of these please download the latest to easily shift into using these new scopes when testing.
 
 ### X-Request-ID
 
