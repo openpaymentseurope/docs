@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "5e16a522-c160-4dbf-9bd7-cb3872adf29a",
+		"_postman_id": "24e95ab0-cc14-4798-848d-56dfaf55ed74",
 		"name": "Open Banking Platform",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -20,7 +20,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "577af547-6cbd-406b-a566-fcf085a6c7de",
+												"id": "972c96b5-f097-4ce9-af2c-37dbb1092134",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -101,7 +101,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "db8df942-6446-4c2d-ac7a-553d504919d6",
+								"id": "29bd8ebe-8f8c-4aae-9d9f-c61e5f9a01d6",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -202,7 +202,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ad1db4a6-1687-472d-b08d-46497e19a540",
+								"id": "ddd38363-2a7f-4852-93d0-fe6bc8951e17",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -308,7 +308,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "36243d79-36aa-47cd-85cd-27422dfcac49",
+								"id": "1475ee5f-1895-46cf-bc2f-c3e414da2627",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -375,16 +375,9 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e8e90e1b-7d8d-4f29-8eef-c30b1206bc21",
+								"id": "7203bc7a-01dd-4e67-bc66-ab7964737058",
 								"exec": [
-									"var jsonData = JSON.parse(responseBody);",
-									"",
-									"if (jsonData.globalPaymentProducts.length > 0) {",
-									"    pm.environment.set(\"payment-product\", jsonData.globalPaymentProducts[0]);",
-									"}",
-									"else {",
-									"    pm.environment.set(\"payment-product\", \"PAYMENT_PRODUCT_NOT_SET\");",
-									"}"
+									""
 								],
 								"type": "text/javascript"
 							}
@@ -440,7 +433,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "990208d5-7824-4390-945a-89df9920c655",
+						"id": "5d3ef1e8-627e-404c-86d4-76c05d601f08",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -450,7 +443,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "765137b5-e2bb-45b2-a147-7896dbb33ea9",
+						"id": "2bc35757-0585-417e-a862-07f93730bd0d",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -608,7 +601,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "775e6d47-8826-48eb-a5b5-ad388b366091",
+												"id": "11c88445-7fe1-4123-b33f-93c6b66e95c1",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -689,7 +682,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "1c4a8fbe-a1ee-4738-b7c0-4baa640bad6d",
+								"id": "6ba1c8c8-d4ba-41ee-b7b9-e13b5026fd22",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -701,7 +694,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "88ed8381-3c3e-4c38-92c4-5274d99a75ef",
+								"id": "e9702262-0d30-47b4-99a0-4458323bda53",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -733,6 +726,11 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-User-Agent",
+								"value": "{{PSU-User-Agent}}",
+								"type": "text"
 							},
 							{
 								"key": "PSU-Corporate-Id",
@@ -767,7 +765,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "df41e0e8-9d46-444a-a0b0-b5d025c5055e",
+								"id": "317f7ab6-fedb-4825-8cf8-ca891d64345c",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -779,7 +777,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "c2c31b3c-6218-467d-9fdb-666336488886",
+								"id": "545da3cc-b82e-4351-9658-680d00051aea",
 								"exec": [
 									"pm.environment.set(\"consentValidUntil\", new Date().addDays(4).toISOString().split('T')[0]);"
 								],
@@ -811,6 +809,11 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-User-Agent",
+								"value": "{{PSU-User-Agent}}",
+								"type": "text"
 							},
 							{
 								"key": "PSU-Corporate-Id",
@@ -845,7 +848,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "5f01da97-97d6-4499-bdfe-059e0374c943",
+								"id": "51b3f9dd-9a90-4700-8ee7-1a852cafeac4",
 								"exec": [
 									""
 								],
@@ -908,7 +911,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "bdf75c52-c65e-4877-8cfe-1516656dba98",
+								"id": "8cc476aa-ad46-40f1-9feb-2079bea58a16",
 								"exec": [
 									""
 								],
@@ -975,7 +978,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "e96bb7cb-a263-4b6b-9548-e27e76b6e5a8",
+								"id": "8ccd5328-ba0a-4959-ac21-6328c3a9b3d4",
 								"exec": [
 									""
 								],
@@ -1039,7 +1042,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "3c4c3fdf-8b5f-49bd-8fd3-6da8503e517a",
+								"id": "d5e6c48e-dc75-4d07-9e9d-91ecb57068b4",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"consentAuthorisationId\", jsonData.authorisationId);",
@@ -1115,7 +1118,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9182828e-4663-4c91-84e8-ece98f7affac",
+								"id": "8cfa0ff9-65be-49e3-a24e-9084bc74c3a0",
 								"exec": [
 									""
 								],
@@ -1179,7 +1182,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "b19a90dc-388f-4e09-b352-f2e91b8f91ec",
+								"id": "01993d66-aa30-47bb-8d70-f4c77c47e5fe",
 								"exec": [
 									""
 								],
@@ -1251,7 +1254,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "8e1423a4-229a-4573-8612-cb7f13c082f2",
+								"id": "fc566d71-f554-4851-85fe-735038a7c301",
 								"exec": [
 									""
 								],
@@ -1329,7 +1332,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "752e7725-7716-4897-98a5-02fd2cb3cd90",
+						"id": "dd7f941e-a2f1-4cc1-afce-0b48755fcbc9",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1339,7 +1342,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b7b39d58-0669-4a92-8300-207f8fb94c78",
+						"id": "34893a98-743b-4e58-acb2-49cc782fb1bf",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1364,7 +1367,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "6533b473-1d43-4ee5-8572-fe2effe4a4b0",
+												"id": "524f6d4d-985f-4b83-89e7-85b227e9d4ce",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -1445,7 +1448,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "36f68957-00ad-4dbd-b005-c7be65066f08",
+								"id": "12895321-01e0-40ec-8e50-50f4364486aa",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1650,7 +1653,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "0456b14e-7ba4-4c73-b720-dec79e9872e3",
+								"id": "71b4717c-b8cc-4611-8da4-86636185e214",
 								"exec": [
 									"pm.environment.set(\"dateFrom\", new Date().addDays(-30).toISOString().split('T')[0]);",
 									"pm.environment.set(\"dateTo\", new Date().toISOString().split('T')[0]);"
@@ -1661,7 +1664,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "62565382-15fc-4586-af30-1adf256ef4d7",
+								"id": "0f6775ee-e929-4c4c-a3a9-a52e33380c71",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -1825,7 +1828,7 @@
 				{
 					"listen": "prerequest",
 					"script": {
-						"id": "44fead19-cf67-477f-9423-2dde544c8492",
+						"id": "f6607cac-2d33-4bba-a78c-3836c467d072",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1835,7 +1838,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "b12129a5-0bcb-49e0-9071-d332385ebf72",
+						"id": "9d3d27bd-8600-4766-ab44-02e5a141d7e6",
 						"type": "text/javascript",
 						"exec": [
 							""
@@ -1993,7 +1996,7 @@
 										{
 											"listen": "test",
 											"script": {
-												"id": "692f8798-1537-4741-9de5-97900b564752",
+												"id": "e5e131d1-af4b-4000-8f8e-c933b844c80f",
 												"exec": [
 													"var jsonData = JSON.parse(responseBody);",
 													"",
@@ -2074,7 +2077,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "9359da63-b407-4b8e-92d8-e6232fe28803",
+								"id": "af1684d8-6e34-4ea0-8010-acf2a14f9470",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -2086,7 +2089,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "636aa626-e7a8-4d66-8b10-4cc50716071d",
+								"id": "99445226-3b63-4753-8a75-cd1e59cef41e",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2123,6 +2126,11 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-User-Agent",
+								"value": "{{PSU-User-Agent}}",
+								"type": "text"
 							},
 							{
 								"key": "PSU-Corporate-Id",
@@ -2158,7 +2166,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "a6c981fa-b9c6-4fbc-aff0-49167d0b456b",
+								"id": "b4402931-48e4-4939-bd54-85bc301c9509",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"",
@@ -2170,7 +2178,7 @@
 						{
 							"listen": "prerequest",
 							"script": {
-								"id": "b0646877-12fe-4bec-b1dd-a61705908305",
+								"id": "465e5876-3dee-4bc6-a679-7c83119fd06f",
 								"exec": [
 									"pm.environment.set(\"debtorReferenceType\", pm.environment.get(\"bicFi\") === \"NDEASESS\" ? \"bban\" : \"iban\");"
 								],
@@ -2207,6 +2215,11 @@
 							{
 								"key": "X-Request-ID",
 								"value": "{{$guid}}"
+							},
+							{
+								"key": "PSU-User-Agent",
+								"value": "{{PSU-User-Agent}}",
+								"type": "text"
 							},
 							{
 								"key": "PSU-Corporate-Id",
@@ -2418,7 +2431,7 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "fd984616-183f-404a-b384-668409185c1c",
+								"id": "63a1d0d2-2056-428e-b6b0-d9c930367114",
 								"exec": [
 									"var jsonData = JSON.parse(responseBody);",
 									"pm.environment.set(\"paymentAuthorisationId\", jsonData.authorisationId);",
@@ -2688,7 +2701,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "f5748e7f-6320-4415-ad21-535e7e6d1e16",
+				"id": "11b00117-4af0-46c3-b293-e8943c353562",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -2698,7 +2711,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "53af11ef-d63e-40ee-a78a-5ea76defc925",
+				"id": "71e5056d-2fb2-4b06-89b2-810d63c5388f",
 				"type": "text/javascript",
 				"exec": [
 					""
