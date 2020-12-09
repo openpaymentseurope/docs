@@ -3405,6 +3405,12 @@ components:
           $ref: "#/components/schemas/maskedPan"
         msisdn: 
           $ref: "#/components/schemas/msisdn"
+        clearingNumber: 
+          description: |
+            Bank account clearing number
+          type: string
+          pattern: "[0-9]{1,5}" 
+          example: "5392"
         currency:
           $ref: "#/components/schemas/currencyCode"
 
