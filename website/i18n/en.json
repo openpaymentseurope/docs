@@ -210,6 +210,10 @@
       "version-1.0.7/banks/version-1.0.7-dabasesx": {
         "title": "Danske Bank (DABASESX)",
         "sidebar_label": "Danske Bank SE"
+      },
+      "version-1.0.8/version-1.0.8-banks": {
+        "title": "Supported Banks",
+        "sidebar_label": "Supported banks"
       }
     },
     "links": {
