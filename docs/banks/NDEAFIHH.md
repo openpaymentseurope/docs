@@ -10,7 +10,6 @@ sidebar_label: Nordea FI
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | Only SEPA payments are supported by ASPSP. Currencies must be set to "EUR".|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP. |
-|![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
