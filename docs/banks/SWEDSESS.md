@@ -8,16 +8,14 @@ sidebar_label: Swedbank
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-defect-red.svg)| PIS | Payment product `swedish-giro` is currently defect in ASPSP production environment. |
-|![](https://img.shields.io/badge/status-defect-red.svg)| Consent | Creating consent for Corporate accounts is currenly non-functional at ASPSP. |
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` are required for `Create Consent` and `Create Payment Initiation`. |
+|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address` and `PSU-User-Agent` are required for `Create Consent` and `Create Payment Initiation`. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
 |Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Production      |Decoupled | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | ASPSP plan to have this available in Q1 2020. |
+|Production      |Decoupled | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Planned for Q1 2021. |
 
 ### Sandbox Test Data
 
@@ -29,7 +27,7 @@ sidebar_label: Swedbank
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|:--------:|--------------|:-----------:|------------|
-|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided |
+|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided |
 |Get Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Delete Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
@@ -63,7 +61,7 @@ sidebar_label: Swedbank
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-defect-critical.svg) |
+|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
 |sepa-credit-transfers | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
 |international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
@@ -71,7 +69,7 @@ sidebar_label: Swedbank
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|--------------------|---|--------------------|---|
-|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address`, `PSU-User-Agent` and `PSU-Http-Method` is required by the ASPSP and must be provided |
+|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided |
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
