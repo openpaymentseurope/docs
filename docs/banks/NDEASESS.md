@@ -5,13 +5,10 @@ sidebar_label: Nordea
 ---
 
 ## Status Highlights
-
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | Nordea have depricated their `Decoupled` SCA flow and replaced it with `OAuth Redirect` |
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | For domestic payment, ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK".|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP. |
-|![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
@@ -63,9 +60,9 @@ sidebar_label: Nordea
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-implemented:waiting_for_aspsp_release-yellow.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-in_development-yellow.svg) | ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
-|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
+|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
+|international         | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
 
 ### API Status
 
