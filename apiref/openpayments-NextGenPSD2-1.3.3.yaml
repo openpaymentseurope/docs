@@ -3956,6 +3956,8 @@ components:
           $ref: "#/components/schemas/bankTransactionCode"
         proprietaryBankTransactionCode:
           $ref: "#/components/schemas/proprietaryBankTransactionCode"
+        transactionListId:
+          $ref: "#/components/schemas/transactionListId"
         _links:
           $ref: "#/components/schemas/_linksTransactionDetails"
 
@@ -4640,6 +4642,13 @@ components:
         for MT94x based transaction reports.
       type: string
       maxLength: 35
+      
+    transactionListId:
+      description: |
+        Only available for transactions in booked state. 
+
+        Generated from the transaction details per transaction, meaning that duplicates may occur for identical transactions on the same day with the same account balance at the transaction time.
+      type: string
 
     merchantCategoryCode:
       description: Merchant category code
