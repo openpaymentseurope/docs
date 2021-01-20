@@ -36,7 +36,7 @@ steps:
   displayName: 'Install npm packages'
 # 5. Generate Redoc html doc from OAS3 yaml file
 - script: |
-    npx redoc-cli bundle ./apiref/openpayments-openbankingplatform_NextGenPSD2-1.3.3.yaml --options.theme.rightPanel.backgroundColor=#1d2937 --options.theme.colors.primary.main=#1d2937 --options.scrollYOffset=50
+    npx redoc-cli bundle ./apiref/openpayments-NextGenPSD2-1.3.3.yaml --options.theme.rightPanel.backgroundColor=#1d2937 --options.theme.colors.primary.main=#1d2937 --options.scrollYOffset=50
     mv ./redoc-static.html ./website/pages/en/openpayments-NextGenPSD2-1.3.3.html
     rm -rf ./apiref/openpayments-NextGenPSD2-1.3.3.yaml
   displayName: 'Generate Redoc html doc from OAS3 yaml file'
