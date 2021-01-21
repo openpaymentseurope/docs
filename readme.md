@@ -34,5 +34,10 @@ Public documentation of OpenPayments API based on NextGet PSD2 1.3.3
 Just build and run container:
 ```shell script
 > docker build --force-rm --no-cache -t docs .
-> docker run -it -p 3000:3000 docs
+> docker run -it --rm -p 3000:3000 docs
+```
+
+## Create new docs version
+```shell script
+> yarn run version 1.0.0
 ```

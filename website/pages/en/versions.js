@@ -42,12 +42,12 @@ function Versions(props) {
                     Documentation
                   </a>
                 </td>
-                <td>
-                <a
-                    href={`${siteConfig.baseUrl}blog/2019/12/09/new-version-1.0.0`}>
-                    Release Nores
-                  </a>
-                </td>
+                {/*<td>*/}
+                {/*<a*/}
+                {/*    href={`${siteConfig.baseUrl}blog/2019/12/09/new-version-1.0.0`}>*/}
+                {/*    Release Nores*/}
+                {/*  </a>*/}
+                {/*</td>*/}
               </tr>
             </tbody>
           </table>
@@ -91,11 +91,11 @@ function Versions(props) {
                           Documentation
                         </a>
                       </td>
-                      <td>
-                        <a href={`${repoUrl}/releases/tag/v${version}`}>
-                          Release Notes
-                        </a>
-                      </td>
+                      {/*<td>*/}
+                      {/*  <a href={`${repoUrl}/releases/tag/v${version}`}>*/}
+                      {/*    Release Notes*/}
+                      {/*  </a>*/}
+                      {/*</td>*/}
                     </tr>
                   ),
               )}
