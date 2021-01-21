@@ -12,7 +12,5 @@ RUN npx redoc-cli bundle /apiref/openpayments-NextGenPSD2-1.3.3.yaml --options.t
 RUN mv /app/redoc-static.html /app/pages/en/openpayments-NextGenPSD2-1.3.3.html
 
 COPY ./docs /docs
-RUN yarn install
-RUN yarn build
 
 CMD ["yarn", "start"]
