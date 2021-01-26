@@ -40,6 +40,7 @@ const siteConfig = {
   headerLinks: [
     {doc: 'introduction', label: 'Docs'},
     {page: 'en/openpayments-NextGenPSD2-1.3.3.html', label: 'API'},
+    {href: "https://github.com/openpaymentseurope/samples", label: "Code", external: true },
     {page: 'support', label: 'Support'},
     // {blog: true, label: 'Blog'},
   ],
