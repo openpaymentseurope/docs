@@ -78,11 +78,13 @@ const siteConfig = {
     ]
   },
   */
+ /*
   algolia: {
     apiKey: 'dafc026eb85cdc374a1e761b561001ad',
     indexName: 'prod_DEVDOCS',
     algoliaOptions: {},
   },
+  */
     // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Open Payments Europe AB`,
 
