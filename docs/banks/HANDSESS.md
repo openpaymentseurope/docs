@@ -9,7 +9,6 @@ sidebar_label: Handelsbanken
 | Status | Product | Comment |
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | For domestic payment, ASPSP require that BBAN is used for both debtor and creditor account and clearing number is given separately|
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP header `PSU-ID` is required by ASPSP when starting authorisation process. |
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, AIS, PIS | HTTP header `PSU-IP-Address` is required by ASPSP on a number of services, please see API status comments below |
 
 ## Supported SCA Methods
