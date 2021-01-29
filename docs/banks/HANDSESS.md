@@ -9,13 +9,12 @@ sidebar_label: Handelsbanken
 | Status | Product | Comment |
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | For domestic payment, ASPSP require that BBAN is used for both debtor and creditor account and clearing number is given separately|
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP header `PSU-ID` is required by ASPSP when starting authorisation process. |
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, AIS, PIS | HTTP header `PSU-IP-Address` is required by ASPSP on a number of services, please see API status comments below |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | - Authentication can be done with any PSU id.<br>- Authentication is automatically approved and finalized by ASPSP directly when calling "Start the authorization process.." endpoint. |
+|Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | - Authentication is automatically approved and finalized by ASPSP directly when calling "Start the authorization process.." endpoint. |
 |Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must start the Mobilt BankID app with returned autostarttoken within 30 sec. from when "Start the authorization process.." service was called or SCA will fail.<br>- To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`, where `{AUTO_START_TOKEN}` is the value of `challengeData.data` given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`. The redirect query is mandatory for iOS and optional for Android. The TPP must then have the PSU to open this link on its mobile device or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
@@ -33,7 +32,7 @@ sidebar_label: Handelsbanken
 |Get Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Delete Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Start Consent Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyyyMMddNNNN` | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyyyMMddNNNN` |
+|Start Consent Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | | ![](https://img.shields.io/badge/status-active-success.svg) | |
 |Get Consent Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Update PSU Data for Consent | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | - Header `PSU-IP-Address` is required by the ASPSP |
@@ -76,7 +75,7 @@ sidebar_label: Handelsbanken
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
-|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | - Header `PSU-IP-Address` is required by the ASPSP<br>- Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyyyMMddNNNN` | ![](https://img.shields.io/badge/status-active-success.svg) | - Header `PSU-IP-Address` is required by the ASPSP<br>- Header `PSU-ID` is required by the ASPSP and must be provided in the form `yyyyMMddNNNN` |
+|Start Payment Initiation Authorisation Process | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
 |Get Payment Initiation Authorisation Sub-Resources | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
 |Get Payment Initiation Authorisation SCA Status | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
 |Update PSU Data for Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) | Header `PSU-IP-Address` is required by the ASPSP |
