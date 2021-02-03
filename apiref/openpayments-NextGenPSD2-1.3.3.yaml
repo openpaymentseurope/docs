@@ -3698,6 +3698,10 @@ components:
           $ref: "#/components/schemas/bban"
         msisdn:
           $ref: "#/components/schemas/msisdn"
+        bankGiroNumber:
+          $ref: "#/components/schemas/bankGiroNumber"
+        plusGiroNumber:
+          $ref: "#/components/schemas/plusGiroNumber"
         currency:
           $ref: "#/components/schemas/currencyCode"
         name:
