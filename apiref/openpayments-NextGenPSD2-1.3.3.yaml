@@ -3698,9 +3698,9 @@ components:
           $ref: "#/components/schemas/bban"
         msisdn:
           $ref: "#/components/schemas/msisdn"
-        bankGiroNumber:
+        bankgiroNumber:
           $ref: "#/components/schemas/bankGiroNumber"
-        plusGiroNumber:
+        plusgiroNumber:
           $ref: "#/components/schemas/plusGiroNumber"
         currency:
           $ref: "#/components/schemas/currencyCode"
