@@ -7,7 +7,8 @@ sidebar_label: Nordea
 ## Status Highlights
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For domestic payment, ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK".|
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For private domestic payment, ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK".|
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For corporate domestic and giro payments, ASPSP requires that `debtorAccount` is `plusgiroNumber` and all currencies must be "SEK". Additionally, `creditorAccount` must be IBAN for domestic payments.|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP. |
 
 ## Supported SCA Methods
