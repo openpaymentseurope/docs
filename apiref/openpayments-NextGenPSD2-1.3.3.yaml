@@ -3414,6 +3414,39 @@ components:
         currency:
           $ref: "#/components/schemas/currencyCode"
 
+    accountReferenceWithGiro:
+      description: | 
+        Reference to an account by either
+          * IBAN, of a payment accounts, or
+          * BBAN, for payment accounts if there is no IBAN, or,
+          * BankGiro/PlusGiro for corporate Swedish accounts, or 
+          * the Primary Account Number (PAN) of a card, can be tokenised by the ASPSP due to PCI DSS requirements, or
+          * the Primary Account Number (PAN) of a card in a masked form, or
+          * an alias to access a payment account via a registered mobile phone number (MSISDN).
+      type: object
+      properties:
+        iban: 
+          $ref: "#/components/schemas/iban"
+        bban: 
+          $ref: "#/components/schemas/bban"
+        pan: 
+          $ref: "#/components/schemas/pan"
+        maskedPan: 
+          $ref: "#/components/schemas/maskedPan"
+        msisdn: 
+          $ref: "#/components/schemas/msisdn"
+        bankgiroNumber: 
+          $ref: "#/components/schemas/bankGiroNumber"
+        plusgiroNumber: 
+          $ref: "#/components/schemas/plusGiroNumber"
+        clearingNumber: 
+          description: |
+            Bank account clearing number
+          type: string
+          pattern: "[0-9]{1,5}" 
+          example: "5392"
+        currency:
+          $ref: "#/components/schemas/currencyCode"
 
     trnsCreditorAccountReference:
       description: | 
@@ -3698,6 +3731,10 @@ components:
           $ref: "#/components/schemas/bban"
         msisdn:
           $ref: "#/components/schemas/msisdn"
+        bankgiroNumber:
+          $ref: "#/components/schemas/bankGiroNumber"
+        plusgiroNumber:
+          $ref: "#/components/schemas/plusGiroNumber"
         currency:
           $ref: "#/components/schemas/currencyCode"
         name:
@@ -4939,7 +4976,7 @@ components:
           type: string
           maxLength: 35
         debtorAccount: 
-          $ref: "#/components/schemas/accountReference"
+          $ref: "#/components/schemas/accountReferenceWithGiro"
 #        debtorId: # N.A. for all, but can be used by ASPSP if needed
 #          $ref: "#/components/schemas/ultimateDebtor"
 #        ultimateDebtor: # N.A. for all, but can be used by ASPSP if needed
@@ -5054,7 +5091,7 @@ components:
           type: string
           maxLength: 35
         debtorAccount: 
-          $ref: "#/components/schemas/accountReference"
+          $ref: "#/components/schemas/accountReferenceWithGiro"
         instructedAmount:
           $ref: "#/components/schemas/amount"
         creditorGiro: 
