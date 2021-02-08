@@ -139,6 +139,10 @@
         "title": "Handelsbanken (HANDSESS)",
         "sidebar_label": "Handelsbanken"
       },
+      "version-1.0.12/banks/version-1.0.12-ndeasess": {
+        "title": "Nordea (NDEASESS)",
+        "sidebar_label": "Nordea"
+      },
       "version-1.0.2/version-1.0.2-api": {
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
