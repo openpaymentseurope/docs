@@ -147,6 +147,38 @@
         "title": "Supported Banks",
         "sidebar_label": "Supported banks"
       },
+      "version-1.0.14/version-1.0.14-aspsp_dabasesx": {
+        "title": "Danske Bank (DABASESX)",
+        "sidebar_label": "Danske Bank SE"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_essesess": {
+        "title": "SEB (ESSESESS)",
+        "sidebar_label": "SEB"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_handsess": {
+        "title": "Handelsbanken (HANDSESS)",
+        "sidebar_label": "Handelsbanken"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_ndeafihh": {
+        "title": "Nordea Bank Finland (NDEAFIHH)",
+        "sidebar_label": "Nordea FI"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_ndeasess": {
+        "title": "Nordea (NDEASESS)",
+        "sidebar_label": "Nordea"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_okoyfihh": {
+        "title": "OP Bank (OKOYFIHH)",
+        "sidebar_label": "OP Bank"
+      },
+      "version-1.0.14/version-1.0.14-aspsp_swedsess": {
+        "title": "Swedbank and Sparbankerna (SWEDSESS)",
+        "sidebar_label": "Swedbank"
+      },
+      "version-1.0.14/version-1.0.14-banks": {
+        "title": "Supported Banks",
+        "sidebar_label": "Supported banks"
+      },
       "version-1.0.2/version-1.0.2-api": {
         "title": "Getting Started with the API",
         "sidebar_label": "Getting started with the API"
