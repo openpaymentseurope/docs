@@ -1,5 +1,5 @@
 ---
-id: handsess
+id: aspsp_handsess
 title: Handelsbanken (HANDSESS)
 sidebar_label: Handelsbanken
 ---

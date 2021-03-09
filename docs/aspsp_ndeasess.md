@@ -1,5 +1,5 @@
 ---
-id: ndeasess
+id: aspsp_ndeasess
 title: Nordea (NDEASESS)
 sidebar_label: Nordea
 ---

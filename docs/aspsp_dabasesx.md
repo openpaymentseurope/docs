@@ -1,26 +1,28 @@
 ---
-id: ndeafihh
-title: Nordea Bank Finland (NDEAFIHH)
-sidebar_label: Nordea FI
+id: aspsp_dabasesx
+title: Danske Bank (DABASESX)
+sidebar_label: Danske Bank SE
 ---
 
 ## Status Highlights
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Only SEPA payments are supported by ASPSP. Currencies must be set to "EUR".|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP. |
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Sandbox doesn't support specifying debtor account for a payment, the PSU must choose which account that should be debited in the ASPSP's SCA flow. |
+|![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Production      |OAuth Redirect | Proprietary Code App | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-
+|Sandbox         |OAuth Redirect | User/password credentials  | ![](https://img.shields.io/badge/status-active-success.svg) | Please see `Sandbox Test Data` |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | When choosing debtor account for payment in the banks SCA webpages, a warning message "Kontovalidering misslyckades" is presented by the bank. It is unknown what this means and it has been reported to the bank, but does not seem to have any impact on the payment authorisation. |
 
 ### Sandbox Test Data
+Credentials for SCA:
+- Username: 8195475386
+- Password: xUKSWPgHy2H2XBt8cv
 
-* No remarks
+Sandbox only supports British accounts, this applies both to AIS and PIS, currency is therefore `GBP` and IBANs are for GB as well. We are mapping UK.OBIE.SortCodeAccountNumber to BBAN in sandbox to make it more aligned with other Swedish ASPSPs.
 
 ## Consent Service
 
@@ -52,7 +54,7 @@ sidebar_label: Nordea FI
 |Get Account List | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Account Details | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Balances | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Get Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) | Date filters are ignored and all transactions are returned. Known issue with ASPSP. | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Get Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Transaction Details | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 
 ## Payment Initiation Service
@@ -61,15 +63,13 @@ sidebar_label: Nordea FI
 
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
-|domestic              | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|international         | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
+|domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
 
 ### API Status
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|--------------------|---|--------------------|---|
-|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | - Payments can only be done between accounts owned by same PSU. | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
