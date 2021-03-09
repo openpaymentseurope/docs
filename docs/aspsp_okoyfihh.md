@@ -1,28 +1,27 @@
 ---
-id: dabasesx
-title: Danske Bank (DABASESX)
-sidebar_label: Danske Bank SE
+id: aspsp_okoyfihh
+title: OP Bank (OKOYFIHH)
+sidebar_label: OP Bank
 ---
 
 ## Status Highlights
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Sandbox doesn't support specifying debtor account for a payment, the PSU must choose which account that should be debited in the ASPSP's SCA flow. |
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Currently, only SEPA payments are supported. Currencies must be set to "EUR".|
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For SEPA payments outside of Finland, `creditorAddress` structure must be present in the `Create Payment Initiation` request body  |
 |![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | User/password credentials  | ![](https://img.shields.io/badge/status-active-success.svg) | Please see `Sandbox Test Data` |
-|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | When choosing debtor account for payment in the banks SCA webpages, a warning message "Kontovalidering misslyckades" is presented by the bank. It is unknown what this means and it has been reported to the bank, but does not seem to have any impact on the payment authorisation. |
+|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Production      |OAuth Redirect | Proprietary Code App or code lists | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+
 
 ### Sandbox Test Data
-Credentials for SCA:
-- Username: 8195475386
-- Password: xUKSWPgHy2H2XBt8cv
 
-Sandbox only supports British accounts, this applies both to AIS and PIS, currency is therefore `GBP` and IBANs are for GB as well. We are mapping UK.OBIE.SortCodeAccountNumber to BBAN in sandbox to make it more aligned with other Swedish ASPSPs.
+* No remarks
 
 ## Consent Service
 
@@ -63,7 +62,9 @@ Sandbox only supports British accounts, this applies both to AIS and PIS, curren
 
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
-|domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|domestic              | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg) | ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
 ### API Status
 

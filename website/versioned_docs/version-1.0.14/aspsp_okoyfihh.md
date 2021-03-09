@@ -1,7 +1,8 @@
 ---
-id: okoyfihh
+id: version-1.0.14-aspsp_okoyfihh
 title: OP Bank (OKOYFIHH)
 sidebar_label: OP Bank
+original_id: aspsp_okoyfihh
 ---
 
 ## Status Highlights

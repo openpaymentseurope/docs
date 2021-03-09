@@ -1,22 +1,21 @@
 ---
-id: ndeafihh
-title: Nordea Bank Finland (NDEAFIHH)
-sidebar_label: Nordea FI
+id: aspsp_ndeasess
+title: Nordea (NDEASESS)
+sidebar_label: Nordea
 ---
 
 ## Status Highlights
-
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Only SEPA payments are supported by ASPSP. Currencies must be set to "EUR".|
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For private domestic payment, ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK".|
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | For corporate domestic and giro payments, ASPSP requires that `debtorAccount` is `plusgiroNumber` and all currencies must be "SEK". Additionally, `creditorAccount` must be IBAN for domestic payments.|
 |![](https://img.shields.io/badge/status-important-important.svg)| PIS | Once the authentication/authorization process for a Payment is completed, the Payment is created and confirmed at the ASPSP. It may take up to several minutes before the payment gets the status "ACSC", this is normal and caused by delays at the ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Production      |OAuth Redirect | Proprietary Code App | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-
+|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id. |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 
 ### Sandbox Test Data
 
@@ -61,15 +60,16 @@ sidebar_label: Nordea FI
 
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
-|domestic              | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
+|sepa-credit-transfers | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
 |international         | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
 
 ### API Status
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|--------------------|---|--------------------|---|
-|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | - Payments can only be done between accounts owned by same PSU. | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | - Payments can only be done between accounts owned by same PSU.<br>- For domestic payment ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK". | ![](https://img.shields.io/badge/status-active-success.svg) | For domestic payment ASPSP requires that `debtorAccount` is BBAN, `creditorAccount` is IBAN and all currencies must be "SEK". |
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |

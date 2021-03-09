@@ -1,25 +1,29 @@
 ---
-id: swedsess
-title: Swedbank and Sparbankerna (SWEDSESS)
-sidebar_label: Swedbank
+id: version-1.0.14-aspsp_dabasesx
+title: Danske Bank (DABASESX)
+sidebar_label: Danske Bank SE
+original_id: aspsp_dabasesx
 ---
 
 ## Status Highlights
 
 | Status | Product | Comment |
 |:---|---|---|
-|![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address` and `PSU-User-Agent` are required for `Create Consent` and `Create Payment Initiation`. |
+|![](https://img.shields.io/badge/status-important-important.svg)| PIS | Sandbox doesn't support specifying debtor account for a payment, the PSU must choose which account that should be debited in the ASPSP's SCA flow. |
+|![](https://img.shields.io/badge/status-important-important.svg)| AIS | "Read Transaction Details" not supported by ASPSP. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id. |
-|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Production      |Decoupled | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Planned for Q1 2021. |
+|Sandbox         |OAuth Redirect | User/password credentials  | ![](https://img.shields.io/badge/status-active-success.svg) | Please see `Sandbox Test Data` |
+|Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | When choosing debtor account for payment in the banks SCA webpages, a warning message "Kontovalidering misslyckades" is presented by the bank. It is unknown what this means and it has been reported to the bank, but does not seem to have any impact on the payment authorisation. |
 
 ### Sandbox Test Data
+Credentials for SCA:
+- Username: 8195475386
+- Password: xUKSWPgHy2H2XBt8cv
 
-* No remarks
+Sandbox only supports British accounts, this applies both to AIS and PIS, currency is therefore `GBP` and IBANs are for GB as well. We are mapping UK.OBIE.SortCodeAccountNumber to BBAN in sandbox to make it more aligned with other Swedish ASPSPs.
 
 ## Consent Service
 
@@ -27,7 +31,7 @@ sidebar_label: Swedbank
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|:--------:|--------------|:-----------:|------------|
-|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided |
+|Create Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Delete Consent | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Consent Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
@@ -42,7 +46,7 @@ sidebar_label: Swedbank
 
 | Transaction History (Private) | Transaction List (Private) | Transaction History (Corporate) | Transaction List (Corporate) |
 |---|---|---|---|
-| Max. 90 Days | Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP |
+| Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP |
 
 ### API Status
 
@@ -51,7 +55,7 @@ sidebar_label: Swedbank
 |Get Account List | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Account Details | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Balances | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Get Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) | Parameters `dateFrom`, `dateTo` and `bookingStatus` are ignored by ASPSP | ![](https://img.shields.io/badge/status-active-success.svg) |  |
+|Get Transaction List | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Transaction Details | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 
 ## Payment Initiation Service
@@ -61,15 +65,12 @@ sidebar_label: Swedbank
 | Payment Product | Sandbox | Production |
 |---------------------|---|---|
 |domestic              | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|swedish-giro          | ![](https://img.shields.io/badge/status-active-success.svg) | ![](https://img.shields.io/badge/status-active-success.svg) |
-|sepa-credit-transfers | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | ![](https://img.shields.io/badge/status-not_supported-critical.svg) |
-|international         | ![](https://img.shields.io/badge/status-in_development-yellow.svg)| ![](https://img.shields.io/badge/status-in_development-yellow.svg) |
 
 ### API Status
 
 |Service  |Sandbox | Comment |Production | Comment |
 |---------|--------------------|---|--------------------|---|
-|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided | ![](https://img.shields.io/badge/status-active-success.svg) | Headers `PSU-IP-Address` and `PSU-User-Agent` is required by the ASPSP and must be provided |
+|Create Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Get Payment Initiation | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
 |Cancel Payment Initiation | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP | ![](https://img.shields.io/badge/status-not_supported-critical.svg) | Not supported by ASPSP |
 |Get Payment Initiation Status | ![](https://img.shields.io/badge/status-active-success.svg) |  | ![](https://img.shields.io/badge/status-active-success.svg) |  |
