@@ -1,6 +1,6 @@
 ---
 id: swedsess
-title: Swedbank (SWEDSESS)
+title: Swedbank and Sparbankerna (SWEDSESS)
 sidebar_label: Swedbank
 ---
 

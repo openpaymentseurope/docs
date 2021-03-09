@@ -1,7 +1,8 @@
 ---
-id: banks
+id: version-1.0.13-banks
 title: Supported Banks
 sidebar_label: Supported banks
+original_id: banks
 ---
 
 This page lists the currently supported banks in our sandbox and production environment. Our environments are continuously being updated with additional banks being added and new functionality made available as the bank API:s evolve. Please contact us to get more information and details about the current state if needed.
