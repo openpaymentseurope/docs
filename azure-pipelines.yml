@@ -7,7 +7,7 @@ trigger:
 - docusaurus
 
 pool:
-  vmImage: 'ubuntu-latest'
+  name: 'Open Payments Pipelines'
 
 name: $(TeamProject)_$(Build.DefinitionName)_$(SourceBranchName)_$(Date:yyyyMMdd)$(Rev:.r)
 
