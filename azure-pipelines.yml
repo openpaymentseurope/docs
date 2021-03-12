@@ -42,6 +42,7 @@ steps:
   displayName: 'Generate Redoc html doc from OAS3 yaml file'
 # 6. Create new version
 - script: |
+    cd ./website
     yarn run version $(DocumentationVersion)
   displayName: 'Create new docs version'
 # 7. Build documentation
