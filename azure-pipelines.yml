@@ -40,17 +40,12 @@ steps:
     mv ./redoc-static.html ./website/pages/en/openpayments-NextGenPSD2-1.3.3.html
     rm -rf ./apiref/openpayments-NextGenPSD2-1.3.3.yaml
   displayName: 'Generate Redoc html doc from OAS3 yaml file'
-# 6. Create new version
-- script: |
-    cd ./website
-    yarn run version $(DocumentationVersion)
-  displayName: 'Create new docs version'
-# 7. Build documentation
+# 6. Build documentation
 - script: |
     cd ./website
     yarn build
   displayName: 'Build and package documentation'
-# 8. Archive and copy all relevant built files
+# 7. Archive and copy all relevant built files
 - task: ArchiveFiles@2
   inputs:
     rootFolderOrFile: './website/build/docs'
@@ -58,7 +53,7 @@ steps:
     archiveType: 'zip'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildNumber).zip'
     replaceExistingArchive: true
-# 9. Publish zipped Docs for later stages
+# 8. Publish zipped Docs for later stages
 - task: PublishBuildArtifacts@1
   displayName: Publish Docs artifact
   inputs:
