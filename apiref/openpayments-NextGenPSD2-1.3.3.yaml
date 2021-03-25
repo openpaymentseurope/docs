@@ -2947,6 +2947,13 @@ components:
   # Predefined Schemas
   #####################################################
 
+    clearingNumber:
+      description: 
+        Bank account clearing number.
+      type: string
+      pattern: "[0-9]{1,5}"
+      example: "5392"
+
     paymentId:
       description: 
         Resource identification of the generated payment initiation resource.
@@ -3405,12 +3412,8 @@ components:
           $ref: "#/components/schemas/maskedPan"
         msisdn: 
           $ref: "#/components/schemas/msisdn"
-        clearingNumber: 
-          description: |
-            Bank account clearing number
-          type: string
-          pattern: "[0-9]{1,5}" 
-          example: "5392"
+        clearingNumber:
+          $ref: "#/components/schemas/clearingNumber"
         currency:
           $ref: "#/components/schemas/currencyCode"
 
@@ -3439,12 +3442,8 @@ components:
           $ref: "#/components/schemas/bankGiroNumber"
         plusgiroNumber: 
           $ref: "#/components/schemas/plusGiroNumber"
-        clearingNumber: 
-          description: |
-            Bank account clearing number
-          type: string
-          pattern: "[0-9]{1,5}" 
-          example: "5392"
+        clearingNumber:
+          $ref: "#/components/schemas/clearingNumber"
         currency:
           $ref: "#/components/schemas/currencyCode"
 
@@ -4128,6 +4127,8 @@ components:
             PSU transactions are already known.
           type: string
           maxLength: 35
+        clearingNumber:
+          $ref: "#/components/schemas/clearingNumber"
 
 
     balanceList:
