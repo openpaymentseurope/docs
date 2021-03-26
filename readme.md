@@ -38,6 +38,15 @@ Just build and run container:
 ```
 
 ## Create new docs version
+
+### On your local machine
 ```shell script
-> yarn run version 1.0.0
+> yarn run version 1.0.15
+```
+### Via docker integration
+```shell script
+> docker run -it --rm -p 3000:3000 -v /docs/website:/src node sh
+> cd /src
+> npm install
+> yarn run version 1.0.15
 ```
