@@ -27,10 +27,10 @@ steps:
   displayName: 'Update npm'
  3. Install ReDoc
 - script: |
-     npm install redoc-cli
+    npm install redoc-cli
 #     npm install redoc --save
 #     npm install -g npx
-   displayName: 'Install ReDoc-CLI'
+  displayName: 'Install ReDoc-CLI'
 # 4. Install npm packages
 - script: |
     npm install --prefix ./website
