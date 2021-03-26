@@ -45,7 +45,7 @@ Just build and run container:
 ```
 ### Via docker integration
 ```shell script
-> docker run -it --rm -p 3000:3000 -v /Users/nikolaykrondev/Desktop/Projects/github/openpaymentseurope/docs/website:/src node sh
+> docker run -it --rm -p 3000:3000 -v /docs/website:/src node sh
 > cd /src
 > npm install
 > yarn run version 1.0.15

@@ -3785,6 +3785,8 @@ components:
           type: string
           maxLength: 140
           example: "John Doe"
+        clearingNumber:
+          $ref: "#/components/schemas/clearingNumber"
 
     cardAccountDetails:
       description: |
@@ -12512,6 +12514,7 @@ components:
               "product": "Girokonto",
               "cashAccountType": "CACC",
               "name": "Main Account",
+              "clearingNumber": "5392",
               "_links": 
                 {
                   "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/balances"},
@@ -12533,6 +12536,7 @@ components:
               "product": "Multicurrency Account",
               "cashAccountType": "CACC",
               "name": "Aggregation Account",
+              "clearingNumber": "5392",
               "_links": 
                 {
                   "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/balances"},
@@ -12554,6 +12558,7 @@ components:
                "product": "Girokonto",
                "cashAccountType": "CACC",
                "name": "Main Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/balances"},
             "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/transactions"}}
@@ -12564,6 +12569,7 @@ components:
                "product": "FremdwÃ¤hrungskonto",
                "cashAccountType": "CACC",
                "name": "US Dollar Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e81g/balances" }}
                } 
@@ -12583,6 +12589,7 @@ components:
                "product": "Girokonto",
                "cashAccountType": "CACC",
                "name": "Main Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/balances"},
             "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/transactions"}}
@@ -12593,6 +12600,7 @@ components:
                "product": "FremdwÃ¤hrungskonto",
                "cashAccountType": "CACC",
                "name": "US Dollar Account",
+               "clearingNumber": "5392",
                "_links": {
                  "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e81g/balances"},
                  "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e81g/transactions"} }
@@ -12615,6 +12623,7 @@ components:
                "product": "Multi currency account",
                "cashAccountType": "CACC",
                "name": "Aggregation Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e333/balances"},
             "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e333/transactions"}}
@@ -12625,6 +12634,7 @@ components:
                "product": "Girokonto",
                "cashAccountType": "CACC",
                "name": "Main Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/balances"},
             "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e80f/transactions"}}
@@ -12635,6 +12645,7 @@ components:
                "product": "FremdwÃ¤hrungskonto",
                "cashAccountType": "CACC",
                "name": "US Dollar Account",
+               "clearingNumber": "5392",
                "_links": {
             "balances": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e81g/balances"},
             "transactions": {"href": "/v1/accounts/3dc3d5b3-7023-4848-9853-f5400a64e81g/transactions"} }
@@ -13112,7 +13123,8 @@ components:
                    },
                {"balanceType": "expected", 
                 "balanceAmount": {"currency": "EUR","amount": "900.00"},
-               "lastChangeDateTime": "2017-10-25T15:30:35.035Z"
+               "lastChangeDateTime": "2017-10-25T15:30:35.035Z",
+                "clearingNumber": "5392",
                }]
         }
 
@@ -13131,7 +13143,8 @@ components:
                    },
               {"balanceType": "expected",
               "balanceAmount": {"currency": "EUR", "amount": "900.00"},
-              "lastChangeDateTime": "2017-10-25T15:30:35.035Z"
+              "lastChangeDateTime": "2017-10-25T15:30:35.035Z",
+               "clearingNumber": "5392",
               },
            {"balanceType": "closingBooked", 
                 "balanceAmount": {"currency": "USD", "amount": "350.00"},
@@ -13139,7 +13152,8 @@ components:
                    },
               {"balanceType": "expected",
                "balanceAmount": {"currency": "USD", "amount": "350.00"},
-               "lastChangeDateTime": "2017-10-24T14:30:21Z"
+               "lastChangeDateTime": "2017-10-24T14:30:21Z",
+               "clearingNumber": "5392",
                    }]
         }
 
