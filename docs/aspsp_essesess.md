@@ -19,14 +19,19 @@ None
 
 * All data will be reset each Sunday at midnight by the ASPSP in the sandbox environment.
 
-* When performing SCA in the sandbox environment, one of the following PSU id's (personnummer) must be used for authentication:
-  * 9311219639
-  * 9311219589
-  * 8811215477
-  * 8811212862
-  * 8311211356
+* When performing SCA in the sandbox environment, one of the following PSU id's (personnummer) must be used for authentication
 
-* Transaction details work only for few transactions in the ASPSP sandbox environment and will return 404 for most of them.
+| PSU Id     | PSU-Corporate-ID |
+|------------|------------------|
+| 9311219639 | 40073144970009   |
+| 9311219589 | 40073144970009   |
+| 8811215477 | -                |
+| 8811212862 | -                |
+| 8311211356 | -                |
+
+* Transaction history data is very old with the last transaction registered on 2019-02-05
+
+* Transaction details work only for few transactions in the ASPSP sandbox environment (indicated in the transaction list with links, e.g: "transactions.booked._links.transactionDetails.href" ).
 
 ## Consent Service
 
