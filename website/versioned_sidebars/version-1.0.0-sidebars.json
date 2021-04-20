@@ -1,16 +1,18 @@
 {
   "version-1.0.0-docs": {
-    "Getting Started": [
+    "Overview": [
       "version-1.0.0-introduction",
       "version-1.0.0-banks",
-      "version-1.0.0-glossary"    
+      "version-1.0.0-glossary",
+      "version-1.0.0-getstarted"
     ],
     "Tutorials": [
       "version-1.0.0-api",
       "version-1.0.0-aspsp",
       "version-1.0.0-consent",
       "version-1.0.0-ais",
-      "version-1.0.0-pis"
+      "version-1.0.0-pis",
+      "version-1.0.0-quickstart_ais"
     ]
   },
   "version-1.0.0-docs-other": {

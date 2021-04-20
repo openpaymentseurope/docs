@@ -1,17 +1,7 @@
 {
   "docs": {
-    "Getting Started": [
-      "introduction",
-      "banks",
-      "glossary"    
-    ],
-    "Tutorials": [
-      "api",
-      "aspsp",
-      "consent",
-      "ais",
-      "pis"
-    ]
+    "Overview": ["introduction", "getstarted", "banks", "glossary"],
+    "Tutorials": ["api", "aspsp", "consent", "ais", "pis", "quickstart_ais"]
   },
   "docs-other": {
     "Category": ["doc4", "doc5"]

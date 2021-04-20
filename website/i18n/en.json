@@ -53,6 +53,10 @@
         "title": "How to use the Consent API",
         "sidebar_label": "How to use the Consent API"
       },
+      "getstarted": {
+        "title": "Get started",
+        "sidebar_label": "Get started"
+      },
       "glossary": {
         "title": "Glossary",
         "sidebar_label": "Glossary"
@@ -64,6 +68,10 @@
       "pis": {
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
+      },
+      "quickstart_ais": {
+        "title": "List accounts",
+        "sidebar_label": "List accounts"
       },
       "version-1.0.0/version-1.0.0-ais": {
         "title": "How to use the AIS API",
@@ -291,7 +299,7 @@
       "Support": "Support"
     },
     "categories": {
-      "Getting Started": "Getting Started",
+      "Overview": "Overview",
       "Tutorials": "Tutorials",
       "Category": "Category"
     }
