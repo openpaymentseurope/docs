@@ -48,11 +48,11 @@ In the **OAuth Redirect** approach, you route the user to the chosen bank where 
 
 ## ASPSP API
 
-First we need to fetch all available banks, which can be used by you to create a UI where your user can pick what bank to authenticate to. This is an optional step, you can hard code the banks if you want to. We recommend you fetching them from our API though, since in that case new banks that we integrate to will automatically be added to your UI.
+First we need to fetch all available banks, which can be used by you to create a UI where your user can pick what bank to authenticate to. This is an optional step, you can of course hard code the banks if you want to. We recommend you fetching them from our API though, since in that case new banks that we integrate to will automatically be added to your UI.
 
 ### 1. Get access token
 
-We will get an access token to make requests to the ASPSP API. Access tokens are valid for one hour.
+You need an access token to make requests to the ASPSP API. Access tokens are valid for one hour.
 
 #### Endpoint
 
@@ -76,12 +76,12 @@ Content-Type: "application/x-www-form-urlencoded"
 }
 ```
 
+Note: `scope`contains information about what part of the API the access token should be valid for. For example, if you want an access token for making requests to the PIS API for corporate accounts, `scope` will contain "paymentinitiation corporate".
 #### Result
 ```javascript
 accessToken = response.data.access_token;
 ```
 
-Note: `scope`contains information about what part of the API the access token should be valid for. For example, if you want an access token for making requests to the PIS API for corporate accounts, `scope` will contain "paymentinitiation corporate".
 
 ### 2. Get ASPSP List
 
