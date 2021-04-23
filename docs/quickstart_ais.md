@@ -18,6 +18,9 @@ Follow the [Get started](getstarted) guide to set up an account and create an ap
 
 ### ASPSP
 The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
+
+### Certificate
+If you make requests to the production environment you need to attach the certificate you downloaded from the Developer Portal in every API request.
 ### Consent
 
 A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
