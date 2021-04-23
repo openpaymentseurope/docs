@@ -48,7 +48,7 @@ In the **OAuth Redirect** approach, you route the user to the chosen bank where 
 
 ## ASPSP API
 
-First thing to do is to fetch all banks to show in your UI and let the user chose a bank. This is an optional step, you can hard code the banks if you want to. We recommend you fetching them from our API though, since in that case new banks that we integrate to will automatically be added to your UI.
+First we need to fetch all available banks, which can be used by you to create a UI where your user can pick what bank to authenticate to. This is an optional step, you can hard code the banks if you want to. We recommend you fetching them from our API though, since in that case new banks that we integrate to will automatically be added to your UI.
 
 ### 1. Get access token
 
