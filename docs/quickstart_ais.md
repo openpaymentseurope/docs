@@ -4,7 +4,7 @@ title: List accounts
 sidebar_label: List accounts
 ---
 
-This guide shows how to make requests to the Open Payments API. We will build an application that lets a user do the following for its private accounts:
+This guide shows how to integrate to the Open Banking API. It contains instructions on what API calls to make and how to structure them. The application will let a user do the following for its private accounts:
 
 - Choose a bank. (Using the ASPSP API)
 - Authenticate to the bank. (Using the Consent API)
@@ -27,11 +27,11 @@ A Consent is an object that holds information about what permissions a user has 
 
 ### SCA approaches
 
-There are two SCA (authentication) approaches that the application needs to implement in order to support all banks: Decoupled and OAuth Redirect.
+There are two SCA (authentication) approaches that the application needs to implement in order to support all banks: Decoupled and Redirect.
 
 In the **Decoupled** approach, the user never leaves your application, and will authenticate either by scanning a QR code that you generate.
 
-In the **OAuth Redirect** approach, you route the user to the chosen bank where the user authenticates, and once that’s done the bank will route the user back to our application.
+In the **Redirect** approach, you route the user to the chosen bank where the user authenticates, and once that’s done the bank will route the user back to your application.
 
 ### Variables and constants used in the guide
 
@@ -48,7 +48,7 @@ In the **OAuth Redirect** approach, you route the user to the chosen bank where 
 
 ## ASPSP API
 
-First we need to fetch all available banks, which can be used by you to create a UI where your user can pick what bank to authenticate to. This is an optional step, you can of course hard code the banks if you want to. We recommend you fetching them from our API though, since in that case new banks that we integrate to will automatically be added to your UI.
+First we need to fetch all available banks, which can be used by you to create a UI where your user can pick what bank to authenticate to. This is an optional step, you can of course hard code the banks if you want to. We recommend you fetching them from our API though, so that new banks we integrate with can automatically be added to your UI.
 
 ### 1. Get access token
 
@@ -76,7 +76,7 @@ Content-Type: "application/x-www-form-urlencoded"
 }
 ```
 
-Note: `scope`contains information about what part of the API the access token should be valid for. For example, if you want an access token for making requests to the PIS API for corporate accounts, `scope` will contain "paymentinitiation corporate".
+Note: `scope`contains information about what part of the API the access token should be valid for.
 #### Result
 ```javascript
 accessToken = response.data.access_token;
@@ -111,7 +111,7 @@ You now have a list of banks that you can use to create a UI that let your user 
 
 ## Consent API
 
-After the user has chosen a bank, we need to authenticate the user to that bank. This is done by creating a Consent object and execute an authentication process (Måste ha bättre formulering). The following examples assume that you have already created an access token with scope "accountinformation private". 
+After the user has chosen a bank, we need to authenticate the user to that bank. This is done by creating a Consent object and execute an authentication process (Måste ha bättre formulering). The following examples assume that you have already created an access token with scope `"accountinformation private"`. 
 
 ### 1. Create Consent
 
@@ -213,7 +213,7 @@ X-Request-ID: xRequestID
 
 #### Result
 
-The first thing we need to check in the response is the SCA method used by the bank (Decoupled or OAuth Redirect), which will be extracted from the response headers.
+The first thing we need to check in the response is the SCA method used by the bank (Decoupled or Redirect), which will be extracted from the response headers.
 
 ```javascript
 // "DECOUPLED" or "REDIRECT"
@@ -241,7 +241,7 @@ bankIdLink = "bankid:///?autostarttoken=" + autoStartToken
 If your users only sign in on a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Consent to see when it's verified. 
 
 [Nedanstående är dåligt och behöver förbättras]
-If you also want to support using your UI on a smartphone, you will create a link that the user will click that will open the Bank ID app. After the user authenticates, Bank ID will redirect back to the URI you supply. 
+If you want to support users on smartphones, you'll need to create a slightly different link, it must contain a redirect_uri query parameter with a value that points back to your site/application. Instruct the user to click on this link, once the authentication process is complete, Mobilt BankID will redirect the user to the value in this parameter. 
 ```javascript
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redirectUriAfterDecoupledAuthentication
 ```
@@ -256,19 +256,18 @@ redirectLinkToBank = result._links.scaOAuth.href
 
 Replace the following placeholders in `redirectLinkToBank` in the following way:
 
-"[CLIENT_ID]" should be replaced by your `clientID`.
+`"[CLIENT_ID]"` should be replaced by your `clientID`.
 
-"[TPP_REDIRECT_URI]" is the URI you want the bank to redirect to after the user has authenticated. This URI has to be whitelisted for the application in the Developer Portal.
+`"[TPP_REDIRECT_URI]"` is the URI you want the bank to redirect to after the user has authenticated. This URI has to be whitelisted for your application in the Developer Portal.
 
-"[TPP_STATE]" is a convenience field for you to put in anything you want, for example something that identifies this session. You may or may not need to use this, depending on how your system is set up.
-
+`"[TPP_STATE]"` is a convenience field for you to put in anything you want, for example something that identifies this session. You may or may not need to use this, depending on how your system is set up.
 
 We now have what we need to let the user authenticate.
 The flow will now differ completely between Decoupled and Redirect, so the instructions will be separated.
 
 ### 4a. Decoupled
 
-If using desktop, you use the `bankIdLink` to generate a QR code that you present in your UI. When the user has successfully authenticated, the status of the Consent will be valid. To know the status of the Consent, you should poll your server where you have an endpoint that calls the OPE API endpoint Get Consent Status:
+If using desktop, you use the `bankIdLink` to generate a QR code that you present in your UI. When the user has successfully authenticated, the status of the Consent will be valid. To know the status of the Consent, you should poll the OPE API endpoint Get Consent Status:
 
 #### Endpoint
 
@@ -291,11 +290,11 @@ Result
 consentStatus = result.consentStatus
 ```
 
-When `consentStatus` == "valid", the Consent is ready to use for AIS calls.
+When `consentStatus` == `"valid"`, the Consent is ready to use for AIS calls.
 
 ### 4b. Redirect
 
-First you need to route the user to `redirectLinkToBank`. When the user has authenticated, the bank will route the user back to the URI you replaced "[TPP_REDIRECT_URI]" with. Once there, you extract the URL parameters `code` and `scope`.
+First you need to route the user to `redirectLinkToBank`. When the user has authenticated, the bank will route the user back to the URI you replaced `"[TPP_REDIRECT_URI]"` with. Once there, you extract the URL parameters `code` and `scope`.
 
 To finalise the Consent, you make the following request:
 
