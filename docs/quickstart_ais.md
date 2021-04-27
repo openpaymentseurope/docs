@@ -111,7 +111,7 @@ You now have a list of banks that you can use to create a UI that let your user 
 
 ## Consent API
 
-After the user has chosen a bank, we need to authenticate the user to that bank. This is done by creating a Consent object and execute an authentication process (Måste ha bättre formulering). The following examples assume that you have already created an access token with scope `"accountinformation private"`. 
+After the user has chosen a bank, we need to authenticate the user to that bank. This is done by creating a Consent object and execute an authentication process. The following examples assume that you have already created an access token with scope `"accountinformation private"`. 
 
 ### 1. Create Consent
 
@@ -173,7 +173,7 @@ X-Request-ID: xRequestID,
 #### Result
 
 ```javascript
-// Contains the authentication method supported (currently only Bank ID).
+// Contains the id that represents Mobilt BankID (mbid).
 authenticationMethodID = response.data.scaMethods[0].authenticationMethodId;
 
 //Resource identification of the related SCA, 
@@ -181,7 +181,7 @@ authenticationMethodID = response.data.scaMethods[0].authenticationMethodId;
 consentAuthorisationID = response.data.authorisationId;
 
 // URL that will be used in the call to Update PSU Data for Consent (next step).
-resource = response.data._links.scaStatus.href;
+resource = response.headers.location;
 ```
 
 ### 3. Update PSU Data for Consent
@@ -247,7 +247,7 @@ bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redi
 
 #### Redirect
 
-In case of Redirect approact, you need to extract the link to the bank's external authentication page, and replace the placeholders with the relevant values.
+In case of Redirect approach, you need to extract the link to the bank's external authentication page, and replace the placeholders with the relevant values.
 
 ```javascript
 redirectLinkToBank = result._links.scaOAuth.href
