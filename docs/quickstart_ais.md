@@ -20,7 +20,7 @@ Follow the [Get started](getstarted) guide to set up an account and create an ap
 The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
 
 ### Certificate
-If you make requests to the production environment you need to attach the certificate you downloaded from the Developer Portal in every API request.
+If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests.
 ### Consent
 
 A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
@@ -240,7 +240,6 @@ bankIdLink = "bankid:///?autostarttoken=" + autoStartToken
 
 If your users only sign in on a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Consent to see when it's verified. 
 
-[Nedanstående är dåligt och behöver förbättras]
 If you want to support users on smartphones, you'll need to create a slightly different link, it must contain a redirect_uri query parameter with a value that points back to your site/application. Instruct the user to click on this link, once the authentication process is complete, Mobilt BankID will redirect the user to the value in this parameter. 
 ```javascript
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redirectUriAfterDecoupledAuthentication

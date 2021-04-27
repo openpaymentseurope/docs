@@ -4,13 +4,13 @@ title: Get started
 sidebar_label: Get started
 ---
 
-To integrate to Open Payments's API you need to set up an account. If you only want to test the sandbox environment, step 1-3 is enough.
+To integrate to Open Payments's API you need to do the following steps. If you only want to test the sandbox environment, step 1-3 is enough.
 
 ### 1. Sign up in the Developer Portal
 
 Click [this link](https://developer.openpayments.io/) and follow the instructions.
 
-### 2. Create a sandbox application (optional)
+### 2. Get credentials to access Sandbox
 
 Access our API in our test envorinment by creating an application in Sandbox. You will then acquire credentials for the sandbox API so that you can try out our API with test data. There are some limitations in Sandbox but you will get a good picture of what you can do with our API’s to build the scope for your solution.
 
@@ -25,11 +25,11 @@ your request within a day. Once your company is approved, you will receive an em
 All requests you make to the Open Payments production API need to include a client certificate that is unique to your organisation.
 Once you have production access you can download your certificate in the Developer Portal.
 
-### 5. Create a production application
+### 5. Get credentials to access Production
 
-An application represents the credentials you'll use to access our API as well as which parts of our API you have access to.
 First, make sure the switch "View sandbox data" in the menu is unchecked.
 Create a new application by clicking "Applications" in the Developer Portal and then press "Create your first application".
+An application represents the credentials you'll use to access our API as well as which parts of our API you have access to.
 
 1. Enter a name for your application in "Application name". This field is just visible to your organisation internally and will never show up
    for your customers.
