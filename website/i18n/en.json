@@ -70,8 +70,12 @@
         "sidebar_label": "How to use the PIS API"
       },
       "quickstart_ais": {
-        "title": "List accounts",
-        "sidebar_label": "List accounts"
+        "title": "Integrate to AIS",
+        "sidebar_label": "Integrate to AIS"
+      },
+      "quickstart_pis": {
+        "title": "Integrate to PIS",
+        "sidebar_label": "Integrate to PIS"
       },
       "version-1.0.0/version-1.0.0-ais": {
         "title": "How to use the AIS API",

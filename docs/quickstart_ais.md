@@ -1,10 +1,10 @@
 ---
 id: quickstart_ais
-title: List accounts
-sidebar_label: List accounts
+title: Integrate to AIS
+sidebar_label: Integrate to AIS
 ---
 
-This guide shows how to integrate to the Open Banking API. It contains instructions on what API calls to make and how to structure them. The application will let a user do the following for its private accounts:
+This guide shows how to integrate to the Account Information Services (AIS). It contains instructions on what requests to make and how to structure them. The application will let a user do the following for its private accounts:
 
 - Choose a bank. (Using the ASPSP API)
 - Authenticate to the bank. (Using the Consent API)
