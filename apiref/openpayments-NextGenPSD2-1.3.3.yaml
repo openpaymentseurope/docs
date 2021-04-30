@@ -5017,9 +5017,9 @@ components:
 #        requestedExecutionDate: # N.A. for all, but can be used by ASPSP if needed
 #          type: string
 #          format: date
-#        requestedExecutionTime: # N.A. for all, but can be used by ASPSP if needed
-#          type: string
-#          format: date-time
+        requestedExecutionDate:
+          type: string
+          description: Date when payment is scheduled to be executed in ISO-Date Format, e.g. 2020-10-30
 
 
     paymentInitiationSwedishGiro_json: 
