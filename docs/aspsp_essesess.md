@@ -11,7 +11,7 @@ None
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication must be done with [specific PSU id's](#sandbox-test-data).|
+|Sandbox         |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication is approved automatically by the ASPSP after a short while.|
 |Production      |Decoupled      | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | - PSU must authenticate with Mobilt BankID within 30 sec. or SCA will fail.<br> - To properly initiate the Mobilt BankID app, the TPP must construct a link with the the format: `bankid:///?autostarttoken={AUTO_START_TOKEN}&redirect={ANY_REDIRECT_URI}`, where `{AUTO_START_TOKEN}` is the value of `challengeData.data` given in response body from `Update PSU Data for Consent` and `Update PSU Data for Payment Initiation`. The redirect query parameter is mandatory for iOS and optional for Android. The TPP must then have the PSU to open this link on its mobile device or generate a QR code for it and ask the PSU to scan it with the Mobilt BankID app. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Supported by ASPSP, but not yet implemented. |
 
@@ -19,15 +19,7 @@ None
 
 * All data will be reset each Sunday at midnight by the ASPSP in the sandbox environment.
 
-* When performing SCA in the sandbox environment, one of the following PSU id's (personnummer) must be used for authentication
-
-| PSU Id     | PSU-Corporate-ID |
-|------------|------------------|
-| 9311219639 | 40073144970009   |
-| 9311219589 | 40073144970009   |
-| 8811215477 | -                |
-| 8811212862 | -                |
-| 8311211356 | -                |
+* For corporate flows, include the `PSU-Corporate-ID` header with the value `40073144970009`
 
 * Transaction history data is very old with the last transaction registered on 2019-02-05
 
