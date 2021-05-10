@@ -350,13 +350,7 @@ If the ASPSP uses OAuth:
     - `TPP_REDIRECT_URI` should be the URL to redirect to after auth is completed.
     - `TPP_STATE` can be anything the TPP wants.
     - `BICIFI`
-- Run it in a browser. In this case you will get to a page at the ESSESESS sandbox. It may differ for different banks.
-- In the page you get to you can use one of the following fake personal numbers:
-    - 9311219639
-    - 9311219589
-    - 8811215477
-    - 8811212862
-    - 8311211356
+- Run it in a browser. Test data may differ for different banks, please see individual docs at [supported banks](banks.md).
 - When you submit the data you will be redirected to the `[TPP_REDIRECT_URI]`
 - On this URI a `code` param will be added. 
 - Use this `code` in the subsequent call when getting the account information token.
