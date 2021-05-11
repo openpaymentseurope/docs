@@ -281,7 +281,7 @@ Authorization: "Bearer " + accessToken,
 Content-Type: "application/json",
 PSU-IP-Address: psuIpAddress,
 X-BicFi: bic,
-X-Request-ID: xRequestID,
+X-Request-ID: xRequestID
 ```
 
 Result
@@ -318,7 +318,7 @@ X-ConsentId: consentID,
     client_id: clientID,
     client_secret: clientSecret,
     code: code,
-    redirect_uri, // Will be the same value as what you replaced [TPP_REDIRECT_URI] with in the end of step 3.
+    redirect_uri: redirectURI, // Will be the same value as what you replaced [TPP_REDIRECT_URI] with in the end of step 3.
     scope: scope, 
     grant_type: "authorization_code",
 }
