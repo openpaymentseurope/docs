@@ -310,7 +310,31 @@ If you receive an access token it means that the request was successful.
 
 The last thing to do is to check the status of the Payment Initiation.
 
+#### Endpoint
 
+```javascript
+GET /psd2/paymentinitiation/v1/payments/domestic/{paymentID}/status
+```
+
+Headers
+```javascript
+Accept: "application/json",
+Authorization: ”Bearer ” + accessToken,
+Content-Type: "application/json",
+PSU-IP-Address: psuIpAddress,
+PSU-User-Agent: psuUserAgent
+```
+
+Response
+```javascript
+transactionStatus = result.data.transactionStatus
+```
+
+[Nedanstående mening suger]
+
+The Payment Initiation can have a number of different statutes. Read more about them here (Länk).
+Currently we want to check if the payment was rejected. In that case, `transactionStatus` will have the value `"RJCT"`.
+If not, then we are done.
 
 <!-- Get Payment Initiation Authorisation SCA Status -->
 

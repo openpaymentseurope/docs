@@ -128,8 +128,8 @@ Authorization: ”Bearer ” + accessToken,
 Content-Type: "application/json",
 X-BicFi: bic,
 X-Request-ID: xRequestID,
-PSU-User-Agent: psuUserAgent,
 PSU-IP-Address: psuIpAddress,
+PSU-User-Agent: psuUserAgent,
 ```
 
 #### Body
