@@ -84,6 +84,7 @@ accessToken = response.data.access_token;
 
 
 ### 2. Get ASPSP List
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/getASPSPList" target="_blank">Endpoint details</a>
 
 Next step is to get all banks in Sweden that Open Payments has integrated to.
 
@@ -114,6 +115,7 @@ You now have a list of banks that you can use to create a UI that let your user 
 After the user has chosen a bank, we need to authenticate the user to that bank. This is done by creating a Consent object and execute an authentication process. The following examples assume that you have already created an access token with scope `"accountinformation private"`. 
 
 ### 1. Create Consent
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/createConsent" target="_blank">Endpoint details</a>
 
 #### Endpoint
 ```javascript
@@ -150,6 +152,7 @@ consentID = response.data.consentId;
 ```
 
 ### 2. Start Consent Authorisation Process
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/startConsentAuthorisation" target="_blank">Endpoint details</a>
 
 Next step is to start an authorisation process for this Consent. [Skriva något mer?]
 
@@ -185,7 +188,9 @@ resource = response.headers.location;
 ```
 
 ### 3. Update PSU Data for Consent
-(skriv något här med)
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/updateConsentsPsuData" target="_blank">Endpoint details</a>
+
+(Vad ska det stå här?)
 #### Endpoint
 
 ```javascript
@@ -220,17 +225,12 @@ The first thing we need to check in the response is the SCA method used by the b
 scaApproach = response.headers.aspsp-sca-approach;
 ```
 
-
-
-
 We are interested in different values from the response depending on if we got Decoupled or Redirect.
-
-#### Decoupled
 
 If the SCA approach is Decopled, you need to get the `autoStartToken` for the QR code that your user will scan.
 
 ```javascript
-autoStartToken = result.challengeData.data[0]
+autoStartToken = response.data.challengeData.data[0]
 ```
 
 You can the construct the full QR code like this:
@@ -238,14 +238,12 @@ You can the construct the full QR code like this:
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken
 ```
 
-If your users only sign in on a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Consent to see when it's verified. 
+If your users only ude a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Payment Initiation to see when it's verified. 
 
 If you want to support users on smartphones, you'll need to create a slightly different link, it must contain a redirect_uri query parameter with a value that points back to your site/application. Instruct the user to click on this link, once the authentication process is complete, Mobilt BankID will redirect the user to the value in this parameter. 
 ```javascript
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redirectUriAfterDecoupledAuthentication
 ```
-
-#### Redirect
 
 In case of Redirect approach, you need to extract the link to the bank's external authentication page, and replace the placeholders with the relevant values.
 
@@ -267,6 +265,8 @@ The flow will now differ completely between Decoupled and Redirect, so the instr
 ### 4a. Decoupled
 
 If using desktop, you use the `bankIdLink` to generate a QR code that you present in your UI. When the user has successfully authenticated, the status of the Consent will be valid. To know the status of the Consent, you should poll the OPE API endpoint Get Consent Status:
+
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/getConsentStatus" target="_blank">Endpoint details</a>
 
 #### Endpoint
 
@@ -337,6 +337,8 @@ If you receive an access token it means that the request was successful. We reco
 When you have a valid Consent for the user, you can make calls to the AIS endpoints to get the user's account and transaction data.
 
 ### 1. Get Account List
+
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/getAccountList" target="_blank">Endpoint details</a>
 
 #### Endpoint
 

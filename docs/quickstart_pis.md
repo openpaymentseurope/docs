@@ -41,8 +41,7 @@ In the **Redirect** approach, you route the user to the chosen bank where the us
 
 ## Integration
 
-Info om att man kommer göra en överföring från ett privatkonto till ett annat.
-The guide shows how to initiate a domestic payment. 
+The guide shows how to initiate a domestic payment between two private bank accounts. 
 
 ### 1. Get access token
 
@@ -77,6 +76,9 @@ accessToken = response.data.access_token;
 ```
 
 ### 2. Create Payment Initiation
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/initiatePayment" target="_blank">Endpoint details</a>
+
+First we need to create a payment initiation. This is where we specify the details of the transaction.
 
 #### Endpoint
 ```javascript
@@ -94,11 +96,31 @@ X-BicFi: bic,
 X-Request-ID: xRequestID,
 ```
 
-We need to construct parts of the request body a bit differently depending on what bank we are sending the money from and to. This is because the differs a bit in what format they want the account numbers (formuleringen suger).
-To our help we have the functions `getCreditorAccount` and `getDebtorAccount`, which returns the body parameters formatted in the correct way depending on what bank the money is sent from and to.
+We need to construct parts of the request body a bit differently depending on what bank we are sending the money from (the debtor (???)) and to (the creditor (???)). This is because the banks differs a bit in what format they want the account numbers.
+For that we can create the helper functions `getCreditorAccount` and `getDebtorAccount`, which returns the body parameters formatted in the correct way depending on the bank of the sender (the debtor).
+
+This assumes that you have the objects `creditor` and `debtor` that contains the neccessary information.
 
 ```javscript
-// As we see, wes  ditorAccs sount will look
+
+// generates the body parameter debtorAccount
+function getDebtorAccount(debtor, bic){
+    switch (bic) {
+        case "HANDSESS":
+        case "NDEASESS":
+            return {
+                bban: debtor.bban,
+                currency: debtor.currency,
+            };
+        default:
+            return {
+                iban: debtor.iban,
+                currency: debtor.currency,
+            };
+    }
+}
+
+// generates the body parameter creditorAccount
 function getCreditorAccount(creditor, bic){
     switch (bic) {
       case "HANDSESS":
@@ -115,25 +137,7 @@ function getCreditorAccount(creditor, bic){
     }
 }
 
-function getDebtorAccount(debtor, bic){
-    switch (bic) {
-        case "HANDSESS":
-        case "NDEASESS":
-            return {
-                bban: debtor.bban,
-                currency: debtor.currency,
-            };
-        default:
-            return {
-                iban: debtor.iban,
-                currency: debtor.currency,
-            };
-    }
-}
 ```
-
-`remittanceInformationUnstructured` contains the message that will be displayed on the transaction.
-
 
 
 #### Body
@@ -143,10 +147,10 @@ function getDebtorAccount(debtor, bic){
         currency: paymentCurrency,
         amount: paymentAmount,
     },
-    creditorName: creditorName,
+    creditorName: creditor.name,
     creditorAccount: getCreditorAccount(creditor, bic),
     remittanceInformationUnstructured:
-        remittanceInformationUnstructured,
+        "Information on the transaction", // Vad ska det stå här?
     debtorAccount: getDebtorAccount(debtor, bic),
 }
 ```
@@ -155,10 +159,14 @@ function getDebtorAccount(debtor, bic){
 #### Result
 
 ```javascript
+// The paymentID will be used in the coming requests
 paymentID = response.data.paymentId
 ```
 
 ### 3. Start Payment Initiation Authorisation Process
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/startPaymentAuthorisation" target="_blank">Endpoint details</a>
+
+Next we need to create an authorisation for the payment initiation we just created.
 
 #### Endpoint
 
@@ -172,19 +180,27 @@ POST /psd2/paymentinitiation/v1/payments/domestic/${paymentID}/authorisations
     Authorization: "Bearer " + accessToken,
     Content-Type: "application/json",
     PSU-IP-Address: psuIpAddress,
-    X-BicFi: bicFi,
+    X-BicFi: bic,
     X-Request-ID: xRequestID,
 ```
 
 #### Result
 
 ```javascript
-paymentAuthorisationID = response.data.authorisationId;
-authoriseTransactionUri = response.data._links.authoriseTransaction.href;
+// Contains the id that represents Mobilt BankID (mbid).
 authenticationMethodID = response.data.scaMethods[0].authenticationMethodId;
+// URL that will be used in the call to Update PSU Data for Payment Initiation (next step).
+authoriseTransactionUri = response.data._links.authoriseTransaction.href;
+//Resource identification of the related SCA, 
+// will be used in the final step of the Redirect approach.
+paymentAuthorisationID = response.data.authorisationId;
 ```
 
 ### 4. Update PSU Data for Payment Initiation
+
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/updatePaymentPsuData" target="_blank">Endpoint details</a>
+
+(Vad ska det stå här?)
 
 #### Endpoint
 
@@ -198,33 +214,40 @@ Accept: "application/json",
 Authorization: "Bearer " + accessToken,
 Content-Type: "application/json",
 PSU-IP-Address: psuIpAddress,
-X-BicFi: bicFi,
+X-BicFi: bic,
 X-Request-ID: xRequestID,
 ```
 
 #### Body
 ```javascript
-authenticationMethodId: authenticationMethodID
+{
+    authenticationMethodId: authenticationMethodID
+}
 ```
 
 #### Result
 
+The first thing we need to check in the response is the SCA method used by the bank (Decoupled or Redirect), which will be extracted from the response headers.
+
 ```javascript
+// "DECOUPLED" or "REDIRECT"
 scaApproach = response.headers.aspsp-sca-approach;
-
-// Only relevant if scaApproach == "DECOUPLED"
-autoStartToken = result.challengeData.data[0]
-
-// Only relevant if scaApproach == "REDIRECT"
-redirectLinkToBank = result._links.scaOAuth.href
 ```
 
-If the SCA approach is Decopled, you will use `autoStartToken` for the QR code that the user will scan. Construct the full QR code like this:
+We are interested in different values from the response depending on if we got Decoupled or Redirect.
+
+If the SCA approach is Decopled, you need to get the `autoStartToken` for the QR code that your user will scan.
+
+```javascript
+autoStartToken = response.data.challengeData.data[0]
+```
+
+You can the construct the full QR code like this:
 ```javascript
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken
 ```
 
-If your users only sign in on a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Payment to see when it's verified. 
+If your users only ude a desktop, the above is enough. You will display the QR code in the browser and poll the status of the Payment Initiation to see when it's verified. 
 
 If you want to support users on smartphones, you'll need to create a slightly different link, it must contain a redirect_uri query parameter with a value that points back to your site/application. Instruct the user to click on this link, once the authentication process is complete, Mobilt BankID will redirect the user to the value in this parameter. 
 ```javascript
@@ -232,6 +255,10 @@ bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redi
 ```
 
 In case of Redirect approach, you need to extract the link to the bank's external authentication page, and replace the placeholders with the relevant values.
+
+```javascript
+redirectLinkToBank = response.data._links.scaOAuth.href
+```
 
 Replace the following placeholders in `redirectLinkToBank` in the following way:
 
@@ -242,16 +269,17 @@ Replace the following placeholders in `redirectLinkToBank` in the following way:
 `"[TPP_STATE]"` is a convenience field for you to put in anything you want, for example something that identifies this session. You may or may not need to use this, depending on how your system is set up.
 
 
-We now have what we need to let the user authenticate.
-The flow will differ completely between Decoupled and Redirect, so the intructions will be separated.
+We now have what we need to let the user authorise the payment intiation. The flow will differ completely between Decoupled and Redirect, so the intructions will be separated.
 
 ### 5a. Decoupled
 
 If using desktop, you use the `bankIdLink` to to generate a QR code that you present in your UI. When the user has successfully authenticated, the SCA status of the Payment Initiation Authorisation will be `"finalised"`.
 
+<a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/getPaymentInitiationScaStatus" target="_blank">Endpoint details</a>
 #### Endpoint
-´´´javascript
-GET /psd2/paymentinitiation/v1/payments/domestic/${paymentID}/authorisations/{paymentAuthorisationID}
+
+```javascript
+GET /psd2/paymentinitiation/v1/payments/domestic/${paymentID}/authorisations/{paymentAuthorisationID} 
 ```
 
 #### Headers
@@ -260,7 +288,7 @@ Accept: "application/json",
 Authorization: "Bearer " + accessToken,
 Content-Type: "application/json",
 PSU-IP-Address: psuIpAddress
-X-BicFi: bicFi,
+X-BicFi: bic,
 X-Request-ID: xRequestID,
 ```
 
@@ -273,7 +301,7 @@ scaStatus = response.data.scaStatus
 
 First you need to route the user to `redirectLinkToBank`. When the user has authenticated, the bank will route the user back to the URI you replaced `"[TPP_REDIRECT_URI]"` with. Once there, you extract the URL parameters `code` and `scope`.
 
-To finalise the Payment, you make the following request:
+To finalise the payment, you make the following request:
 
 #### Endpoint
 ```javascript
@@ -301,7 +329,7 @@ X-PaymentAuthorisationId: paymentAuthorisationID,
 
 #### Result
 ```javascript
-accessToken = result.access_token
+accessToken = response.data.access_token
 ```
 
 If you receive an access token it means that the request was successful.
@@ -327,7 +355,7 @@ PSU-User-Agent: psuUserAgent
 
 Response
 ```javascript
-transactionStatus = result.data.transactionStatus
+transactionStatus = response.data.transactionStatus
 ```
 
 [Nedanstående mening suger]
@@ -335,6 +363,3 @@ transactionStatus = result.data.transactionStatus
 The Payment Initiation can have a number of different statutes. Read more about them here (Länk).
 Currently we want to check if the payment was rejected. In that case, `transactionStatus` will have the value `"RJCT"`.
 If not, then we are done.
-
-<!-- Get Payment Initiation Authorisation SCA Status -->
-
