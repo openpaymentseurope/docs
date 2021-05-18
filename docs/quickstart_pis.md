@@ -254,7 +254,7 @@ If you want to support users on smartphones, you'll need to create a slightly di
 bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redirectUriAfterDecoupledAuthentication
 ```
 
-In case of Redirect approach, you need to extract the link to the bank's external authentication page, and replace the placeholders with the relevant values.
+In case of Redirect approach, you need to extract the link to our auth server (which in turn will redirect to the bank's external authentication page) and replace the placeholders with the relevant values.
 
 ```javascript
 redirectLinkToBank = response.body._links.scaOAuth.href
@@ -264,9 +264,9 @@ Replace the following placeholders in `redirectLinkToBank` in the following way:
 
 `"[CLIENT_ID]"` should be replaced by your `clientID`.
 
-`"[TPP_REDIRECT_URI]"` is the URI you want the bank to redirect to after the user has authenticated. This URI has to be whitelisted for your application in the Developer Portal.
+`"[TPP_REDIRECT_URI]"` is the URI you want us to redirect to after we get confirmation from the bank that the user has authenticated. This URI has to be whitelisted for your application in the Developer Portal.
 
-`"[TPP_STATE]"` is a convenience field for you to put in anything you want, for example something that identifies this session. You may or may not need to use this, depending on how your system is set up.
+`"[TPP_STATE]"` is a convenience field for you to put in anything you want, for example something that identifies this session. It's important that you can identify the correct session after the PSU is redirected back again.
 
 
 We now have what we need to let the user authorise the payment intiation. The flow will differ completely between Decoupled and Redirect, so the intructions will be separated.
@@ -279,7 +279,7 @@ If using desktop, you use the `bankIdLink` to to generate a QR code that you pre
 #### Endpoint
 
 ```javascript
-GET /psd2/paymentinitiation/v1/payments/domestic/${paymentID}/authorisations/{paymentAuthorisationID} 
+GET /psd2/paymentinitiation/v1/payments/domestic/{paymentID}/authorisations/{paymentAuthorisationID} 
 ```
 
 #### Request headers
