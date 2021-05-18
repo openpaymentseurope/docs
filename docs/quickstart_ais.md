@@ -190,7 +190,8 @@ resource = response.headers.location;
 ### 3. Update PSU Data for Consent
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/updateConsentsPsuData" target="_blank">Endpoint details</a>
 
-(Vad ska det stå här?)
+This request triggers the authentication flow.
+
 #### Endpoint
 
 ```javascript
