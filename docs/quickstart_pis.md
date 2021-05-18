@@ -28,16 +28,16 @@ In the **Decoupled** approach, the user stays in your application where you gene
 
 | Name         | Description                                                                                                                                                                                                                                                             |
 | ------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| authURL      | The token URL. For production, use `https://auth.openbankingplatform.com/connect/token`                                                                                                                                                                                 |
-| apiHost      | The API host. All API calls in this guide except the ones to `authURL` will be prefixed with this value. For production, use `https://api.openbankingplatform.com`                                                                                                                                                                                                 |
+| AUTH_HOST      | The token URL. For production, use `https://auth.openbankingplatform.com/connect/token`                                                                                                                                                                                 |
+| API_HOST      | The API host. All API calls in this guide except the ones to `AUTH_HOST` will be prefixed with this value. For production, use `https://api.openbankingplatform.com`                                                                                                                                                                                                 |
 | bic          | Will contain the BIC of the bank that the user selected.                                                                                                                                                                                                                |
-| clientID     | The Client ID of the application you created in the Developer Portal.                                                                                                                                                                                                   |
-| clientSecret | The secret that was generated when you created an application. If you did not save that value, you need to generate a new secret.                                                                                                                                    |
+| CLIENT_ID     | The Client ID of the application you created in the Developer Portal.                                                                                                                                                                                                   |
+| CLIENT_SECRET | The secret that was generated when you created an application. If you did not save that value, you need to generate a new secret.                                                                                                                                    |
 | paymentAmount | The transaction amount                                                                                                                                    |
 | paymentCurrency | The transaction currency                                                                                                                                    |
 | psuUserAgent | The User-Agent from the user's request.                                                                                                                                                                                                                                 |
 | psuIpAddress | The user's IP address                                                                                                                                                                                                                                                   |
-| xRequestID   | Most requests require the header `X-Request-ID`, which is a uuid. This will be a unique identifier of your request and will be useful in case you need support. Make sure to create a new  In this guide, we assume that you have generate a new value for every request and stored it in the variable `xRequestID`. |
+| xRequestID   | Most requests require the header `X-Request-ID`, which is a uuid. This will be a unique identifier of your request and will be useful in case you need support. Make sure to create a new GUID for every individual request. In this guide, we assume that you store this value in the variable `xRequestID`. |
 
 ## Integration
 
@@ -50,7 +50,7 @@ You need an access token to make requests to the Open Banking Platform API. Acce
 #### Endpoint
 
 ```javascript
-POST authURL
+POST AUTH_HOST
 ```
 #### Request headers
 
@@ -62,14 +62,14 @@ Content-Type: "application/x-www-form-urlencoded"
 
 ```javascript
 {
-    client_id: clientID,
-    client_secret: clientSecret,
+    client_id: CLIENT_ID,
+    client_secret: CLIENT_SECRET,
     grant_type: ”client_credentials”,
     scope: ”paymentinitiation private”
 }
 ```
 
-Note: `scope`contains information about what part of the API the access token should be valid for.
+Note: `scope` contains information about what part of the API the access token should be valid for.
 #### Result
 ```javascript
 accessToken = response.body.access_token;
@@ -200,7 +200,7 @@ paymentAuthorisationID = response.body.authorisationId;
 
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/updatePaymentPsuData" target="_blank">Endpoint details</a>
 
-This request triggers the authentication flow.
+This request triggers the authorisation flow.
 
 #### Endpoint
 
@@ -262,7 +262,7 @@ redirectLinkToBank = response.body._links.scaOAuth.href
 
 Replace the following placeholders in `redirectLinkToBank` in the following way:
 
-`"[CLIENT_ID]"` should be replaced by your `clientID`.
+`"[CLIENT_ID]"` should be replaced by your `CLIENT_ID`.
 
 `"[TPP_REDIRECT_URI]"` is the URI you want us to redirect to after we get confirmation from the bank that the user has authenticated. This URI has to be whitelisted for your application in the Developer Portal.
 
@@ -305,7 +305,7 @@ To finalise the payment, you make the following request:
 
 #### Endpoint
 ```javascript
-POST authUrl
+POST AUTH_HOST
 ```
 
 #### Request headers
@@ -318,8 +318,8 @@ X-PaymentAuthorisationId: paymentAuthorisationID,
 #### Request body
 ```javascript
 {
-    client_id: clientID,
-    client_secret: clientSecret,
+    client_id: CLIENT_ID,
+    client_secret: CLIENT_SECRET,
     code: code,
     redirect_uri: redirectURI, // Will be the same value as what you replaced [TPP_REDIRECT_URI] with in the end of step 4.
     scope: scope,
