@@ -12,8 +12,11 @@
       "version-1.0.0-consent",
       "version-1.0.0-ais",
       "version-1.0.0-pis",
-      "version-1.0.0-quickstart_ais",
-      "version-1.0.0-quickstart_pis"
+      "version-1.0.0-quickstart_pis",
+      "version-1.0.0-get_access_token",
+      "version-1.0.0-create_consent",
+      "version-1.0.0-list_banks",
+      "version-1.0.0-list_accounts"
     ]
   },
   "version-1.0.0-docs-other": {

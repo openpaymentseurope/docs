@@ -53,6 +53,14 @@
         "title": "How to use the Consent API",
         "sidebar_label": "How to use the Consent API"
       },
+      "create_consent": {
+        "title": "Create consent",
+        "sidebar_label": "Create consent"
+      },
+      "get_access_token": {
+        "title": "Create access token",
+        "sidebar_label": "Create access token"
+      },
       "getstarted": {
         "title": "Get started",
         "sidebar_label": "Get started"
@@ -65,6 +73,14 @@
         "title": "Introduction",
         "sidebar_label": "Introduction"
       },
+      "list_accounts": {
+        "title": "List accounts",
+        "sidebar_label": "List accounts"
+      },
+      "list_banks": {
+        "title": "List banks",
+        "sidebar_label": "List banks"
+      },
       "pis": {
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
@@ -74,8 +90,8 @@
         "sidebar_label": "Integrate to AIS"
       },
       "quickstart_pis": {
-        "title": "Integrate to PIS",
-        "sidebar_label": "Integrate to PIS"
+        "title": "Initiate payment",
+        "sidebar_label": "Initiate payment"
       },
       "version-1.0.0/version-1.0.0-ais": {
         "title": "How to use the AIS API",

@@ -1,35 +1,18 @@
 ---
 id: quickstart_pis
-title: Integrate to PIS
-sidebar_label: Integrate to PIS
+title: Initiate payment
+sidebar_label: Initiate payment
 ---
 
 This guide shows how to integrate to the PIS API. It will contain information on how to initiate a domestic private account to account payment.
-
-## Prerequisites
-
-Follow the [Get started](getstarted) guide to set up an account and create an application.
-
-## Good to know
-
-### Certificate
-If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests.
-
-### SCA approaches
-
-There are two SCA (authentication) approaches that the application needs to implement in order to support all banks: Decoupled and Redirect.
-
-In the **Redirect** approach, you route the user to the chosen bank where the user authenticates, and once that’s done the bank will route the user back to your application.
-
-In the **Decoupled** approach, the user stays in your application where you generate a QR code or a link for Mobile Bank ID.
 
 ### Variables and constants used in the guide
 
 
 | Name         | Description                                                                                                                                                                                                                                                             |
 | ------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| accessToken          | An access token with `scope` `"paymentinitiation private"`.                                                                                                                                                                                                                |
 | AUTH_HOST      | The token URL. For production, use `https://auth.openbankingplatform.com/connect/token`                                                                                                                                                                                 |
-| API_HOST      | The API host. All API calls in this guide except the ones to `AUTH_HOST` will be prefixed with this value. For production, use `https://api.openbankingplatform.com`                                                                                                                                                                                                 |
 | bic          | Will contain the BIC of the bank that the user selected.                                                                                                                                                                                                                |
 | CLIENT_ID     | The Client ID of the application you created in the Developer Portal.                                                                                                                                                                                                   |
 | CLIENT_SECRET | The secret that was generated when you created an application. If you did not save that value, you need to generate a new secret.                                                                                                                                    |
@@ -39,43 +22,7 @@ In the **Decoupled** approach, the user stays in your application where you gene
 | psuIpAddress | The user's IP address                                                                                                                                                                                                                                                   |
 | xRequestID   | Most requests require the header `X-Request-ID`, which is a uuid. This will be a unique identifier of your request and will be useful in case you need support. Make sure to create a new GUID for every individual request. In this guide, we assume that you store this value in the variable `xRequestID`. |
 
-## Integration
-
-The guide shows how to initiate a domestic payment between two private bank accounts. 
-
-### 1. Get access token
-
-You need an access token to make requests to the Open Banking Platform API. Access tokens are valid for one hour.
-
-#### Endpoint
-
-```javascript
-POST AUTH_HOST
-```
-#### Request headers
-
-```javascript
-Content-Type: "application/x-www-form-urlencoded"
-```
-
-#### Request body
-
-```javascript
-{
-    client_id: CLIENT_ID,
-    client_secret: CLIENT_SECRET,
-    grant_type: ”client_credentials”,
-    scope: ”paymentinitiation private”
-}
-```
-
-Note: `scope` contains information about what part of the API the access token should be valid for.
-#### Result
-```javascript
-accessToken = response.body.access_token;
-```
-
-### 2. Create Payment Initiation
+### 1. Create Payment Initiation
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/initiatePayment" target="_blank">Endpoint details</a>
 
 First we need to create a payment initiation. This is where we specify the details of the transaction.
@@ -163,7 +110,7 @@ function getCreditorAccount(creditor, bic){
 paymentID = response.body.paymentId
 ```
 
-### 3. Start Payment Initiation Authorisation Process
+### 2. Start Payment Initiation Authorisation Process
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/startPaymentAuthorisation" target="_blank">Endpoint details</a>
 
 Next we need to create an authorisation for the payment initiation we just created.
@@ -196,7 +143,7 @@ authoriseTransactionUri = response.body._links.authoriseTransaction.href;
 paymentAuthorisationID = response.body.authorisationId;
 ```
 
-### 4. Update PSU Data for Payment Initiation
+### 3. Update PSU Data for Payment Initiation
 
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/updatePaymentPsuData" target="_blank">Endpoint details</a>
 
@@ -271,7 +218,7 @@ Replace the following placeholders in `redirectLinkToBank` in the following way:
 
 We now have what we need to let the user authorise the payment intiation. The flow will differ completely between Decoupled and Redirect, so the intructions will be separated.
 
-### 5a. Decoupled
+### 4a. Decoupled
 
 If using desktop, you use the `bankIdLink` to to generate a QR code that you present in your UI. When the user has successfully authenticated, the SCA status of the Payment Initiation Authorisation will be `"finalised"`.
 
@@ -297,7 +244,7 @@ X-Request-ID: xRequestID,
 scaStatus = response.body.scaStatus
 ```
 
-### 5b. Redirect
+### 4b. Redirect
 
 First you need to route the user to `redirectLinkToBank`. When the user has authenticated, the bank will route the user back to the URI you replaced `"[TPP_REDIRECT_URI]"` with. Once there, you extract the URL parameters `code` and `scope`.
 
@@ -334,7 +281,7 @@ accessToken = response.body.access_token
 
 If you receive an access token it means that the request was successful.
 
-### 6. Get Payment Initiation Status
+### 5. Get Payment Initiation Status
 
 The last thing to do is to check the status of the Payment Initiation.
 

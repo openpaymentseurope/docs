@@ -1,11 +1,11 @@
 ---
-id: quickstart_ais
-title: Integrate to AIS
-sidebar_label: Integrate to AIS
+id: create_consent
+title: Create consent
+sidebar_label: Create consent
 ---
 
 
-This guide demonstrates how to create a consent and let a user authorise it.
+This guide demonstrates how to create a consent and let a user authorise it for use against the Account Information Service.
 [Peter, kan du skriva lite grejer om consent här?]
 
 In step 1 we create a consent. In step 2 and 3 we start an authorisation process for that consent.
@@ -20,7 +20,7 @@ For requests to the Consent API, we need an access token for `scope` `"accountin
 
 | Name         | Description                                                                                                                                                                                                                                                             |
 | ------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| API_HOST      | The API host. All API calls in this guide except the ones to `AUTH_URL` will be prefixed with this value. For production, use `https://api.openbankingplatform.com`                                                                                                                                                                                                 |
+| accessToken          | An access token with `scope` `"accountinformation private"`.                                                                                                                                                                                                                |
 | bic          | Will contain the BIC of the bank that you want to create a consent for.                                                                                                                                                                                                                |
 | CLIENT_ID     | The Client ID of the application you created in the Developer Portal.                                                                                                                                                                                                   |
 | CLIENT_SECRET | The secret that was generated when you created an application. If you did not save that value, you need to generate a new secret.                                                                                                                                    |
