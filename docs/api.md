@@ -14,16 +14,6 @@ Follow the [Get started](getstarted) guide to set up an account and create an ap
 ### ASPSP
 The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
 
-### Auth host (suger)
-
-An access token is required for making requests to the Open Banking API. Acquire an access token by calling the auth host.
-Available `AUTH_HOST` values
-
-| Environment | URL |
-| --- | --- |
-| Sandbox | https://auth.sandbox.openbankingplatform.com |
-| Production | https://auth.openbankingplatform.com |
-
 ### Certificate
 If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests.
 
