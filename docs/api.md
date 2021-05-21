@@ -4,9 +4,19 @@ title: Getting Started with the API
 sidebar_label: Getting started with the API
 ---
 
-Open Payments Platform uses OAuth2 (specifically OIDC) for authentication. In the following sections, we have provided step
-by step instructions on how you will interact with the platform. Throughout this documentation we use brackets to denote variables that need to be replaced with corresponding values. The actual domains to access are two - one for handling auth and one for doing the actual calls. See list below for values in sandbox and production.
 
+## Prerequisites
+
+Follow the [Get started](getstarted) guide to set up an account and create an application.
+
+## General notes about requests
+
+### ASPSP
+The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
+
+### Auth host (suger)
+
+An access token is required for making requests to the Open Banking API. Acquire an access token by calling the auth host.
 Available `AUTH_HOST` values
 
 | Environment | URL |
@@ -14,32 +24,23 @@ Available `AUTH_HOST` values
 | Sandbox | https://auth.sandbox.openbankingplatform.com |
 | Production | https://auth.openbankingplatform.com |
 
-Available `API_HOST` values
+### Certificate
+If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests.
 
-| Environment | URL |
-| --- | --- |
-| Sandbox | https://api.sandbox.openbankingplatform.com |
-| Production | https://api.openbankingplatform.com |
-
-## Register a client
-
-[Register a client](https://developer.openpayments.io) by creating a developer account at our [Developer Portal](https://developer.openpayments.io) to acquire client credentials.
-
-Decide what parts of the API you want access to for your new client. At this point you can choose one or several of ASPSP Information, Account Information and Payment Initiation.
-
-You will get a `client_id` and a `client_secret` that you can use to authenticate with the platform. The secret will not be stored on our end so it is iportant that you keep track of it. Otherwise you'll have to obtain new credentials in the portal.
-
-## Postman collection
-
-You can download our [Postman Collection](/obp.postman_collection.json), [Postman Environment Settings for Sandbox](/sandbox.postman_environment.json) and [Postman Environment Settings for Production](/production.postman_environment.json) with ready made API calls and settings for our environments. After importing the Collection and the Environment Settings, you just need to set the values for variables "clientId", "clientSecret" and "redirectUri" to start using our API:s.
-
-## General notes about requests
+### Consent
+A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
 
 ### Explicit scopes for Private and Corporate contexts
 Your requests will operate in either a "private" or a "corporate" context in our platform. This is an abstraction layer provided by our platform so that you need to know less about how specific banks are implementing and separating private/corporate access to account information and payment operations.
 The context is selected by specifying an additional "private" or "corporate" scope when requesting an access token from our auth endpoint. The examples in our tutorials shows how it can be done.
-<br><br>
-With this change we have also updated our [Postman Collection](/obp.postman_collection.json), [Postman Environment Settings for Sandbox](/sandbox.postman_environment.json) and [Postman Environment Settings for Production](/production.postman_environment.json), so if you are using an old version of these please download the latest to easily shift into using these new scopes when testing.
+
+### SCA approaches
+
+SCA stands for Strong customer authentication. Required by end user (account holder) every time a consent is created, or a payment is initiated. There are two SCA approaches that the application needs to implement in order to support all banks: Decoupled and Redirect.
+
+In the **Redirect** approach, you route the user to the chosen bank where the user authenticates, and once that’s done the bank will route the user back to your application.
+
+In the **Decoupled** approach, the user stays in your application where you generate a QR code or a link for Mobile Bank ID.
 
 ### X-Request-ID
 
