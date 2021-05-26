@@ -9,13 +9,16 @@ sidebar_label: Swedbank
 | Status | Product | Comment |
 |:---|---|---|
 |![](https://img.shields.io/badge/status-important-important.svg)| Consent, PIS | HTTP headers `PSU-IP-Address` and `PSU-User-Agent` are required for `Create Consent` and `Create Payment Initiation`. |
+|![](https://img.shields.io/badge/status-important-important.svg)| AIS, Consent, PIS | In order to use decoupled, please send the `TPP-Redirect-Preferred` header with the value `false` to all calls to AIS, Consent and PIS endpoints. Please do not mix usage of this header, if a consent or payment was created with it specified, all subsequent calls must include it with the same value. This also applies to AIS calls which are referencing consents via the `Consent-ID` header. |
+|![](https://img.shields.io/badge/status-important-important.svg)| AIS | Sandbox: When requesting transactions over 90 days might fail if the same `dateFrom` has been used by any API user recently, resulting in a 401 response with the text `Unauthorized, request not successful. Statement requires SCA`. Please change the parameter value or wait a while before trying again. |
 
 ## Supported SCA Methods
 |Environment     |SCA Method | Authentication Method | Status | Comment |
 |----------------|----------|--------------|--------------|--------------|
-|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id. |
+|Sandbox         |OAuth Redirect | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id, but must be provided. |
+|Sandbox         |Decoupled | None   | ![](https://img.shields.io/badge/status-active-success.svg) | Authentication can be done with any PSU id, but must be provided. |
 |Production      |OAuth Redirect | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) |  |
-|Production      |Decoupled | Mobilt BankID | ![](https://img.shields.io/badge/status-backlog-inactive.svg) | Planned for Q1 2021. |
+|Production      |Decoupled | Mobilt BankID | ![](https://img.shields.io/badge/status-active-success.svg) | Sparbankerna are currently not supported. |
 
 ### Sandbox Test Data
 
@@ -42,7 +45,7 @@ sidebar_label: Swedbank
 
 | Transaction History (Private) | Transaction List (Private) | Transaction History (Corporate) | Transaction List (Corporate) |
 |---|---|---|---|
-| Max. 90 Days | Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP |
+| Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP | Not disclosed by ASPSP |
 
 ### API Status
 
