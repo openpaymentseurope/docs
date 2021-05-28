@@ -163,7 +163,7 @@ bankIdLink = "bankid:///?autostarttoken=" + autoStartToken + "&redirect=" + redi
 In case of Redirect flow, you need to extract the link to our auth server (which in turn will redirect to the bank's external authentication page) and replace the placeholders with the relevant values.
 
 ```javascript
-redirectLinkToBank = result.body._links.scaOAuth.href
+redirectLinkToBank = response.body._links.scaOAuth.href
 ```
 
 Replace the following placeholders in `redirectLinkToBank` in the following way:

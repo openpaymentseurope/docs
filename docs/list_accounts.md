@@ -43,5 +43,5 @@ PSU-IP-Address: psuIpAddress,
 #### Result
 
 ```javascript
-accounts = result.body.accounts
+accounts = response.body.accounts
 ```

@@ -1,44 +1,37 @@
 ---
 id: api
-title: Getting Started with the API
-sidebar_label: Getting started with the API
+title: Good to know
+sidebar_label: Good to know
 ---
 
+Open Payments Platform uses OAuth2 (specifically OIDC) for authentication. In the following sections, we have provided step
+by step instructions on how you will interact with the platform. Throughout this documentation we use brackets to denote variables that need to be replaced with corresponding values. The actual domains to access are two - one for handling auth and one for doing the actual calls. See list below for values in sandbox and production.
 
-## Introduction
+Available `AUTH_HOST` values
 
-Skriva några rader om vad APIet kan göra på en högre nivå. Finns det några tekniska detaljer som behöver finnas med redan här? Skriva vilka olika produkter som finns i APIet, dvs ASPSP, Accout, Payment, Consent(vilket måste förtydligas att det bara rör Accounts).
+| Environment | URL |
+| --- | --- |
+| Sandbox | https://auth.sandbox.openbankingplatform.com |
+| Production | https://auth.openbankingplatform.com |
 
-## About this guide
-Skriv några rader om hur guiden är uppbyggd. Den visar de anrop man behöver göra för att uppnå en viss sak. Den visar de headers som behöver följa med, samt exempel-request-bodys, samt det response man behöver för att fortsätta.
+Available `API_HOST` values
 
+| Environment | URL |
+| --- | --- |
+| Sandbox | https://api.sandbox.openbankingplatform.com |
+| Production | https://api.openbankingplatform.com |
 
+## Postman collection
 
-## Prerequisites
+You can download our [Postman Collection](/obp.postman_collection.json), [Postman Environment Settings for Sandbox](/sandbox.postman_environment.json) and [Postman Environment Settings for Production](/production.postman_environment.json) with ready made API calls and settings for our environments. After importing the Collection and the Environment Settings, you just need to set the values for variables "clientId", "clientSecret" and "redirectUri" to start using our API:s.
 
-Follow the [Get started](getstarted) guide to set up an account and create an application.
-
-### ASPSP
-The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
-
-### Certificate
-If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests. Vad mer skriva?
-
-
-### Consent
-A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
+## General notes about requests
 
 ### Explicit scopes for Private and Corporate contexts
 Your requests will operate in either a "private" or a "corporate" context in our platform. This is an abstraction layer provided by our platform so that you need to know less about how specific banks are implementing and separating private/corporate access to account information and payment operations.
 The context is selected by specifying an additional "private" or "corporate" scope when requesting an access token from our auth endpoint. The examples in our tutorials shows how it can be done.
-
-### SCA approaches
-
-SCA stands for Strong customer authentication. Required by end user (account holder) every time a consent is created, or a payment is initiated. There are two SCA approaches that the application needs to implement in order to support all banks: Decoupled and Redirect.
-
-In the **Redirect** approach, you route the user to the chosen bank where the user authenticates, and once that’s done the bank will route the user back to your application.
-
-In the **Decoupled** approach, the user stays in your application where you generate a QR code or a link for Mobile Bank ID.
+<br><br>
+With this change we have also updated our [Postman Collection](/obp.postman_collection.json), [Postman Environment Settings for Sandbox](/sandbox.postman_environment.json) and [Postman Environment Settings for Production](/production.postman_environment.json), so if you are using an old version of these please download the latest to easily shift into using these new scopes when testing.
 
 ### X-Request-ID
 

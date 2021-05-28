@@ -1,10 +1,10 @@
 ---
 id: getstarted
-title: Connect to API
-sidebar_label: Connect to API
+title: Get access
+sidebar_label: Get access
 ---
 
-To integrate to Open Payments's API you need to do the following steps. If you only want to test the sandbox environment, step 1-3 is enough.
+To get access to Open Payments's API you need to do the following steps. If you only want to test the sandbox environment, step 1-3 is enough.
 
 ### 1. Sign up in the Developer Portal
 
@@ -38,8 +38,5 @@ An application represents the credentials you'll use to access our API as well a
 
 Click “Create application” to create your application. You will now see a confirmation screen that holds your client secret. Save this secret somewhere safe. Once you close this dialogue you will be unable to retrieve it again, in which case you need to create a new application.
 
-You’re now ready to integrate to our production API. Check out our guides on how to get started.
+You’re now ready to integrate to our production API. Look through the rest of our guides on how to get started.
 
-[Account information](ais)
-
-[Payment initiation](pis)

@@ -10,8 +10,8 @@
         "sidebar_label": "How to use the AIS API"
       },
       "api": {
-        "title": "Getting Started with the API",
-        "sidebar_label": "Getting started with the API"
+        "title": "Good to know",
+        "sidebar_label": "Good to know"
       },
       "aspsp_dabasesx": {
         "title": "Danske Bank (DABASESX)",
@@ -62,8 +62,8 @@
         "sidebar_label": "Access tokens"
       },
       "getstarted": {
-        "title": "Connect to API",
-        "sidebar_label": "Connect to API"
+        "title": "Get access",
+        "sidebar_label": "Get access"
       },
       "glossary": {
         "title": "Glossary",
@@ -315,8 +315,9 @@
       "Support": "Support"
     },
     "categories": {
-      "Get started": "Get started",
+      "Guides": "Guides",
       "Overview": "Overview",
+      "Other": "Other",
       "Category": "Category",
       "Tutorials": "Tutorials"
     }
