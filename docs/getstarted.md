@@ -12,7 +12,7 @@ Click [this link](https://developer.openpayments.io/) and follow the instruction
 
 ### 2. Get credentials to access Sandbox
 
-Access our API in our test envorinment by creating an application in Sandbox. You will then acquire credentials for the sandbox API so that you can try out our API with test data. There are some limitations in Sandbox but you will get a good picture of what you can do with our API’s to build the scope for your solution.
+Access our API in our test environment by creating an application in Sandbox. You will then acquire credentials for the sandbox API so that you can try out our API with test data. There are some limitations in Sandbox but you will get a good picture of what you can do with our API’s to build the scope for your solution.
 
 ### 3. Request production access
 
