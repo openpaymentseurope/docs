@@ -268,6 +268,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -358,6 +359,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -443,6 +445,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -656,6 +659,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -737,6 +741,7 @@ paths:
         - $ref: "#/components/parameters/Signature"
         - $ref: "#/components/parameters/TPP-Signature-Certificate"
           #optional additional PSU Information in header
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
         - $ref: "#/components/parameters/PSU-Accept"
@@ -861,6 +866,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1081,6 +1087,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1164,6 +1171,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1289,6 +1297,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Address_optional"
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1413,6 +1422,7 @@ paths:
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
         - $ref: "#/components/parameters/PSU-Accept"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
         - $ref: "#/components/parameters/PSU-Accept-Language"
@@ -1505,6 +1515,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1593,6 +1604,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1685,6 +1697,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1772,6 +1785,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -1970,6 +1984,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -2047,7 +2062,8 @@ paths:
           #conditional elemention for AIS
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
-        - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/PSU-IP-Port"          
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -2127,6 +2143,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -2338,6 +2355,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -2420,6 +2438,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
@@ -2544,6 +2563,7 @@ paths:
         - $ref: "#/components/parameters/PSU-IP-Address_conditionalForAis"
           #optional additional PSU Information in header
         - $ref: "#/components/parameters/PSU-IP-Port"
+        - $ref: "#/components/parameters/TPP-Redirect-Preferred"
         - $ref: "#/components/parameters/PSU-Accept"
         - $ref: "#/components/parameters/PSU-Accept-Charset"
         - $ref: "#/components/parameters/PSU-Accept-Encoding"
