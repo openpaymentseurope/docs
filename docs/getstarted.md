@@ -1,7 +1,7 @@
 ---
 id: getstarted
-title: Get access
-sidebar_label: Get access
+title: Get started
+sidebar_label: Get started
 ---
 
 To get access to Open Payments's API you need to do the following steps. If you only want to test the sandbox environment, step 1-3 is enough.
