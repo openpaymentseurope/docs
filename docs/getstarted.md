@@ -1,7 +1,7 @@
 ---
 id: getstarted
-title: Get started
-sidebar_label: Get started
+title: Connect to API
+sidebar_label: Connect to API
 ---
 
 To integrate to Open Payments's API you need to do the following steps. If you only want to test the sandbox environment, step 1-3 is enough.

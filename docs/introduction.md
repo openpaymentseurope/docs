@@ -1,7 +1,7 @@
 ---
 id: introduction
-title: Introduction
-sidebar_label: Introduction
+title: Platform introduction
+sidebar_label: Platform introduction
 ---
 
 ## Open Payments Platform

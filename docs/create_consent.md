@@ -1,14 +1,14 @@
 ---
 id: create_consent
-title: Create consent
-sidebar_label: Create consent
+title: Consents
+sidebar_label: Consents
 ---
 
 
-This guide demonstrates how to create a consent and let a user authorise it for use against the Account Information Service.
-[Peter, kan du skriva lite grejer om consent här?]
+This guide demonstrates how to create a Consent and let a user authorise it for use against the Account Information Service.
+A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
 
-In step 1 we create a consent. In step 2 and 3 we start an authorisation process for that consent.
+In step 1 we create a Consent. In step 2 and 3 we start an authorisation process for that Consent.
 Step 1-3 will be executed immediately after one another and need no user input in between, meaning that all three probably will be executed from a single function in your system (Det här suger så hårt men essensen av vad jag vill säga finns där, hur skriva?)
 Step 4 describes how to handle the two different SCA flows.
 
@@ -21,7 +21,7 @@ For requests to the Consent API, we need an access token for `scope` `"accountin
 | Name         | Description                                                                                                                                                                                                                                                             |
 | ------------ | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | accessToken          | An access token with `scope` `"accountinformation private"`.                                                                                                                                                                                                                |
-| bic          | Will contain the BIC of the bank that you want to create a consent for.                                                                                                                                                                                                                |
+| bic          | Will contain the BIC of the bank that you want to create a Consent for.                                                                                                                                                                                                                |
 | CLIENT_ID     | The Client ID of the application you created in the Developer Portal.                                                                                                                                                                                                   |
 | CLIENT_SECRET | The secret that was generated when you created an application. If you did not save that value, you need to generate a new secret.                                                                                                                                    |
 | psuUserAgent | The User-Agent from the user's request.                                                                                                                                                                                                                                 |
@@ -69,7 +69,7 @@ consentID = response.body.consentId;
 ### 2. Start Consent Authorisation Process
 <a href="https://docs.openpayments.io/en/openpayments-NextGenPSD2-1.3.3.html#operation/startConsentAuthorisation" target="_blank">Endpoint details</a>
 
-Next step is to start an authorisation process for this consent.
+Next step is to start an authorisation process for this Consent.
 
 #### Endpoint
 

@@ -5,17 +5,25 @@ sidebar_label: Getting started with the API
 ---
 
 
+## Introduction
+
+Skriva några rader om vad APIet kan göra på en högre nivå. Finns det några tekniska detaljer som behöver finnas med redan här? Skriva vilka olika produkter som finns i APIet, dvs ASPSP, Accout, Payment, Consent(vilket måste förtydligas att det bara rör Accounts).
+
+## About this guide
+Skriv några rader om hur guiden är uppbyggd. Den visar de anrop man behöver göra för att uppnå en viss sak. Den visar de headers som behöver följa med, samt exempel-request-bodys, samt det response man behöver för att fortsätta.
+
+
+
 ## Prerequisites
 
 Follow the [Get started](getstarted) guide to set up an account and create an application.
-
-## General notes about requests
 
 ### ASPSP
 The terms "ASPSP" (Account Servicing Payment Service Provider) and "bank" will be used interchangeably in this guide.
 
 ### Certificate
-If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests.
+If you use the production environment, you should attach the certificate you downloaded from the Developer Portal when making API requests. Vad mer skriva?
+
 
 ### Consent
 A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.

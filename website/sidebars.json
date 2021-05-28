@@ -1,18 +1,14 @@
 {
   "docs": {
-    "Overview": ["introduction", "getstarted", "banks", "glossary"],
-    "Tutorials": [
-      "api", 
-      "aspsp", 
-      "consent", 
-      "ais", 
-      "pis", 
-      "quickstart_pis", 
+    "Get started": [
+      "getstarted", 
       "get_access_token", 
-      "create_consent", 
       "list_banks",
-      "list_accounts"
-    ]
+      "create_consent", 
+      "list_accounts",
+      "quickstart_pis"
+    ],
+    "Overview": ["introduction", "banks", "glossary"]
   },
   "docs-other": {
     "Category": ["doc4", "doc5"]

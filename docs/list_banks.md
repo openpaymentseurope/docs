@@ -4,7 +4,7 @@ title: List banks
 sidebar_label: List banks
 ---
 
-This guide demonstrates how to fetch all swedish banks in the Open Banking Platform.
+This guide demonstrates how to fetch all Swedish banks in the Open Banking Platform.
 ### Variables and constants used in the guide
 
 | Name         | Description                                                                                                                                                                                                                                                             |

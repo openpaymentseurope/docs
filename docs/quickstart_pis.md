@@ -1,7 +1,7 @@
 ---
 id: quickstart_pis
-title: Initiate payment
-sidebar_label: Initiate payment
+title: Initiate Payments
+sidebar_label: Initiate Payments
 ---
 
 This guide shows how to integrate to the PIS API. It will contain information on how to initiate a domestic private account to account payment.

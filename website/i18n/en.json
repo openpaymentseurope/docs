@@ -54,24 +54,24 @@
         "sidebar_label": "How to use the Consent API"
       },
       "create_consent": {
-        "title": "Create consent",
-        "sidebar_label": "Create consent"
+        "title": "Consents",
+        "sidebar_label": "Consents"
       },
       "get_access_token": {
-        "title": "Create access token",
-        "sidebar_label": "Create access token"
+        "title": "Access tokens",
+        "sidebar_label": "Access tokens"
       },
       "getstarted": {
-        "title": "Get started",
-        "sidebar_label": "Get started"
+        "title": "Connect to API",
+        "sidebar_label": "Connect to API"
       },
       "glossary": {
         "title": "Glossary",
         "sidebar_label": "Glossary"
       },
       "introduction": {
-        "title": "Introduction",
-        "sidebar_label": "Introduction"
+        "title": "Platform introduction",
+        "sidebar_label": "Platform introduction"
       },
       "list_accounts": {
         "title": "List accounts",
@@ -85,13 +85,9 @@
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
       },
-      "quickstart_ais": {
-        "title": "Integrate to AIS",
-        "sidebar_label": "Integrate to AIS"
-      },
       "quickstart_pis": {
-        "title": "Initiate payment",
-        "sidebar_label": "Initiate payment"
+        "title": "Initiate Payments",
+        "sidebar_label": "Initiate Payments"
       },
       "version-1.0.0/version-1.0.0-ais": {
         "title": "How to use the AIS API",
@@ -319,9 +315,10 @@
       "Support": "Support"
     },
     "categories": {
+      "Get started": "Get started",
       "Overview": "Overview",
-      "Tutorials": "Tutorials",
-      "Category": "Category"
+      "Category": "Category",
+      "Tutorials": "Tutorials"
     }
   },
   "pages-strings": {

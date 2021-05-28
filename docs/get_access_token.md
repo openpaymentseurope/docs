@@ -1,10 +1,12 @@
 ---
 id: get_access_token
-title: Create access token
-sidebar_label: Create access token
+title: Access tokens
+sidebar_label: Access tokens
 ---
 
-All requests made to the Open Banking API requires an access token. The access token is valid for one hour. [Något mer här?]
+All requests made to the Open Banking API requires an access token. Access tokens are valid for one hour. 
+An access token belongs to a certain product and scope only. See the information of the variable `scope` in the section "Variables and constants used in this guide" below.
+
 
 ### Variables and constants used in the guide
 
