@@ -1,7 +1,8 @@
 ---
-id: aspsp_swedsess
+id: version-1.0.19-aspsp_swedsess
 title: Swedbank and Sparbankerna (SWEDSESS)
 sidebar_label: Swedbank
+original_id: aspsp_swedsess
 ---
 
 ## Status Highlights

@@ -28,7 +28,7 @@ const siteConfig = {
   // For github.io type URLs, you would set the url and baseUrl like:
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
-  editUrl: 'https://github.com/openpaymentseurope/docs/blob/docusaurus/docs/',
+  editUrl: 'https://github.com/openpaymentseurope/docs/blob/master/docs/',
   // Used for publishing and more
   projectName: 'docs',
   organizationName: 'openpaymentseurope',
