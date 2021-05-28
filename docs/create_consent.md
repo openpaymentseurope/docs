@@ -8,9 +8,8 @@ sidebar_label: Consents
 This guide demonstrates how to create a Consent and let a user authorise it for use against the Account Information Service.
 A Consent is an object that holds information about what permissions a user has given you to get its account information from a particular bank.
 
-In step 1 we create a Consent. In step 2 and 3 we start an authorisation process for that Consent.
-Step 1-3 will be executed immediately after one another and need no user input in between, meaning that all three probably will be executed from a single function in your system (Det här suger så hårt men essensen av vad jag vill säga finns där, hur skriva?)
-Step 4 describes how to handle the two different SCA flows.
+Step 1 shows how to create a Consent. Step 2 and 3 shows how to start an authorisation process for that Consent.
+Step 1-3 are to be executed consecutively without the need for any user input, as such, it can be executed in the same method in your implementation. Step 4 describes how to handle the two different SCA flows.
 
 ## Prerequisites
 
