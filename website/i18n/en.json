@@ -215,6 +215,10 @@
         "title": "Supported Banks",
         "sidebar_label": "Supported banks"
       },
+      "version-1.0.21/version-1.0.21-aspsp_swedsess": {
+        "title": "Swedbank and Sparbankerna (SWEDSESS)",
+        "sidebar_label": "Swedbank"
+      },
       "version-1.0.3/version-1.0.3-ais": {
         "title": "How to use the AIS API",
         "sidebar_label": "How to use the AIS API"
