@@ -167,6 +167,7 @@ paths:
           #common header parameter
         - $ref: "#/components/parameters/X-Request-ID"
         - $ref: "#/components/parameters/X-BicFi"
+        - $ref: "#/components/parameters/X-AffiliatedASPSP-ID"
           #header to support the signature function
         - $ref: "#/components/parameters/Digest"
         - $ref: "#/components/parameters/Signature"
@@ -1879,6 +1880,7 @@ paths:
           #common header parameter
         - $ref: "#/components/parameters/X-Request-ID"
         - $ref: "#/components/parameters/X-BicFi"
+        - $ref: "#/components/parameters/X-AffiliatedASPSP-ID"
           #header to support the signature function
         - $ref: "#/components/parameters/Digest"
         - $ref: "#/components/parameters/Signature"
@@ -9891,10 +9893,29 @@ components:
           type: string
         logoUrl:
           type: string
-        paymentProducts:
+        globalPaymentProducts:
           type: array
           items:
             type: string
+        affiliatedAspsps:
+          $ref: "#/components/schemas/affiliatedAspsps"
+
+    affiliatedAspsps:
+      description: Affiliated ASPSP
+      type: array
+      items:
+        $ref: "#/components/schemas/affiliatedAspspItem"
+
+    affiliatedAspspItem:
+      description: Affiliated ASPSP
+      type: object
+      properties:
+        id:
+          type: string
+          description: Id of the affiliated ASPSP
+        name:
+          type: string
+          description: Name of the affiliated ASPSP
 
     aspspListItem:
       description: Basic ASPSP information
@@ -10206,6 +10227,16 @@ components:
         type: string
         pattern: "[A-Z]{6,6}[A-Z2-9][A-NP-Z0-9]([A-Z0-9]{3,3}){0,1}"
         example: "AAAADEBBXXX"
+
+    X-AffiliatedASPSP-ID:
+      name: X-AffiliatedASPSP-ID
+      in: header
+      description: |
+        The ID of an affiliated ASPSP as related to the X-BicFi header
+      schema:
+        type: string
+      required: false
+      example: 08191
 
     Digest:
       name: Digest
@@ -11327,18 +11358,35 @@ components:
             {
               "city": "Stockholm",
               "country": "Sweden",
-              "postalCode": "111 57",
-              "streetAddress": "Mäster Samuelsgatan 36",
-              "companyNumber": "502017-7753",
-              "phone": "+46-8-565 000 00",
-              "websiteUrl": "https://openpayments.io",
-              "paymentProducts": [
-                "sepa-credit-transfers",
-                "target-2-payments"
+              "postalCode": "106 40",
+              "streetAddress": "Kungsträdgårdsgatan 8",
+              "companyNumber": "502032-9081",
+              "phone": "+46-771 365 365",
+              "websiteUrl": "https://seb.se/",
+              "globalPaymentProducts": [
+                  "sepa-credit-transfers",
+                  "domestic",
+                  "international"
               ],
-              "bicFi": "OPBKSE21",
-              "name": "Demo Bank One (EUR)",
-              "logoUrl": "https://openbankingplatform.blob.core.windows.net/image/OPBKSE21.png"
+              "supportedAuthorizationMethods": [
+                {
+                  "name": "OAuth2",
+                  "uri": "https://auth.sandbox.openbankingplatform.com/.well-known/openid-configuration"
+                }
+              ],
+              "bicFi": "ESSESESS",
+              "name": "Skandinaviska Enskilda Banken AB ",
+              "logoUrl": "https://opeopenbanking.blob.core.windows.net/images/ESSESESS.jpg",
+              "affiliatedAspsps": [
+                {
+                  "id": "08999",
+                  "name": "Swedbank"
+                },
+                {
+                  "id": "08114",
+                  "name": "Södra Dalarnas Sparbank AB"
+                }
+              ]
             }
 
     OK_200_CityList:

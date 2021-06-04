@@ -219,6 +219,14 @@
         "title": "Swedbank and Sparbankerna (SWEDSESS)",
         "sidebar_label": "Swedbank"
       },
+      "version-1.0.22/version-1.0.22-aspsp_swedsess": {
+        "title": "Swedbank and Sparbankerna (SWEDSESS)",
+        "sidebar_label": "Swedbank"
+      },
+      "version-1.0.22/version-1.0.22-aspsp": {
+        "title": "How to use the ASPSP API",
+        "sidebar_label": "How to use the ASPSP API"
+      },
       "version-1.0.3/version-1.0.3-ais": {
         "title": "How to use the AIS API",
         "sidebar_label": "How to use the AIS API"

@@ -1,7 +1,8 @@
 ---
-id: aspsp
+id: version-1.0.22-aspsp
 title: How to use the ASPSP API
 sidebar_label: How to use the ASPSP API
+original_id: aspsp
 ---
 
 This API is used to retreive information about supported Account Servicing Payment Service Providers (ASPSP) that Open Payments Platform currently support. You will also get information about the specific ASPSP that will be used to call the other APIs.
