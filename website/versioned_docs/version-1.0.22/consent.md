@@ -1,7 +1,8 @@
 ---
-id: consent
+id: version-1.0.22-consent
 title: How to use the Consent API
 sidebar_label: How to use the Consent API
+original_id: consent
 ---
 
 This API is used to retrieve![img.png](img.png) and manage consent for accessing account information on behalf of a banks customer. If you are new to Open Payments API it is probably best to read a bit about how the APIs work in the [ASPSP tutorial](aspsp.md).

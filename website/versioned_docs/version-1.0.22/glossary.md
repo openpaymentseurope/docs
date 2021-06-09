@@ -1,7 +1,8 @@
 ---
-id: glossary
+id: version-1.0.22-glossary
 title: Glossary
 sidebar_label: Glossary
+original_id: glossary
 ---
 
 In this section, we go through some terminology used in this documentation to avoid confusion. It is not meant to be a complete list of terminology used in this documentation.
