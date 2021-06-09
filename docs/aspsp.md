@@ -248,7 +248,7 @@ The list of **global payment products** is generic payments products that we sup
 
 The list of **payment products** is specifically for the bank at hand. When using one of these you have to send payment information in a format the bank will accept. 
 
-The list of **affiliatedAspsps** includes any affiliated ASPSPs to the main entry that can be access when using the `BICFI`. Please see ASPSP specific documentation [here](aspsp.md) for usage.
+The list of **affiliatedAspsps** includes any affiliated ASPSPs to the main entry that can be accessed when using the `BICFI`. Please see ASPSP specific documentation [here](aspsp.md) for usage.
 
 Read more about the [payment initiation](pis.md) API.
 
