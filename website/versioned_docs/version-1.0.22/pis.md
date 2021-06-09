@@ -1,7 +1,8 @@
 ---
-id: pis
+id: version-1.0.22-pis
 title: How to use the PIS API
 sidebar_label: How to use the PIS API
+original_id: pis
 ---
 
 This API is used to get consent for and initiating payments. Note that the consent from the consent API is only used to access the account information API and that this API has its own consent procedure. (Very similar to the one in the [consent API](consent.md).)

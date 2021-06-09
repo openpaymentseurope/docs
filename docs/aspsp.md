@@ -4,7 +4,7 @@ title: How to use the ASPSP API
 sidebar_label: How to use the ASPSP API
 ---
 
-This API is used to retreive information about supported Account Servicing Payment Service Providers (ASPSP) that Open Payments Platform currently support. You will also get information about the specific ASPSP that will be used to call the other APIs.
+This API is used to retrieve information about supported Account Servicing Payment Service Providers (ASPSP) that Open Payments Platform currently support. You will also get information about the specific ASPSP that will be used to call the other APIs.
 
 ## Hosts
 
@@ -244,9 +244,7 @@ curl -X GET
 
 This result contains contact details for the bank and information about how to access its services through Open Payments API.
 
-The list of **global payment products** is generic payments products that we support for all banks (where it makes sense). In this case the swedish bank SEB has support for domestic payments internally in Sweden and sepa payments on the European market. When using these we have a unified API for payments that work across banks. If you want a no hassle experience where the API towards us always is the same - this is the products to use.
-
-The list of **payment products** is specifically for the bank at hand. When using one of these you have to send payment information in a format the bank will accept. 
+The list of **global payment products** defines a subset of payment products supported for a specific bank. The models for each product is unified across all banks that support it.
 
 The list of **affiliatedAspsps** includes any affiliated ASPSPs to the main entry that can be accessed when using the `BICFI`. Please see ASPSP specific documentation [here](aspsp.md) for usage.
 
