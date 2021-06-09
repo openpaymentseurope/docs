@@ -262,5 +262,5 @@ A typical flow in the system may be like this:
 1. the user is presented a list of supported countries
 2. the user selects a country
 3. the system retrieves a list of banks for that country
-4. the user selects its bank
+4. the user selects their bank
 5. the system moves on to one of the other APIs to get account information or to initiate a payment
