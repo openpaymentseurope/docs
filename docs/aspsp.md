@@ -204,37 +204,41 @@ curl -X GET
 ### Response
 ```javascript
 {
-    "city": "Stockholm",
-    "country": "Sweden",
-    "postalCode": "106 40",
-    "streetAddress": "Kungsträdgårdsgatan 8",
-    "companyNumber": "502032-9081",
-    "phone": "+46-771 365 365",
-    "websiteUrl": "https://seb.se/",
-    "globalPaymentProducts": [
-        "sepa-credit-transfers",
-        "domestic",
-        "international"
-    ],
-    "supportedAuthorizationMethods": [
-        {
-            "name": "OAuth2",
-            "uri": "https://auth.sandbox.openbankingplatform.com/.well-known/openid-configuration"
-        }
-    ],
-    "bicFi": "ESSESESS",
-    "name": "Skandinaviska Enskilda Banken AB ",
-    "logoUrl": "https://opeopenbanking.blob.core.windows.net/images/ESSESESS.jpg",
-    "affiliatedAspsps": [
-        {
-            "id": "08999",
-            "name": "Swedbank"
-        },
-        {
-            "id": "08114",
-            "name": "Södra Dalarnas Sparbank AB"
-        }
-    ]
+  "city": "Stockholm",
+  "country": "Sweden",
+  "postalCode": "105 34",
+  "streetAddress": "Landsvägen 40",
+  "companyNumber": "502017-7753",
+  "phone": "+46-8-585 900 00",
+  "websiteUrl": "https://www.swedbank.se",
+  "globalPaymentProducts": [
+    "domestic",
+    "international",
+    "swedish-giro"
+  ],
+  "supportedAuthorizationMethods": [
+    {
+      "name": "OAuth2",
+      "uri": "https://auth.openbankingplatform.com/.well-known/openid-configuration"
+    },
+    {
+      "name": "Decoupled",
+      "uri": ""
+    }
+  ],
+  "bicFi": "SWEDSESS",
+  "name": "Swedbank",
+  "logoUrl": "https://opeopenbanking.blob.core.windows.net/images/SWEDSESS.png",
+  "affiliatedAspsps": [
+    {
+      "id": "08999",
+      "name": "Swedbank"
+    },
+    {
+      "id": "08114",
+      "name": "Södra Dalarnas Sparbank AB"
+    }
+  ]
 }
 ```
 
@@ -255,7 +259,7 @@ The APIs in this product does not interface directly with the banks but provide 
 
 A typical flow in the system may be like this:
 1. the user is presented a list of supported countries
-2. the user select a country
+2. the user selects a country
 3. the system retrieves a list of banks for that country
 4. the user selects its bank
 5. the system moves on to one of the other APIs to get account information or to initiate a payment
