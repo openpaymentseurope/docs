@@ -3177,6 +3177,10 @@ components:
             The SCA routine failed
           * 'exempted':
             SCA was exempted for the related transaction, the related authorisation is successful.
+          * 'authenticationStarted':
+            Authentication of the PSU has started at the ASPSP.
+          * 'authoriseCreditorAccountStarted':
+            Approval of new creditor account for payment has started at the ASPSP.
       type: string
       enum:
         - "received"
@@ -3187,6 +3191,8 @@ components:
         - "finalised"
         - "failed"
         - "exempted"
+        - "authenticationStarted"
+        - "authoriseCreditorAccountStarted"
         
       example: "psuAuthenticated"
 
