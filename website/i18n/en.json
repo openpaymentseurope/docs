@@ -239,6 +239,14 @@
         "title": "How to use the PIS API",
         "sidebar_label": "How to use the PIS API"
       },
+      "version-1.0.23/version-1.0.23-aspsp_essesess": {
+        "title": "SEB (ESSESESS)",
+        "sidebar_label": "SEB"
+      },
+      "version-1.0.23/version-1.0.23-aspsp_swedsess": {
+        "title": "Swedbank and Sparbankerna (SWEDSESS)",
+        "sidebar_label": "Swedbank"
+      },
       "version-1.0.3/version-1.0.3-ais": {
         "title": "How to use the AIS API",
         "sidebar_label": "How to use the AIS API"

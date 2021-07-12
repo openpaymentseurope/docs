@@ -1,7 +1,8 @@
 ---
-id: aspsp_essesess
+id: version-1.0.23-aspsp_essesess
 title: SEB (ESSESESS)
 sidebar_label: SEB
+original_id: aspsp_essesess
 ---
 
 ## Status Highlights
